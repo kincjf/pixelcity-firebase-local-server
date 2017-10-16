@@ -2,7 +2,7 @@ firebase-server
 ===============
 
 Firebase Web Socket Protocol Server. Useful for emulating the Firebase server in tests.
-
+https://firebase.googleblog.com/2015/04/end-to-end-testing-with-firebase-server_16.html
 Copyright (C) 2013, 2014, 2015, Uri Shaked <uri@urish.org>
 
 [![Build Status](https://travis-ci.org/urish/firebase-server.png?branch=master)](https://travis-ci.org/urish/firebase-server)
