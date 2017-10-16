@@ -1,0 +1,10 @@
+{
+  "ignoreRoot": [
+     ".git/", ".idea/*", "node_modules/", "bower_components/", ".nyc_output/", "coverage/", ".sass-cache/",
+     "public/*", "tools/*", "image-resizer/node_modules/*",
+     "resources/*", "swagger/*", "views/*", "test/*", "logs/*",
+
+     ".sqlite", ".sqlite-journal", ".bak", ".tmp", ".mwb", ".___jb_tmp___", ".json___jb_tmp___", ".js___jb_tmp___",
+     ".pptx", ".md", "*.json", "*.swap"
+  ]
+}

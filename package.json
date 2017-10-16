@@ -1,0 +1,56 @@
+{
+  "name": "firebase-local-server",
+  "version": "0.11.0",
+  "description": "Simple Firebase Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js pixelcity-demo-48860-export.json",
+    "test": "npm run lint && npm run cover",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "debug": "mocha",
+    "watch": "mocha -w",
+    "lint": "eslint index.js lib test bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urish/firebase-server"
+  },
+  "keywords": [
+    "firebase",
+    "server"
+  ],
+  "author": "Uri Shaked",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/urish/firebase-server/issues"
+  },
+  "homepage": "https://github.com/urish/firebase-server",
+  "devDependencies": {
+    "babel": "5.8.23",
+    "bluebird": "2.10.2",
+    "co": "4.6.0",
+    "coveralls": "2.11.4",
+    "dom-storage": "^2.0.2",
+    "ecdsa-sig-formatter": "^1.0.9",
+    "eslint": "1.7.3",
+    "faye-websocket": "0.10.0",
+    "firebase": "^4.5.2",
+    "firebase-server": "^0.11.0",
+    "firebase-token-generator": "^2.0.0",
+    "istanbul": "0.4.0",
+    "mocha": "2.3.3",
+    "nodemon": "^1.12.1",
+    "proxyquire": "^1.7.3",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "dependencies": {
+    "any-promise": "1.3.0",
+    "cli": "0.11.3",
+    "debug": "2.2.0",
+    "jsonfile": "^4.0.0",
+    "jwt-simple": "0.3.1",
+    "lodash": "3.10.1",
+    "targaryen": "3.0.1",
+    "ws": "1.1.1"
+  }
+}
