@@ -6,12 +6,14 @@
 
 'use strict';
 
+const util = require('util');
+
 var FirebaseServer = require('firebase-server');
 var firebase = require('firebase');
 var jsonfile = require('jsonfile');
 require('dotenv').config();
 
-var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860-export.json';
+var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
 var host = process.env.FIREBASE_HOST || test.firebaseio.com;
 var port = process.env.FIREBASE_PORT || 3000;
 
@@ -19,7 +21,12 @@ console.log("filename: " + filename);
 console.log("host: " + host);
 console.log("port: " + port);
 
-var data = jsonfile.readFileSync(filename);
+var data = require("./test/data");
+jsonfile.writeFile(filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
+	console.error(err);
+})
+
+// var data = jsonfile.readFileSync(filename);
 // var name = 'pixelcity-demo-48860';
 // new FirebaseServer(5000, 'test.firebaseio.com', {
 // 	states: {
@@ -44,5 +51,6 @@ var database = firebase.database();
 var ref = database.ref();  // document root
 
 ref.on('value', function(snap) {
-	console.log('--- Got value --- \n', snap.val());
+	console.log('--- Got value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
 });
