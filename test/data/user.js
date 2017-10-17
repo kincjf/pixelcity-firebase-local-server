@@ -1,5 +1,8 @@
 "use strict";
 
+var moment = require('moment');
+var _ = require('lodash');
+
 var data = {
 	"Bl5k6bioized1EFqb2vWuCJl6XF2" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
@@ -69,3 +72,7 @@ var data = {
 };
 
 module.exports = data;
+
+// Foreign Master 때문에
+
+
