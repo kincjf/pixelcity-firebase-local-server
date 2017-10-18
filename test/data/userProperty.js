@@ -19,7 +19,12 @@ var data = {
 				}
 			}
 		},
-		"bank": {}
+		"bank": {},
+		"equipment": {
+			"weapon": "Lorem",
+			"armor": "Lorem",
+			"accessory": "Lorem"
+		}
 	},
 	"YxgY3Usu0XPCorrVkZGa8qkaQ103": {
 		"level": -71,
@@ -38,7 +43,12 @@ var data = {
 				}
 			}
 		},
-		"bank": {}
+		"bank": {},
+		"equipment": {
+			"weapon": "Lorem",
+			"armor": "Lorem",
+			"accessory": "Lorem"
+		}
 	},
 	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22": {
 		"level": -71,
@@ -57,7 +67,12 @@ var data = {
 				}
 			}
 		},
-		"bank": {}
+		"bank": {},
+		"equipment": {
+			"weapon": "Lorem",
+			"armor": "Lorem",
+			"accessory": "Lorem"
+		}
 	},
 	"xxkVJ3qkzxQ14i373C9KSNSLsR32": {
 		"level": -71,
@@ -76,7 +91,12 @@ var data = {
 				}
 			}
 		},
-		"bank": {}
+		"bank": {},
+		"equipment": {
+			"weapon": "Lorem",
+			"armor": "Lorem",
+			"accessory": "Lorem"
+		}
 	},
 	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2": {
 		"level": -71,
@@ -95,7 +115,12 @@ var data = {
 				}
 			}
 		},
-		"bank": {}
+		"bank": {},
+		"equipment": {
+			"weapon": "Lorem",
+			"armor": "Lorem",
+			"accessory": "Lorem"
+		}
 	}
 };
 

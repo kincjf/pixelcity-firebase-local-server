@@ -21,6 +21,11 @@ var data = {
 							"active": true
 						}
 					}
+				},
+				"equipment": {
+					"weapon": "Lorem",
+					"armor": "Lorem",
+					"accessory": "Lorem"
 				}
 			}
 		},
@@ -56,6 +61,11 @@ var data = {
 							"active": true
 						}
 					}
+				},
+				"equipment": {
+					"weapon": "Lorem",
+					"armor": "Lorem",
+					"accessory": "Lorem"
 				}
 			}
 		},
@@ -91,6 +101,11 @@ var data = {
 							"active": true
 						}
 					}
+				},
+				"equipment": {
+					"weapon": "Lorem",
+					"armor": "Lorem",
+					"accessory": "Lorem"
 				}
 			}
 		},
@@ -126,6 +141,11 @@ var data = {
 							"active": true
 						}
 					}
+				},
+				"equipment": {
+					"weapon": "Lorem",
+					"armor": "Lorem",
+					"accessory": "Lorem"
 				}
 			}
 		},
@@ -161,6 +181,11 @@ var data = {
 							"active": true
 						}
 					}
+				},
+				"equipment": {
+					"weapon": "Lorem",
+					"armor": "Lorem",
+					"accessory": "Lorem"
 				}
 			}
 		},

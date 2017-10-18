@@ -48,9 +48,69 @@ var database = firebase.database();
 // https://firebase.google.com/docs/database/web/lists-of-data
 // https://firebase.google.com/docs/reference/node/firebase.database.DataSnapshot
 
-var ref = database.ref();  // document root
+var character = database.ref("/character");
+var checkFriendship = database.ref("/checkFriendship");
+var history = database.ref("/history");
+var item = database.ref("/item");
+var map = database.ref("/map");
+var onlineUser = database.ref("/onlineUser");
+var skill = database.ref("/skill");
+var user = database.ref("/user");
+var userDeck = database.ref("/userDeck");
+var userProperty = database.ref("/userProperty");
+var userRelationship = database.ref("/userRelationship");
 
-ref.on('value', function(snap) {
-	console.log('--- Got value --- \n');
+character.on('value', function(snap) {
+	console.log('\n --- Got character value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+checkFriendship.on('value', function(snap) {
+	console.log('\n --- Got checkFriendship value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+history.on('value', function(snap) {
+	console.log('\n --- Got history value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+item.on('value', function(snap) {
+	console.log('\n --- Got item value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+map.on('value', function(snap) {
+	console.log('\n --- Got map value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+onlineUser.on('value', function(snap) {
+	console.log('\n --- Got onlineUser value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+skill.on('value', function(snap) {
+	console.log('\n --- Got skill value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+user.on('value', function(snap) {
+	console.log('\n --- Got user value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+userDeck.on('value', function(snap) {
+	console.log('\n --- Got userDeck value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+userProperty.on('value', function(snap) {
+	console.log('\n --- Got userProperty value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+userRelationship.on('value', function(snap) {
+	console.log('\n --- Got userRelationship value --- \n');
 	console.log(util.inspect(snap.val(), false, null));
 });
