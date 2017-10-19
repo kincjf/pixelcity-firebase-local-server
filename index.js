@@ -14,7 +14,7 @@ var jsonfile = require('jsonfile');
 require('dotenv').config();
 
 var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
-var host = process.env.FIREBASE_HOST || test.firebaseio.com;
+var host = process.env.FIREBASE_HOST || 'test.firebaseio.com';
 var port = process.env.FIREBASE_PORT || 3000;
 
 console.log("filename: " + filename);
