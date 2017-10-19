@@ -48,6 +48,8 @@ var database = firebase.database();
 // https://firebase.google.com/docs/database/web/lists-of-data
 // https://firebase.google.com/docs/reference/node/firebase.database.DataSnapshot
 
+var ref = database.ref();
+
 var character = database.ref("/character");
 var checkFriendship = database.ref("/checkFriendship");
 var history = database.ref("/history");
@@ -59,6 +61,11 @@ var user = database.ref("/user");
 var userDeck = database.ref("/userDeck");
 var userProperty = database.ref("/userProperty");
 var userRelationship = database.ref("/userRelationship");
+
+ref.on('value', function(snap) {
+	console.log('\n --- Got ref value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
 
 character.on('value', function(snap) {
 	console.log('\n --- Got character value --- \n');
