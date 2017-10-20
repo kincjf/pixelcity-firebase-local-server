@@ -6,7 +6,7 @@ var userData = require("./user");
 
 // user 수만큼 있음
 var data = {
-	"Bl5k6bioized1EFqb2vWuCJl6XF2": {
+	"smadupset@naver": {
 		"userStat": {
 			"voteCount": 49,
 			"friendCount": -65
@@ -23,7 +23,7 @@ var data = {
 			}
 		}
 	},
-	"YxgY3Usu0XPCorrVkZGa8qkaQ103": {
+	"jgj90@naver": {
 		"userStat": {
 			"voteCount": 49,
 			"friendCount": -65
@@ -40,7 +40,7 @@ var data = {
 			}
 		}
 	},
-	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22": {
+	"pastelbook89@gmail": {
 		"userStat": {
 			"voteCount": 49,
 			"friendCount": -65
@@ -57,7 +57,7 @@ var data = {
 			}
 		}
 	},
-	"xxkVJ3qkzxQ14i373C9KSNSLsR32": {
+	"sinho0689@gmail": {
 		"userStat": {
 			"voteCount": 49,
 			"friendCount": -65
@@ -74,7 +74,7 @@ var data = {
 			}
 		}
 	},
-	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2": {
+	"random_1487780669@gmail": {
 		"userStat": {
 			"voteCount": 49,
 			"friendCount": -65

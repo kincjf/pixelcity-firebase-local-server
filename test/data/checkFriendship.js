@@ -1,39 +1,34 @@
 "use strict";
 
 var data = {
-	"Bl5k6bioized1EFqb2vWuCJl6XF2": {
-		"invitor": {
-			"uid": {
-				"status": "Lorem"
-			}
+	"smadupset@naver": {
+		"invitorUid1": {
+			"status": "Lorem",
+			"message": "ㅎㅇㅎㅇ 초대좀"
 		}
 	},
-	"YxgY3Usu0XPCorrVkZGa8qkaQ103": {
-		"invitor": {
-			"uid": {
-				"status": "Lorem"
-			}
+	"jgj90@naver": {
+		"invitorUid2": {
+			"status": "Lorem",
+			"message": "ㅎㅇㅎㅇ 초대좀"
 		}
 	},
-	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22": {
-		"invitor": {
-			"uid": {
-				"status": "Lorem"
-			}
+	"pastelbook89@gmail": {
+		"invitorUid3": {
+			"status": "Lorem",
+			"message": "ㅎㅇㅎㅇ 초대좀"
 		}
 	},
-	"xxkVJ3qkzxQ14i373C9KSNSLsR32": {
-		"invitor": {
-			"uid": {
-				"status": "Lorem"
-			}
+	"sinho0689@gmail": {
+		"invitorUid4": {
+			"status": "Lorem",
+			"message": "ㅎㅇㅎㅇ 초대좀"
 		}
 	},
-	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2": {
-		"invitor": {
-			"uid": {
-				"status": "Lorem"
-			}
+	"random_1487780669@gmail": {
+		"invitorUid5": {
+			"status": "Lorem",
+			"message": "ㅎㅇㅎㅇ 초대좀"
 		}
 	}
 };

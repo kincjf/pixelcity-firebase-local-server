@@ -2,7 +2,7 @@
 
 // user 수만큼 있음
 var data = {
-	"Bl5k6bioized1EFqb2vWuCJl6XF2": {
+	"smadupset@naver": {
 		"level": -71,
 		"exp": -4,
 		"film": -17,
@@ -21,12 +21,18 @@ var data = {
 		},
 		"bank": {},
 		"equipment": {
-			"weapon": "Lorem",
-			"armor": "Lorem",
-			"accessory": "Lorem"
+			"weapon": {
+				"inventoryUid1": {}
+			},
+			"armor": {
+				"inventoryUid2": {}
+			},
+			"accessory": {
+				"inventoryUid3": {}
+			}
 		}
 	},
-	"YxgY3Usu0XPCorrVkZGa8qkaQ103": {
+	"jgj90@naver": {
 		"level": -71,
 		"exp": -4,
 		"film": -17,
@@ -45,12 +51,18 @@ var data = {
 		},
 		"bank": {},
 		"equipment": {
-			"weapon": "Lorem",
-			"armor": "Lorem",
-			"accessory": "Lorem"
+			"weapon": {
+				"inventoryUid1": {}
+			},
+			"armor": {
+				"inventoryUid2": {}
+			},
+			"accessory": {
+				"inventoryUid3": {}
+			}
 		}
 	},
-	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22": {
+	"pastelbook89@gmail": {
 		"level": -71,
 		"exp": -4,
 		"film": -17,
@@ -69,12 +81,18 @@ var data = {
 		},
 		"bank": {},
 		"equipment": {
-			"weapon": "Lorem",
-			"armor": "Lorem",
-			"accessory": "Lorem"
+			"weapon": {
+				"inventoryUid1": {}
+			},
+			"armor": {
+				"inventoryUid2": {}
+			},
+			"accessory": {
+				"inventoryUid3": {}
+			}
 		}
 	},
-	"xxkVJ3qkzxQ14i373C9KSNSLsR32": {
+	"sinho0689@gmail": {
 		"level": -71,
 		"exp": -4,
 		"film": -17,
@@ -93,12 +111,18 @@ var data = {
 		},
 		"bank": {},
 		"equipment": {
-			"weapon": "Lorem",
-			"armor": "Lorem",
-			"accessory": "Lorem"
+			"weapon": {
+				"inventoryUid1": {}
+			},
+			"armor": {
+				"inventoryUid2": {}
+			},
+			"accessory": {
+				"inventoryUid3": {}
+			}
 		}
 	},
-	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2": {
+	"random_1487780669@gmail": {
 		"level": -71,
 		"exp": -4,
 		"film": -17,
@@ -117,9 +141,15 @@ var data = {
 		},
 		"bank": {},
 		"equipment": {
-			"weapon": "Lorem",
-			"armor": "Lorem",
-			"accessory": "Lorem"
+			"weapon": {
+				"inventoryUid1": {}
+			},
+			"armor": {
+				"inventoryUid2": {}
+			},
+			"accessory": {
+				"inventoryUid3": {}
+			}
 		}
 	}
 };

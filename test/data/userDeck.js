@@ -2,7 +2,7 @@
 
 // user 수만큼 있음
 var data = {
-	"Bl5k6bioized1EFqb2vWuCJl6XF2": {
+	"smadupset@naver": {
 		"cardList": {
 			"uid": {
 				"name": "Lorem",
@@ -23,9 +23,15 @@ var data = {
 					}
 				},
 				"equipment": {
-					"weapon": "Lorem",
-					"armor": "Lorem",
-					"accessory": "Lorem"
+					"weapon": {
+						"inventoryUid1": {}
+					},
+					"armor": {
+						"inventoryUid2": {}
+					},
+					"accessory": {
+						"inventoryUid3": {}
+					}
 				}
 			}
 		},
@@ -42,7 +48,7 @@ var data = {
 			"uid3": {}
 		}
 	},
-	"YxgY3Usu0XPCorrVkZGa8qkaQ103": {
+	"jgj90@naver": {
 		"cardList": {
 			"uid": {
 				"name": "Lorem",
@@ -63,9 +69,15 @@ var data = {
 					}
 				},
 				"equipment": {
-					"weapon": "Lorem",
-					"armor": "Lorem",
-					"accessory": "Lorem"
+					"weapon": {
+						"inventoryUid1": {}
+					},
+					"armor": {
+						"inventoryUid2": {}
+					},
+					"accessory": {
+						"inventoryUid3": {}
+					}
 				}
 			}
 		},
@@ -82,7 +94,7 @@ var data = {
 			"uid3": {}
 		}
 	},
-	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22": {
+	"pastelbook89@gmail": {
 		"cardList": {
 			"uid": {
 				"name": "Lorem",
@@ -103,9 +115,15 @@ var data = {
 					}
 				},
 				"equipment": {
-					"weapon": "Lorem",
-					"armor": "Lorem",
-					"accessory": "Lorem"
+					"weapon": {
+						"inventoryUid1": {}
+					},
+					"armor": {
+						"inventoryUid2": {}
+					},
+					"accessory": {
+						"inventoryUid3": {}
+					}
 				}
 			}
 		},
@@ -122,7 +140,7 @@ var data = {
 			"uid3": {}
 		}
 	},
-	"xxkVJ3qkzxQ14i373C9KSNSLsR32": {
+	"sinho0689@gmail": {
 		"cardList": {
 			"uid": {
 				"name": "Lorem",
@@ -143,9 +161,15 @@ var data = {
 					}
 				},
 				"equipment": {
-					"weapon": "Lorem",
-					"armor": "Lorem",
-					"accessory": "Lorem"
+					"weapon": {
+						"inventoryUid1": {}
+					},
+					"armor": {
+						"inventoryUid2": {}
+					},
+					"accessory": {
+						"inventoryUid3": {}
+					}
 				}
 			}
 		},
@@ -162,7 +186,7 @@ var data = {
 			"uid3": {}
 		}
 	},
-	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2": {
+	"random_1487780669@gmail": {
 		"cardList": {
 			"uid": {
 				"name": "Lorem",
@@ -183,9 +207,15 @@ var data = {
 					}
 				},
 				"equipment": {
-					"weapon": "Lorem",
-					"armor": "Lorem",
-					"accessory": "Lorem"
+					"weapon": {
+						"inventoryUid1": {}
+					},
+					"armor": {
+						"inventoryUid2": {}
+					},
+					"accessory": {
+						"inventoryUid3": {}
+					}
 				}
 			}
 		},

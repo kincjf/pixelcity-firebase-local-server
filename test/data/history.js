@@ -2,7 +2,7 @@
 
 // 유저 수만큼 있음
 var data = {
-	"uid": {
+	"smadupset@naver": {
 		"maps": {
 			"locationId": {}
 		},

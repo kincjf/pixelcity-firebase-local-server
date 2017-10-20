@@ -4,7 +4,7 @@ var moment = require('moment');
 var _ = require('lodash');
 
 var data = {
-	"Bl5k6bioized1EFqb2vWuCJl6XF2" : {
+	"smadupset@naver" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "smadupset@naver.com",
@@ -17,7 +17,7 @@ var data = {
 		"voteCount" : -56,
 		"baseLocation": {}
 	},
-	"YxgY3Usu0XPCorrVkZGa8qkaQ103" : {
+	"jgj90@naver" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "jgj90@naver.com",
@@ -30,7 +30,7 @@ var data = {
 		"voteCount" : -56,
 		"baseLocation": {}
 	},
-	"eFc0ngtIpgYAvzKuc6eZS2Rwyv22" : {
+	"pastelbook89@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "pastelbook89@gmail.com",
@@ -43,7 +43,7 @@ var data = {
 		"voteCount" : -56,
 		"baseLocation": {}
 	},
-	"xxkVJ3qkzxQ14i373C9KSNSLsR32" : {
+	"sinho0689@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "sinho0689@gmail.com",
@@ -56,7 +56,7 @@ var data = {
 		"voteCount" : -56,
 		"baseLocation": {}
 	},
-	"3r5PNGSG3iW5wTL3lTO3rFNmjMb2" : {
+	"random_1487780669@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "random_1487780669@gmail.com",
