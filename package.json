@@ -33,6 +33,7 @@
     "bluebird": "2.10.2",
     "co": "4.6.0",
     "coveralls": "2.11.4",
+    "cross-env": "^5.1.1",
     "dom-storage": "^2.0.2",
     "ecdsa-sig-formatter": "^1.0.9",
     "eslint": "1.7.3",

@@ -342,7 +342,7 @@ var data = {
 					"max": 0
 				},
 				"spawnRate": 60
-			},, 
+			}, 
 			"good": {
 				"exp": {
 					"min": 200,
@@ -380,7 +380,7 @@ var data = {
 					"max": 5
 				},
 				"spawnRate": 10
-			}
+			},
 			"best": {
 				"exp": {
 					"min": 400,

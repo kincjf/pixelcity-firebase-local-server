@@ -170,7 +170,7 @@ var data = {
 		},
 		"dropRate": 20.0,
 		"rating": 4
-	}
+	},
 	"Silvercoin": {
 		"type": {
 			"main": "material",
@@ -204,7 +204,7 @@ var data = {
 		},
 		"dropRate": 20.0,
 		"rating": 4
-	}
+	},
 	"Goldcoin": {
 		"type": {
 			"main": "material",
@@ -238,7 +238,7 @@ var data = {
 		},
 		"dropRate": 5.0,
 		"rating": 5
-	}
+	},
 	"Bronzecoin": {
 		"type": {
 			"main": "material",

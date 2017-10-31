@@ -14,7 +14,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -53,7 +53,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -92,7 +92,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -131,7 +131,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -170,7 +170,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -209,7 +209,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -248,7 +248,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -287,7 +287,7 @@ var data = {
 		"spawnRate": 5,
 		"rating": 5,
 		"monster": false,
-		"boss": true
+		"boss": true,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -326,7 +326,7 @@ var data = {
 		"spawnRate": 5,
 		"rating": 5,
 		"monster": false,
-		"boss": true
+		"boss": true,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -365,7 +365,7 @@ var data = {
 		"spawnRate": 5,
 		"rating": 5,
 		"monster": false,
-		"boss": true
+		"boss": true,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -404,7 +404,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -443,7 +443,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
@@ -482,7 +482,7 @@ var data = {
 		"spawnRate": 20,
 		"rating": 2,
 		"monster": true,
-		"boss": false
+		"boss": false,
 		"properties": {
 			"lv1": {
 				"hp": {
