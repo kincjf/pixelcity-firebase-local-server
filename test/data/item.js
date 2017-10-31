@@ -1,131 +1,167 @@
 "use strict";
 
 var data = {
-	"name1": {
+	"Redberry": {
 		"type": {
-			"main": "Lorem",
-			"sub": "Lorem"
+			"main": "material",
+			"sub": "healingPotion"
 		},
 		"slotSize": {
-			"row": 50,
-			"col": -44
+			"row": 1,
+			"col": 1
 		},
 		"price": {
-			"gameMoney": -42,
-			"cash": 97
+			"gameMoney": 50,
+			"cash": 0
 		},
 		"property": {
 			"hp": {
-				"min": -95,
-				"max": -3
-			},
-			"defence": {},
-			"attackPower": {},
-			"agility": {}
+				"min": 50,
+				"max": 50
+			}
 		},
-		"dropRate": -90,
-		"rating": -8
+		"dropRate": 30.0,
+		"rating": 1
 	},
-	"name2": {
+	"BronzeRing": {
 		"type": {
-			"main": "Lorem",
-			"sub": "Lorem"
+			"main": "accessory",
+			"sub": "ring"
 		},
 		"slotSize": {
-			"row": 50,
-			"col": -44
+			"row": 1,
+			"col": 1
 		},
 		"price": {
-			"gameMoney": -42,
-			"cash": 97
+			"gameMoney": 100,
+			"cash": 0
 		},
 		"property": {
-			"hp": {
-				"min": -95,
-				"max": -3
-			},
-			"defence": {},
-			"attackPower": {},
-			"agility": {}
+			"defence": {
+				"min": 1,
+				"max": 3
+			},	
 		},
-		"dropRate": -90,
-		"rating": -8
+		"dropRate": 30.0,
+		"rating": 1
 	},
-	"name3": {
+	"Basicsword": {
 		"type": {
-			"main": "Lorem",
-			"sub": "Lorem"
+			"main": "weapon",
+			"sub": "sword"
 		},
 		"slotSize": {
-			"row": 50,
-			"col": -44
+			"row": 1,
+			"col": 1
 		},
 		"price": {
-			"gameMoney": -42,
-			"cash": 97
+			"gameMoney": 100,
+			"cash": 0
 		},
 		"property": {
-			"hp": {
-				"min": -95,
-				"max": -3
-			},
-			"defence": {},
-			"attackPower": {},
-			"agility": {}
+			"attackPower": {
+				"min": 10,
+				"max": 30
+			},	
 		},
-		"dropRate": -90,
-		"rating": -8
+		"dropRate": 30.0,
+		"rating": 2
 	},
-	"name4": {
+	"Blade": {
 		"type": {
-			"main": "Lorem",
-			"sub": "Lorem"
+			"main": "weapon",
+			"sub": "sword"
 		},
 		"slotSize": {
-			"row": 50,
-			"col": -44
+			"row": 1,
+			"col": 1
 		},
 		"price": {
-			"gameMoney": -42,
-			"cash": 97
+			"gameMoney": 100,
+			"cash": 0
 		},
 		"property": {
-			"hp": {
-				"min": -95,
-				"max": -3
+			"attackPower": {
+				"min": 100,
+				"max": 150
 			},
-			"defence": {},
-			"attackPower": {},
-			"agility": {}
 		},
-		"dropRate": -90,
-		"rating": -8
+		"dropRate": 30.0,
+		"rating": 2
 	},
-	"name5": {
+	"Magicstaff": {
 		"type": {
-			"main": "Lorem",
-			"sub": "Lorem"
+			"main": "weapon",
+			"sub": "staff"
 		},
 		"slotSize": {
-			"row": 50,
-			"col": -44
+			"row": 1,
+			"col": 1
 		},
 		"price": {
-			"gameMoney": -42,
-			"cash": 97
+			"gameMoney": 200,
+			"cash": 0
 		},
 		"property": {
-			"hp": {
-				"min": -95,
-				"max": -3
+			"attackPower": {
+				"min": 150,
+				"max": 200
 			},
-			"defence": {},
-			"attackPower": {},
-			"agility": {}
 		},
-		"dropRate": -90,
-		"rating": -8
+		"dropRate": 20.0,
+		"rating": 4
 	}
+	"Silvercoin": {
+		"type": {
+			"main": "material",
+			"sub": "etc"
+		},
+		"slotSize": {
+			"row": 1,
+			"col": 1
+		},
+		"price": {
+			"gameMoney": 500,
+			"cash": 0
+		},
+		"property": {},
+		"dropRate": 20.0,
+		"rating": 4
+	}
+	"Goldcoin": {
+		"type": {
+			"main": "material",
+			"sub": "etc"
+		},
+		"slotSize": {
+			"row": 1,
+			"col": 1
+		},
+		"price": {
+			"gameMoney": 2000,
+			"cash": 0
+		},
+		"property": {},
+		"dropRate": 5.0,
+		"rating": 5
+	}
+	"Bronzecoin": {
+		"type": {
+			"main": "material",
+			"sub": "etc"
+		},
+		"slotSize": {
+			"row": 1,
+			"col": 1
+		},
+		"price": {
+			"gameMoney": 300,
+			"cash": 0
+		},
+		"property": {},
+		"dropRate": 30.0,
+		"rating": 3
+	}	
 };
 
 

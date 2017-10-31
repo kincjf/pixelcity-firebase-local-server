@@ -3,417 +3,402 @@
 var data = {
 	"static": {
 		"pixel": {
-			"location1": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"DeokjinPark": {
+				"type": "normal",
+				"lat": 35.84890,
+				"lng": 127.12348,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "덕진공원",
+						"comment": "연꽃이 아름다운 공원이다. 수영은 권하지 않는다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"E3": true,
+							"pyok": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"BronzeRing": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 300,
+							"max": 500
 						}
 					}
 				}
 			},
-			"location2": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"SoriHall": {
+				"type": "normal",
+				"lat": 35.8551,
+				"lng": 127.1387,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "소리 문화의 전당",
+						"comment": "전주에서 각종 음악 행사가 행해지는 문화 공간이다. 가끔 무료공연도 관람 할수 있다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"spoon": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"Redberry": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 300
 						}
 					}
 				}
 			},
-			"location3": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"AJungReservoir": {
+				"type": "Boss",
+				"lat": 35.82552,
+				"lng": 127.17467,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "아중저수지",
+						"comment": "아중리에 위치한 저수지 공원. 날씨만 좋다면 경관을 볼 수 있다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"Doki": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"Sword": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 500
 						}
 					}
 				}
 			},
-			"location4": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"DragonHeadStreet": {
+				"type": "Boss",
+				"lat": 35.80918,
+				"lng": 127.13686,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "용머리고개",
+						"comment": "용의머리 현상을 하고 있다고 하여 붙어진 지명이다. 일제시대때의 아픈 기억을 갖고 있다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 15,
 					"monster": {
 						"list": {
-							"name1": true
+							"GangWoo": true
 						},
-						"min": -88,
+						"min": 1,
 						"max": 1
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"Blade": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 500,
+							"max": 600
 						}
 					}
 				}
 			},
-			"location5": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"HanokVillage": {
+				"type": "Boss",
+				"lat": 35.81430,
+				"lng": 127.15109,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "한옥마을",
+						"comment": "언제나 사람이 북적거리는 전주의 명소이다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 15,
 					"monster": {
 						"list": {
-							"name1": true
+							"HwaSa": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 2
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"MagicStaff": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 300
 						}
 					}
 				}
 			},
-			"location6": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"NationalMuseum": {
+				"type": "normal",
+				"lat": 35.80112,
+				"lng": 127.09038,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "전주 국립박물관",
+						"comment": "대한민국 국립 박물관 중 하나이다. 조상들의 지혜를 엿볼수 있다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"Sopleco": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"SilverCoim": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 500
 						}
 					}
 				}
 			},
-			"location7": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"JeonjuRiverside": {
+				"type": "Special",
+				"lat": 35.8342,
+				"lng": 127.1240,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "전주천변",
+						"comment": "전주시민들의 휴식공간이다. 시간만 맞다면 아름다운 석양을 보며 싸이클을 즐길 수 있다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"Woolve": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"GoldCoin": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 300
 						}
 					}
 				}
 			},
-			"location8": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"WorldcupStadium": {
+				"type": "Normal",
+				"lat": 35.86810,
+				"lng": 127.06585,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "전주월드컵경기장",
+						"comment": "2002월드컵때 지어진 축구경기장이다. 전북현대 화이팅!"
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"Xyz": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"BronzeCoin": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 500
 						}
 					}
 				}
 			},
-			"location9": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
+			"TurtleRock": {
+				"type": "Normal",
+				"lat": 35.8352130,
+				"lng": 127.1374249,
 				"info": {
 					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
+						"title": "거북바위",
+						"comment": "전주 사방신 중 현무의 힘이 깃든 바위이다. 금암동의 이름의 어원이 되는 바위이다."
 					},
 					"en-us": {}
 				},
 				"property": {
-					"entranceFee": -27,
+					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"name1": true
+							"Konga": true
 						},
-						"min": -88,
-						"max": 1
+						"min": 1,
+						"max": 3
 					},
 					"ratingLimit": {
-						"min": 39,
-						"max": 1
+						"min": 1,
+						"max": 5
 					},
 					"reward": {
 						"dropItems": {
-							"name1": true
+							"Greenbow": true
 						},
 						"gameMoney": {
-							"min": -95,
-							"max": -93
+							"min": 100,
+							"max": 500
 						}
 					}
 				}
 			},
-			"location10": {
-				"type": "Lorem",
-				"lat": -57,
-				"lng": -26,
-				"info": {
-					"ko-kr": {
-						"title": "Lorem",
-						"comment": "Lorem"
-					},
-					"en-us": {}
-				},
-				"property": {
-					"entranceFee": -27,
-					"monster": {
-						"list": {
-							"name1": true
-						},
-						"min": -88,
-						"max": 1
-					},
-					"ratingLimit": {
-						"min": 39,
-						"max": 1
-					},
-					"reward": {
-						"dropItems": {
-							"name1": true
-						},
-						"gameMoney": {
-							"min": -95,
-							"max": -93
-						}
-					}
-				}
-			}
 		},
 		"area": {}
 	},
 	"dynamic": {
 		"dots": {
-			"name1": {
+			"normal": {
 				"exp": {
-					"min": -92,
-					"max": 58
+					"min": 100,
+					"max": 150
 				},
 				"gameMoney": {
-					"min": -52,
-					"max": -98
+					"min": 150,
+					"max": 200
 				},
 				"item": {
-					"minRating": -65,
-					"maxRating": 45
+					"minRating": 1,
+					"maxRating": 2
 				},
 				"cash": {
-					"min": 57,
-					"max": -18
+					"min": 0,
+					"max": 0
 				},
-				"spawnRate": -44
+				"spawnRate": 60
+			},, 
+			"good": {
+				"exp": {
+					"min": 200,
+					"max": 250
+				},
+				"gameMoney": {
+					"min": 300,
+					"max": 350
+				},
+				"item": {
+					"minRating": 2,
+					"maxRating": 3
+				},
+				"cash": {
+					"min": 1,
+					"max": 3
+				},
+				"spawnRate": 30
 			},
-			"name2": {
+			"better": {
 				"exp": {
-					"min": -92,
-					"max": 58
+					"min": 300,
+					"max": 350
 				},
 				"gameMoney": {
-					"min": -52,
-					"max": -98
+					"min": 400,
+					"max": 450
 				},
 				"item": {
-					"minRating": -65,
-					"maxRating": 45
+					"minRating": 3,
+					"maxRating": 4
 				},
 				"cash": {
-					"min": 57,
-					"max": -18
+					"min": 1,
+					"max": 5
 				},
-				"spawnRate": -44
-			},
-			"name3": {
+				"spawnRate": 10
+			}
+			"best": {
 				"exp": {
-					"min": -92,
-					"max": 58
+					"min": 400,
+					"max": 450
 				},
 				"gameMoney": {
-					"min": -52,
-					"max": -98
+					"min": 500,
+					"max": 550
 				},
 				"item": {
-					"minRating": -65,
-					"maxRating": 45
+					"minRating": 4,
+					"maxRating": 5
 				},
 				"cash": {
-					"min": 57,
-					"max": -18
+					"min": 5,
+					"max": 10
 				},
-				"spawnRate": -44
+				"spawnRate": 1
 			}
 		},
 		"eventItem": {}

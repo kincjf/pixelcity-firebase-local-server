@@ -1,8 +1,8 @@
 "use strict";
 
 var data = {
-	"name1": {
-		"type": "Lorem",
+	"LeafBlast": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
 				"factor": -58,
@@ -151,6 +151,7 @@ var data = {
 		},
 		"special": true
 	}
+
 };
 
 
