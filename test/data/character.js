@@ -35,8 +35,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"LeafBlast": true,
-					"GreenZone": true
+					"LeafBlast": true
 				}
 			}
 		}
@@ -75,8 +74,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"MorningAmericano": true,
-					"HelloWorld": true
+					"MorningAmericano": true
 				}
 			}
 		}
@@ -115,8 +113,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"RussianRoulette": true,
-					"Goodluck": true
+					"RussianRoulette": true
 				}
 			}
 		}
@@ -155,8 +152,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"TakeBath": true,
-					"NoWater" : true
+					"TakeBath": true
 				}
 			}
 		}
@@ -195,8 +191,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"ISeeYou": true,
-					"YouSeeMe": true
+					"ISeeYou": true
 				}
 			}
 		}
@@ -313,7 +308,7 @@ var data = {
 				},
 				"expForNext": 1000,
 				"skills": {
-					"name1": true
+					"ShiningAction": true
 				}
 			}
 		}
@@ -352,7 +347,7 @@ var data = {
 				},
 				"expForNext": 1000,
 				"skills": {
-					"name1": true
+					"Slow": true
 				}
 			}
 		}
@@ -391,7 +386,7 @@ var data = {
 				},
 				"expForNext": 1000,
 				"skills": {
-					"name1": true
+					"Breakfast": true
 				}
 			}
 		}
@@ -430,7 +425,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"name1": true
+					"Hungry": true
 				}
 			}
 		}
@@ -469,7 +464,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"name1": true
+					"FinalAttack": true
 				}
 			}
 		}
@@ -508,7 +503,7 @@ var data = {
 				},
 				"expForNext": 200,
 				"skills": {
-					"name1": true
+					"UsingFoce": true
 				}
 			}
 		}

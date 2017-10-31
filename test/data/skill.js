@@ -5,153 +5,262 @@ var data = {
 		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
-				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"factor": 5,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1000
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name2": {
-		"type": "Lorem",
+	"GreenZone": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
-				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"factor": 10,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1000
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name3": {
-		"type": "Lorem",
+	"MorningAmericano": {
+		"type": "buff",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 1.5,
+				"duration": 10,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 25,
+				"expForNext": 1000
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name4": {
-		"type": "Lorem",
+	"HelloWorld": {
+		"type": "buff",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 3,
+				"duration": 15,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 35,
+				"expForNext": 2000
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name5": {
-		"type": "Lorem",
+	"RussianRoulette": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
-				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"factor": 5,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name6": {
-		"type": "Lorem",
+	"GoodLuck": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
-				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"factor": 10,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 20,
+				"expForNext": 1500
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name7": {
-		"type": "Lorem",
+	"TakeBath": {
+		"type": "healing",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 500,
+				"duration": 0,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 20,
+				"expForNext": 1500
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name8": {
-		"type": "Lorem",
+	"NoWater": {
+		"type": "healing",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 1000,
+				"duration": 0,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 30,
+				"expForNext": 2500
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name9": {
-		"type": "Lorem",
+	"ISeeYou": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 2,
+				"duration": 0,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 10,
+				"expForNext": 2000
 			}
 		},
-		"special": true
+		"special": false
 	},
-	"name10": {
-		"type": "Lorem",
+	"YouSeeMe": {
+		"type": "attack",
 		"properties": {
 			"lv1": {
-				"factor": -58,
-				"duration": -90,
+				"factor": 8,
+				"duration": 0,
 				"AOE": true,
-				"cooldown": -6,
-				"criticalFactor": -63,
-				"criticalProc": 4,
-				"expForNext": 19
+				"cooldown": 20,
+				"expForNext": 3000
 			}
 		},
-		"special": true
-	}
-
+		"special": false
+	},
+	"DontMess": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 5,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"IhaveTear": {
+		"type": "buff",
+		"properties": {
+			"lv1": {
+				"factor": 1.2,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"HardTraining": {
+		"type": "buff",
+		"properties": {
+			"lv1": {
+				"factor": 1.5,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 25,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"UsingFoce": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 10,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"Hungry": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 10,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"WaterPunch": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 10,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 1500
+			}
+		},
+		"special": false
+	},
+	"ShiningAction": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 30,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 15,
+				"expForNext": 2000
+			}
+		},
+		"special": false
+	},
+	"Slow": {
+		"type": "sturn",
+		"properties": {
+			"lv1": {
+				"factor": 2,
+				"duration": 2,
+				"AOE": true,
+				"cooldown": 15,
+				"expForNext": 2000
+			}
+		},
+		"special": false
+	},
+	"Breakfast": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 30,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 25,
+				"expForNext": 2000
+			}
+		},
+		"special": false
+	},
+	"FinalAttack": {
+		"type": "attack",
+		"properties": {
+			"lv1": {
+				"factor": 30,
+				"duration": 0,
+				"AOE": false,
+				"cooldown": 25,
+				"expForNext": 2000
+			}
+		},
+		"special": false
+	},
 };
 
 

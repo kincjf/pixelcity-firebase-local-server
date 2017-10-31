@@ -15,10 +15,22 @@ var data = {
 			"cash": 0
 		},
 		"property": {
-			"hp": {
+			"heal": {
 				"min": 50,
 				"max": 50
-			}
+			},
+			"attackPower": {
+				"min": 0,
+				"max": 0
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
 		},
 		"dropRate": 30.0,
 		"rating": 1
@@ -37,10 +49,22 @@ var data = {
 			"cash": 0
 		},
 		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
+			"attackPower": {
+				"min": 0,
+				"max": 0
+			},
 			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
 				"min": 1,
 				"max": 3
-			},	
+			},
 		},
 		"dropRate": 30.0,
 		"rating": 1
@@ -59,10 +83,22 @@ var data = {
 			"cash": 0
 		},
 		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
 			"attackPower": {
 				"min": 10,
 				"max": 30
-			},	
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
 		},
 		"dropRate": 30.0,
 		"rating": 2
@@ -81,9 +117,21 @@ var data = {
 			"cash": 0
 		},
 		"property": {
+			"heal": {
+				"min": 50,
+				"max": 50
+			},
 			"attackPower": {
 				"min": 100,
 				"max": 150
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
 			},
 		},
 		"dropRate": 30.0,
@@ -103,9 +151,21 @@ var data = {
 			"cash": 0
 		},
 		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
 			"attackPower": {
 				"min": 150,
 				"max": 200
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
 			},
 		},
 		"dropRate": 20.0,
@@ -124,7 +184,24 @@ var data = {
 			"gameMoney": 500,
 			"cash": 0
 		},
-		"property": {},
+		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
+			"attackPower": {
+				"min": 0,
+				"max": 0
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
+		},
 		"dropRate": 20.0,
 		"rating": 4
 	}
@@ -141,7 +218,24 @@ var data = {
 			"gameMoney": 2000,
 			"cash": 0
 		},
-		"property": {},
+		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
+			"attackPower": {
+				"min": 0,
+				"max": 0
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
+		},
 		"dropRate": 5.0,
 		"rating": 5
 	}
@@ -158,7 +252,24 @@ var data = {
 			"gameMoney": 300,
 			"cash": 0
 		},
-		"property": {},
+		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
+			"attackPower": {
+				"min": 0,
+				"max": 0
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
+		},
 		"dropRate": 30.0,
 		"rating": 3
 	}	
