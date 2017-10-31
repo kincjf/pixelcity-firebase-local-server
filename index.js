@@ -11,6 +11,10 @@ const util = require('util');
 var FirebaseServer = require('firebase-server');
 var firebase = require('firebase');
 var jsonfile = require('jsonfile');
+var requestp = require('request-promise');
+var jwt = require('jsonwebtoken');
+var debug = require('debug')('firebase-server');
+
 require('dotenv').config();
 
 var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
@@ -36,7 +40,22 @@ jsonfile.writeFile(filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
 // 	}
 // });
 
-new FirebaseServer(port, host, data);
+// https://stackoverflow.com/questions/37418372/firebase-where-is-my-account-secret-in-the-new-console
+var server = new FirebaseServer(port, host, data);
+server._tokenValidator.decode = function(token) {
+	// firebase token verify를 위한 custom decoder
+	// 참고 : https://firebase.google.com/docs/auth/admin/verify-id-tokens?hl=ko
+	// var decoded = jwt.verify(token, pubkey, {
+	// 	algorithms: ["RS256"],
+	// 	audience: projectId,		// Firebase 프로젝트 ID(Firebase 프로젝트의 고유 식별자)여야 합니다. 프로젝트 콘솔의 URL에서 확인할 수 있습니다.
+	// 	iss: "https://securetoken.google.com/" + projectId,
+	// 	sub: uid
+	// });
+	var decoded = jwt.decode(token);
+
+	debug('decode(token: %j, secret: %j) => %j', token, decoded);
+	return decoded;
+};
 
 firebase.initializeApp({
 	databaseURL: 'ws://' + host + ':' + port

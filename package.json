@@ -4,7 +4,10 @@
   "description": "Simple Firebase Server",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js pixelcity-demo-48860-export.json",
+    "server:dev": "nodemon index.js pixelcity-demo-48860-export.json",
+    "server:dev:log": "cross-env DEBUG=firebase-server nodemon index.js pixelcity-demo-48860-export.json",
+    "server:debug": "nodemon --debug index.js pixelcity-demo-48860-export.json",
+    "server:debug:log": "cross-env DEBUG=firebase-server nodemon --debug index.js pixelcity-demo-48860-export.json",
     "test": "npm run lint && npm run cover",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "debug": "mocha",
@@ -49,9 +52,11 @@
     "debug": "2.2.0",
     "dotenv": "^4.0.0",
     "jsonfile": "^4.0.0",
+    "jsonwebtoken": "^8.1.0",
     "jwt-simple": "0.3.1",
     "lodash": "^3.10.1",
     "moment": "^2.19.1",
+    "request-promise": "^4.2.2",
     "targaryen": "3.0.1",
     "ws": "1.1.1"
   }
