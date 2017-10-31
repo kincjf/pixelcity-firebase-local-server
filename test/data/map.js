@@ -19,7 +19,7 @@ var data = {
 					"monster": {
 						"list": {
 							"E3": true,
-							"pyok": true
+							"Pyok": true
 						},
 						"min": 1,
 						"max": 3
@@ -54,7 +54,7 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"spoon": true
+							"Spoon": true
 						},
 						"min": 1,
 						"max": 3
@@ -310,7 +310,7 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"Greenbow": true
+							"GreenBow": true
 						},
 						"gameMoney": {
 							"min": 100,

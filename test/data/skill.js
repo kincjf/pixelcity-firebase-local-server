@@ -9,6 +9,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1000
 			}
 		},
@@ -22,6 +24,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1000
 			}
 		},
@@ -48,6 +52,8 @@ var data = {
 				"duration": 15,
 				"AOE": true,
 				"cooldown": 35,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},
@@ -61,6 +67,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -74,6 +82,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 20,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -87,6 +97,8 @@ var data = {
 				"duration": 0,
 				"AOE": true,
 				"cooldown": 20,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -100,6 +112,8 @@ var data = {
 				"duration": 0,
 				"AOE": true,
 				"cooldown": 30,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2500
 			}
 		},
@@ -113,6 +127,8 @@ var data = {
 				"duration": 0,
 				"AOE": true,
 				"cooldown": 10,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},
@@ -126,6 +142,8 @@ var data = {
 				"duration": 0,
 				"AOE": true,
 				"cooldown": 20,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 3000
 			}
 		},
@@ -139,6 +157,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -152,6 +172,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -165,6 +187,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 25,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -178,6 +202,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -191,6 +217,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -204,6 +232,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 1500
 			}
 		},
@@ -217,19 +247,23 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 15,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},
 		"special": false
 	},
 	"Slow": {
-		"type": "sturn",
+		"type": "debuff",
 		"properties": {
 			"lv1": {
-				"factor": 2,
+				"factor": 0,
 				"duration": 2,
 				"AOE": true,
 				"cooldown": 15,
+				"stun": true,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},
@@ -243,6 +277,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 25,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},
@@ -256,6 +292,8 @@ var data = {
 				"duration": 0,
 				"AOE": false,
 				"cooldown": 25,
+				"stun": false,
+				"repeat": 0,
 				"expForNext": 2000
 			}
 		},

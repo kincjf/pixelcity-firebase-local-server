@@ -69,7 +69,7 @@ var data = {
 		"dropRate": 30.0,
 		"rating": 1
 	},
-	"Basicsword": {
+	"BasicSword": {
 		"type": {
 			"main": "weapon",
 			"sub": "sword"
@@ -137,7 +137,7 @@ var data = {
 		"dropRate": 30.0,
 		"rating": 2
 	},
-	"Magicstaff": {
+	"MagicStaff": {
 		"type": {
 			"main": "weapon",
 			"sub": "staff"
@@ -171,7 +171,7 @@ var data = {
 		"dropRate": 20.0,
 		"rating": 4
 	},
-	"Silvercoin": {
+	"SilverCoin": {
 		"type": {
 			"main": "material",
 			"sub": "etc"
@@ -205,7 +205,7 @@ var data = {
 		"dropRate": 20.0,
 		"rating": 4
 	},
-	"Goldcoin": {
+	"GoldCoin": {
 		"type": {
 			"main": "material",
 			"sub": "etc"
@@ -239,7 +239,7 @@ var data = {
 		"dropRate": 5.0,
 		"rating": 5
 	},
-	"Bronzecoin": {
+	"BronzeCoin": {
 		"type": {
 			"main": "material",
 			"sub": "etc"

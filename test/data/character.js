@@ -4,8 +4,8 @@ var data = {
 	"Pyok": {
 		"elementType": "tree",
 		"dropItems": {
-			"sword": true,
-			"redberry": true
+			"Sword": true,
+			"Redberry": true
 		},
 		"dropGameMoney": {
 			"min": 50,
@@ -43,8 +43,8 @@ var data = {
 	"Xyz": {
 		"elementType": "dark",
 		"dropItems": {
-			"greenbow": true,
-			"silvercoin": true
+			"GreenBow": true,
+			"SilverCoin": true
 		},
 		"dropGameMoney": {
 			"min": 50,
@@ -82,8 +82,8 @@ var data = {
 	"Inish": {
 		"elementType": "fire",
 		"dropItems": {
-			"bronzecoin": true,
-			"blade": true
+			"BronzeCoin": true,
+			"Blade": true
 		},
 		"dropGameMoney": {
 			"min": 50,
@@ -121,8 +121,8 @@ var data = {
 	"Luga": {
 		"elementType": "water",
 		"dropItems": {
-			"magicstaff": true,
-			"redberry": true
+			"MagicStaff": true,
+			"Redberry": true
 		},
 		"dropGameMoney": {
 			"min": 50,
@@ -160,8 +160,8 @@ var data = {
 	"E2": {
 		"elementType": "light",
 		"dropItems": {
-			"magicstaff": true,
-			"redberry": true
+			"MagicStaff": true,
+			"Redberry": true
 		},
 		"dropGameMoney": {
 			"min": 50,
@@ -238,7 +238,7 @@ var data = {
 	"Woolve": {
 		"elementType": "tree",
 		"dropItems": {
-			"Silvercoin": true,
+			"SilverCoin": true,
 			"Redberry": true
 		},
 		"dropGameMoney": {
@@ -277,8 +277,8 @@ var data = {
 	"Doki": {
 		"elementType": "light",
 		"dropItems": {
-			"Goldcoin": true,
-			"Greenbow": true
+			"GoldCoin": true,
+			"GreenBow": true
 		},
 		"dropGameMoney": {
 			"min": 500,
@@ -316,7 +316,7 @@ var data = {
 	"Gangwoo": {
 		"elementType": "tree",
 		"dropItems": {
-			"Goldcoin": true,
+			"GoldCoin": true,
 			"Blade": true
 		},
 		"dropGameMoney": {
@@ -355,7 +355,7 @@ var data = {
 	"Hwasa": {
 		"elementType": "dark",
 		"dropItems": {
-			"Goldcoin": true,
+			"GoldCoin": true,
 			"Sword": true
 		},
 		"dropGameMoney": {
@@ -394,7 +394,7 @@ var data = {
 	"Spoon": {
 		"elementType": "dark",
 		"dropItems": {
-			"Magicstaff": true,
+			"MagicStaff": true,
 			"Redberry": true
 		},
 		"dropGameMoney": {
@@ -433,7 +433,7 @@ var data = {
 	"Sopleco": {
 		"elementType": "tree",
 		"dropItems": {
-			"Greenbow": true,
+			"GreenBow": true,
 			"Redberry": true
 		},
 		"dropGameMoney": {
@@ -472,7 +472,7 @@ var data = {
 	"Konga": {
 		"elementType": "tree",
 		"dropItems": {
-			"Silvercoin": true,
+			"SilverCoin": true,
 			"Redberry": true
 		},
 		"dropGameMoney": {
