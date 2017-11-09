@@ -284,6 +284,42 @@ var data = {
 					}
 				}
 			},
+			"coap": {
+       	   		"type": "normal",
+       	   		"lat": 35.84055,
+       	 		"lng": 127.13173,
+       	  		"info": {
+       	     		"ko-kr": {
+       	       			"title": "코앞빌딩",
+       	       			"comment": "개발자의 서식지이다. 커피를 사다주면 사랑받을 수 있는 곳."
+       	     			},
+       	     			"en-us": {}
+       	   			},
+       	   		"property": {
+       	     		"entranceFee": 10,
+       		    	"monster": {
+       	       			"list": {
+       	         			"E3": true,
+       	         			"Pyok": true
+       	       			},
+       	       			"min": 1,
+       	       			"max": 3
+       	     		},
+       	     		"ratingLimit": {
+	       	       		"min": 1,
+       	       			"max": 3
+       	     		},
+       	     		"reward": {
+	       	       		"dropItems": {
+       	         			"BronzeRing": true
+       	       			},
+       	       			"gameMoney": {
+	       	         		"min": 300,
+       	         			"max": 500
+       	       			}
+       	     		}
+       	   		}
+       	 	},
 			"TurtleRock": {
 				"type": "Normal",
 				"lat": 35.8352130,
