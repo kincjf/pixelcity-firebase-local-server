@@ -81,10 +81,10 @@ var userDeck = database.ref("/userDeck");
 var userProperty = database.ref("/userProperty");
 var userRelationship = database.ref("/userRelationship");
 
-ref.on('value', function(snap) {
-	console.log('\n --- Got ref value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
+// ref.on('value', function(snap) {
+// 	console.log('\n --- Got ref value --- \n');
+//	console.log(util.inspect(snap.val(), false, null));
+// });
 
 character.on('value', function(snap) {
 	console.log('\n --- Got character value --- \n');
