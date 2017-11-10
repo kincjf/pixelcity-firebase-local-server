@@ -284,6 +284,41 @@ var data = {
 					}
 				}
 			},
+			"Hyangyo": {
+				"type": "Normal",
+				"lat": 35.8121,
+				"lng": 127.15719,
+				"info": {
+					"ko-kr": {
+						"title": "전주향교",
+						"comment": "우리 조상들의 얼을 느낄수 있는 공간이다."
+					},
+					"en-us": {}
+				},
+				"property": {
+					"entranceFee": 10,
+					"monster": {
+						"list": {
+							"Sopleco": true
+						},
+						"min": 1,
+						"max": 3
+					},
+					"ratingLimit": {
+						"min": 1,
+						"max": 5
+					},
+					"reward": {
+						"dropItems": {
+							"Blade": true
+						},
+						"gameMoney": {
+							"min": 100,
+							"max": 500
+						}
+					}
+				}
+			},
 			"coap": {
        	   		"type": "normal",
        	   		"lat": 35.84055,
