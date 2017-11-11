@@ -16,7 +16,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -57,7 +57,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -98,7 +98,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 500,
 					"max": 600
@@ -139,7 +139,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -180,7 +180,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -221,7 +221,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 550,
 					"max": 600
@@ -262,7 +262,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -303,7 +303,7 @@ var data = {
 			"rating": 5,
 			"monster": false,
 			"boss": true,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 900,
 					"max": 1000
@@ -344,7 +344,7 @@ var data = {
 			"rating": 5,
 			"monster": false,
 			"boss": true,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 1400,
 					"max": 1500
@@ -385,7 +385,7 @@ var data = {
 			"rating": 5,
 			"monster": false,
 			"boss": true,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 900,
 					"max": 1000
@@ -426,7 +426,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 1400,
 					"max": 1500
@@ -467,7 +467,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -508,7 +508,7 @@ var data = {
 			"rating": 2,
 			"monster": true,
 			"boss": false,
-			"properties": {
+			"property": {
 				"hp": {
 					"min": 450,
 					"max": 500
@@ -537,7 +537,7 @@ var data = {
 		}
 	},
 	"my": {
-		"properties": {
+		"property": {
 			"hp": {
 				"min": 30,
 				"max": 50

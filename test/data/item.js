@@ -3,10 +3,8 @@
 var data = {
 	"weapon": {
 		"BasicSword": {
-			"type": {
-				"main": "weapon",
-				"sub": "sword"
-			},
+			"type": "sword",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -37,10 +35,8 @@ var data = {
 			"rating": 2
 		},
 		"Blade": {
-			"type": {
-				"main": "weapon",
-				"sub": "sword"
-			},
+			"type": "sword",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -71,10 +67,8 @@ var data = {
 			"rating": 2
 		},
 		"MagicStaff": {
-			"type": {
-				"main": "weapon",
-				"sub": "staff"
-			},
+			"type": "staff",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -110,10 +104,8 @@ var data = {
 	},
 	"accessory": {
 		"BronzeRing": {
-			"type": {
-				"main": "accessory",
-				"sub": "ring"
-			},
+			"type": "ring",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -146,10 +138,8 @@ var data = {
 	},
 	"groceries": {
 		"Redberry": {
-			"type": {
-				"main": "material",
-				"sub": "healingPotion"
-			},
+			"type": "healingPotion",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -182,10 +172,8 @@ var data = {
 	},
 	"coin": {
 		"SilverCoin": {
-			"type": {
-				"main": "material",
-				"sub": "etc"
-			},
+			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -216,10 +204,8 @@ var data = {
 			"rating": 4
 		},
 		"GoldCoin": {
-			"type": {
-				"main": "material",
-				"sub": "etc"
-			},
+			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -250,10 +236,8 @@ var data = {
 			"rating": 5
 		},
 		"BronzeCoin": {
-			"type": {
-				"main": "material",
-				"sub": "etc"
-			},
+			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1

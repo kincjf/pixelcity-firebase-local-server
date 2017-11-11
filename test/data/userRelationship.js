@@ -1,8 +1,9 @@
 "use strict";
 
 var _ = require('lodash');
-
 var userData = require("./user");
+var checkFriendshipData = require("./checkFriendship");
+
 
 // user 수만큼 있음
 var data = {
@@ -93,9 +94,27 @@ var data = {
 	}
 };
 
-_.forEach(data, function(value, key) {
-	userData[key].voteCount = value.userStat.voteCount;
-	userData[key].friendCount = value.userStat.friendCount;
+_.forEach(userData, function(value, key) {
+	data[key] = {
+		userStat: {},
+		friends: {},
+		blockUsers: {}
+	};
+
+	_.forEach(userData, function(fValue, fKey) {
+		if (_.eq(key, fKey)) {
+			return;
+		}
+
+		data[key].friends[fKey] = {
+			nickname: userData[fKey].nickname,
+			friendshipStatus: checkFriendshipData[key][fKey].status
+		};
+	});
+
+	data[key].userStat.voteCount = value.voteCount;
+	data[key].userStat.friendCount = Object.keys(data[key].friends).length;
+	userData[key].friendCount = data[key].userStat.friendCount;
 });
 
 module.exports = data;

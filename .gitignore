@@ -2,3 +2,4 @@
 /node_modules
 *.export.json
 *.bak
+/build
