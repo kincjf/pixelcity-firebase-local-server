@@ -35,6 +35,40 @@ var data = {
 		"dropRate": 30.0,
 		"rating": 1
 	},
+	"GreenBow": {
+		"type": {
+			"main": "weapon",
+			"sub": "bow"
+		},
+		"slotSize": {
+			"row": 1,
+			"col": 1
+		},
+		"price": {
+			"gameMoney": 50,
+			"cash": 0
+		},
+		"property": {
+			"heal": {
+				"min": 0,
+				"max": 0
+			},
+			"attackPower": {
+				"min": 300,
+				"max": 400
+			},
+			"defence": {
+				"min": 0,
+				"max": 0
+			},
+			"agility": {
+				"min": 0,
+				"max": 0
+			},
+		},
+		"dropRate": 30.0,
+		"rating": 1
+	},
 	"BronzeRing": {
 		"type": {
 			"main": "accessory",
