@@ -78,8 +78,7 @@ var data = {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "MorningAmericano": true
-							"RussianRoulette": true
+							"MorningAmericano": true
 						}
 					}
 				}
@@ -161,8 +160,7 @@ var data = {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "TakeBath": true
-							"GoodLuck": true
+							"TakeBath": true
 						}
 					}
 				}
@@ -285,8 +283,7 @@ var data = {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "IHaveTear": true
-							"DontMess": true
+							"IHaveTear": true
 						}
 					}
 				}
@@ -368,8 +365,7 @@ var data = {
 					"lv1": {
 						"expForNext": 1000,
 						"skills": {
-							// "Slow": true
-							"ShiningAction": true
+							"Slow": true
 						}
 					}
 				}
@@ -533,7 +529,7 @@ var data = {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							"UsingForce": true
+							"UsingFoce": true
 						}
 					}
 				}

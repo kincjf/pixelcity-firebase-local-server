@@ -194,7 +194,7 @@ var data = {
 		},
 		"special": false
 	},
-	"UsingFoce": {
+	"UsingForce": {
 		"type": "attack",
 		"property": {
 			"lv1": {
