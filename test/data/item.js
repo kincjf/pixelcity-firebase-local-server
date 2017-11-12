@@ -4,6 +4,7 @@ var data = {
 	"weapon": {
 		"BasicSword": {
 			"type": "sword",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -35,6 +36,7 @@ var data = {
 		},
 		"Blade": {
 			"type": "sword",
+			"skin": false,			
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -66,6 +68,7 @@ var data = {
 		},
 		"MagicStaff": {
 			"type": "staff",
+			"skin": false,			
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -97,6 +100,7 @@ var data = {
 		},
 		"GreenBow": {
 			"type": "bow",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -106,7 +110,7 @@ var data = {
 				"cash": 0
 			},
 			"property": {
-				"heal": {
+				"hp": {
 					"min": 0,
 					"max": 0
 				},
@@ -133,6 +137,7 @@ var data = {
 	"accessory": {
 		"BronzeRing": {
 			"type": "ring",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -166,6 +171,7 @@ var data = {
 	"groceries": {
 		"Redberry": {
 			"type": "healingPotion",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -199,6 +205,7 @@ var data = {
 	"coin": {
 		"SilverCoin": {
 			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -230,6 +237,7 @@ var data = {
 		},
 		"GoldCoin": {
 			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -261,6 +269,7 @@ var data = {
 		},
 		"BronzeCoin": {
 			"type": "etc",
+			"skin": false,
 			"slotSize": {
 				"row": 1,
 				"col": 1

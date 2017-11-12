@@ -1,5 +1,8 @@
 "use strict";
 
+let _ = require("lodash");
+var userData = require("./user");
+
 var data = {
 	"smadupset@naver": {
 		"invitorUid1": {
@@ -33,5 +36,34 @@ var data = {
 	}
 };
 
+
+_.forEach(userData, function(value, key) {
+	data[key] = {};		// 초대 메시지를 받은 사람(본인)
+
+	_.forEach(userData, function(fValue, fKey) {	// 초대 메시지를 전송한 사람(타인)
+		if (_.eq(key, fKey)) {
+			return;
+		}
+
+		data[key][fKey] = {
+			status: function () {
+				let i = _.random(-1, 1);
+				let status = "decline";
+
+				if (i === -1) {
+					status = "decline";
+				} else if (i === 0) {
+					status = "pending";
+				} else if (i === 1) {
+					status = "accept";
+				}
+
+				return status;
+			}(),
+			message: "hello? "+ key
+		};
+	});
+
+});
 
 module.exports = data;
