@@ -7,6 +7,7 @@
 'use strict';
 
 const util = require('util');
+const _ = require("lodash");
 
 var FirebaseServer = require('firebase-server');
 var firebase = require('firebase');
@@ -14,6 +15,7 @@ var jsonfile = require('jsonfile');
 var requestp = require('request-promise');
 var jwt = require('jsonwebtoken');
 var debug = require('debug')('firebase-server');
+const mkdirp = require("mkdirp");
 
 require('dotenv').config();
 
@@ -26,7 +28,14 @@ console.log("host: " + host);
 console.log("port: " + port);
 
 var data = require("./test/data");
-jsonfile.writeFile(filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
+mkdirp(process.env.FIREBASE_DB_BUILDDIR);
+_.forEach(data, function (value, key) {  // 개별로 찍어보자
+	jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + key + ".json", value, {spaces: 2, EOL: '\r\n'}, function(err) {
+		console.error(err);
+	})
+});
+
+jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
 	console.error(err);
 })
 

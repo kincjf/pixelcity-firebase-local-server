@@ -5,10 +5,10 @@ let userData = require("./user");
 let itemData = require("./item");
 var crypto = require("crypto");
 
-var weaponKey = Object.keys(itemData.weapon);
-var armorKey = Object.keys(itemData.armor);
-var accessoryKey = Object.keys(itemData.accessory);
-var groceriesKey = Object.keys(itemData.groceries);
+var weaponKeyList = Object.keys(itemData.weapon);
+var armorKeyList = Object.keys(itemData.armor);
+var accessoryKeyList = Object.keys(itemData.accessory);
+var groceriesKeyList = Object.keys(itemData.groceries);
 
 let tengableItemData = {
 	"weapon": itemData.weapon,
@@ -33,6 +33,8 @@ var data = {
 		"cash": 200,
 		"inventory": {
 			"c4ca4238a0b923820dcc509a6f75849b": {
+				"category": "Lorem",
+				"type": "Lorem",
 				"name": "Lorem",
 				"property": {
 					"hp": -46,
@@ -43,6 +45,8 @@ var data = {
 			},
 			"c81e728d9d4c2f636f067f89cc14862c": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -52,6 +56,8 @@ var data = {
 			},
 			"eccbc87e4b5ce2fe28308fd9f2a7baf3": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -61,6 +67,8 @@ var data = {
 			},
 			"a87ff679a2f3e71d9181a67b7542122c": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -70,6 +78,8 @@ var data = {
 			},
 			"c4ca4238a0b923820dcc5": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -100,6 +110,8 @@ var data = {
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -130,6 +142,8 @@ var data = {
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -160,6 +174,8 @@ var data = {
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -190,6 +206,8 @@ var data = {
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
+				"category": "Lorem",
+				"type": "Lorem",
 				"property": {
 					"hp": -46,
 					"defence": -34,
@@ -241,19 +259,19 @@ _.forEach(userData, function(userValue, userKey) {
 		switch (itemKey) {
 			case "weapon":
 				itemObj = tengableItemData.weapon;
-				itemObjKey = weaponKey;
+				itemObjKey = weaponKeyList;
 				break;
 			case "armor":
 				itemObj = tengableItemData.armor;
-				itemObjKey = armorKey;
+				itemObjKey = armorKeyList;
 				break;
 			case "accessory":
 				itemObj = tengableItemData.accessory;
-				itemObjKey = accessoryKey;
+				itemObjKey = accessoryKeyList;
 				break;
 			case "groceries":
 				itemObj = tengableItemData.groceries;
-				itemObjKey = groceriesKey;
+				itemObjKey = groceriesKeyList;
 				break;
 		}
 
@@ -262,7 +280,10 @@ _.forEach(userData, function(userValue, userKey) {
 
 		if (detailValue) {
 			data[userKey].inventory[uid] = {};
+			data[userKey].inventory[uid].category = itemKey
+			data[userKey].inventory[uid].type = detailValue.type;
 			data[userKey].inventory[uid].name = itemObjKey[idx];
+
 			data[userKey].inventory[uid].property = {
 				hp: detailValue.property.hp.min,
 				attackPower: detailValue.property.attackPower.min,
@@ -282,19 +303,19 @@ _.forEach(userData, function(userValue, userKey) {
 				data[userKey].equipment.weapon = {};
 
 				itemObj = wearableItemData.weapon;
-				itemObjKey = weaponKey;
+				itemObjKey = weaponKeyList;
 				break;
 			case "armor":
 				data[userKey].equipment.armor = {};
 
 				itemObj = wearableItemData.armor;
-				itemObjKey = armorKey;
+				itemObjKey = armorKeyList;
 				break;
 			case "accessory":
 				data[userKey].equipment.accessory = {};
 
 				itemObj = wearableItemData.accessory;
-				itemObjKey = accessoryKey;
+				itemObjKey = accessoryKeyList;
 				break;
 		}
 

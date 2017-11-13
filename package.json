@@ -42,6 +42,7 @@
     "firebase-server": "^0.11.0",
     "firebase-token-generator": "^2.0.0",
     "istanbul": "0.4.0",
+    "mkdirp": "^0.5.1",
     "mocha": "2.3.3",
     "nodemon": "^1.12.1",
     "proxyquire": "^1.7.3",

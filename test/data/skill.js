@@ -3,7 +3,7 @@
 var data = {
 	"LeafBlast": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 5,
 				"duration": 0,
@@ -18,7 +18,7 @@ var data = {
 	},
 	"GreenZone": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 10,
 				"duration": 0,
@@ -33,7 +33,7 @@ var data = {
 	},
 	"MorningAmericano": {
 		"type": "buff",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 1.5,
 				"duration": 10,
@@ -46,7 +46,7 @@ var data = {
 	},
 	"HelloWorld": {
 		"type": "buff",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 3,
 				"duration": 15,
@@ -61,7 +61,7 @@ var data = {
 	},
 	"RussianRoulette": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 5,
 				"duration": 0,
@@ -76,7 +76,7 @@ var data = {
 	},
 	"GoodLuck": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 10,
 				"duration": 0,
@@ -91,7 +91,7 @@ var data = {
 	},
 	"TakeBath": {
 		"type": "healing",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 500,
 				"duration": 0,
@@ -106,7 +106,7 @@ var data = {
 	},
 	"NoWater": {
 		"type": "healing",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 1000,
 				"duration": 0,
@@ -121,7 +121,7 @@ var data = {
 	},
 	"ISeeYou": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 2,
 				"duration": 0,
@@ -136,7 +136,7 @@ var data = {
 	},
 	"YouSeeMe": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 8,
 				"duration": 0,
@@ -151,7 +151,7 @@ var data = {
 	},
 	"DontMess": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 5,
 				"duration": 0,
@@ -166,7 +166,7 @@ var data = {
 	},
 	"IhaveTear": {
 		"type": "buff",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 1.2,
 				"duration": 0,
@@ -181,7 +181,7 @@ var data = {
 	},
 	"HardTraining": {
 		"type": "buff",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 1.5,
 				"duration": 0,
@@ -196,7 +196,7 @@ var data = {
 	},
 	"UsingFoce": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 10,
 				"duration": 0,
@@ -211,7 +211,7 @@ var data = {
 	},
 	"Hungry": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 10,
 				"duration": 0,
@@ -226,7 +226,7 @@ var data = {
 	},
 	"WaterPunch": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 10,
 				"duration": 0,
@@ -241,7 +241,7 @@ var data = {
 	},
 	"ShiningAction": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 30,
 				"duration": 0,
@@ -256,7 +256,7 @@ var data = {
 	},
 	"Slow": {
 		"type": "debuff",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 0,
 				"duration": 2,
@@ -271,7 +271,7 @@ var data = {
 	},
 	"Breakfast": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 30,
 				"duration": 0,
@@ -286,7 +286,7 @@ var data = {
 	},
 	"FinalAttack": {
 		"type": "attack",
-		"properties": {
+		"property": {
 			"lv1": {
 				"factor": 30,
 				"duration": 0,
