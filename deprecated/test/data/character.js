@@ -18,24 +18,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1000,
-					"min": 90,
-					"max": 100
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 400,
-					"min": 30,
-					"max": 40
+					"min": 150,
+					"max": 200
 				},
 				"attackPower": {
-					"default": 1000,
-					"min": 90,
-					"max": 100
+					"min": 450,
+					"max": 500
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 5
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
@@ -63,31 +59,26 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 3000,
+					"min": 450,
+					"max": 500
+				},
+				"defence": {
 					"min": 250,
 					"max": 300
 				},
-				"defence": {
-					"default": 700,
-					"min": 60,
-					"max": 70
-				},
 				"attackPower": {
-					"default": 800,
-					"min": 70,
-					"max": 80
+					"min": 250,
+					"max": 300
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 2.0,
+					"max": 1.0
 				},
 				"byLevel": {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "MorningAmericano": true
-							"RussianRoulette": true
+							"MorningAmericano": true
 						}
 					}
 				}
@@ -109,24 +100,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1200,
-					"min": 110,
-					"max": 120
+					"min": 500,
+					"max": 600
 				},
 				"defence": {
-					"default": 500,
-					"min": 45,
-					"max": 50
-				},
-				"attackPower": {
-					"default": 1000,
-					"min": 90,
+					"min": 50,
 					"max": 100
 				},
+				"attackPower": {
+					"min": 550,
+					"max": 600
+				},
 				"agility": {
-					"default": 0.7,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
@@ -154,31 +141,26 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
-					"min": 145,
-					"max": 150
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 500,
-					"min": 45,
-					"max": 50
+					"min": 150,
+					"max": 200
 				},
 				"attackPower": {
-					"default": 800,
-					"min": 75,
-					"max": 80
+					"min": 450,
+					"max": 500
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "TakeBath": true
-							"GoodLuck": true
+							"TakeBath": true
 						}
 					}
 				}
@@ -200,24 +182,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
-					"min": 145,
-					"max": 150
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 300,
-					"min": 25,
-					"max": 30
+					"min": 250,
+					"max": 300
 				},
 				"attackPower": {
-					"default": 1000,
-					"min": 50,
-					"max": 100
+					"min": 250,
+					"max": 300
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 1.5,
+					"max": 1.0
 				},
 				"byLevel": {
 					"lv1": {
@@ -245,24 +223,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1600,
-					"min": 155,
-					"max": 160
+					"min": 550,
+					"max": 600
 				},
 				"defence": {
-					"default": 1000,
 					"min": 50,
 					"max": 100
 				},
 				"attackPower": {
-					"default": 1600,
-					"min": 155,
-					"max": 160
+					"min": 550,
+					"max": 600
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.7
 				},
 				"byLevel": {
 					"lv1": {
@@ -290,31 +264,26 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
-					"min": 145,
-					"max": 150
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 1200,
-					"min": 100,
-					"max": 120
+					"min": 150,
+					"max": 200
 				},
 				"attackPower": {
-					"default": 1500,
-					"min": 145,
-					"max": 150
+					"min": 450,
+					"max": 500
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							// "IHaveTear": true
-							"DontMess": true
+							"IHaveTear": true
 						}
 					}
 				}
@@ -336,24 +305,20 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1000,
-					"min": 90,
-					"max": 100
+					"min": 900,
+					"max": 1000
 				},
 				"defence": {
-					"default": 400,
-					"min": 30,
-					"max": 40
+					"min": 300,
+					"max": 400
 				},
 				"attackPower": {
-					"default": 1500,
-					"min": 130,
-					"max": 150
+					"min": 1300,
+					"max": 1500
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
@@ -381,31 +346,26 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1500,
-					"min": 140,
-					"max": 150
+					"min": 1400,
+					"max": 1500
 				},
 				"defence": {
-					"default": 900,
-					"min": 80,
-					"max": 90
+					"min": 800,
+					"max": 900
 				},
 				"attackPower": {
-					"default": 900,
-					"min": 80,
-					"max": 90
+					"min": 800,
+					"max": 900
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
 						"expForNext": 1000,
 						"skills": {
-							// "Slow": true
-							"ShiningAction": true
+							"Slow": true
 						}
 					}
 				}
@@ -427,24 +387,20 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1000,
-					"min": 90,
-					"max": 100
+					"min": 900,
+					"max": 1000
 				},
 				"defence": {
-					"default": 400,
-					"min": 30,
-					"max": 40
+					"min": 300,
+					"max": 400
 				},
 				"attackPower": {
-					"default": 1200,
-					"min": 110,
-					"max": 120
+					"min": 1100,
+					"max": 1200
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 1.5,
+					"max": 1.0
 				},
 				"byLevel": {
 					"lv1": {
@@ -472,24 +428,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 2000,
-					"min": 15,
-					"max": 20
+					"min": 1400,
+					"max": 1500
 				},
 				"defence": {
-					"default": 1000,
-					"min": 50,
-					"max": 100
+					"min": 250,
+					"max": 300
 				},
 				"attackPower": {
-					"default": 1300,
-					"min": 25,
-					"max": 30
+					"min": 250,
+					"max": 300
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 0.5,
+					"max": 1.0
 				},
 				"byLevel": {
 					"lv1": {
@@ -517,24 +469,20 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
-					"min": 45,
-					"max": 50
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 300,
-					"min": 15,
-					"max": 20
+					"min": 150,
+					"max": 200
 				},
 				"attackPower": {
-					"default": 500,
-					"min": 45,
-					"max": 50
+					"min": 450,
+					"max": 500
 				},
 				"agility": {
-					"default": 1.0,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
@@ -562,30 +510,26 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 800,
-					"min": 45,
-					"max": 50
+					"min": 450,
+					"max": 500
 				},
 				"defence": {
-					"default": 200,
-					"min": 15,
-					"max": 20
+					"min": 150,
+					"max": 200
 				},
 				"attackPower": {
-					"default": 500,
-					"min": 45,
-					"max": 50
+					"min": 450,
+					"max": 500
 				},
 				"agility": {
-					"default": 0.5,
-					"min": 0,
-					"max": 0
+					"min": 1.0,
+					"max": 0.5
 				},
 				"byLevel": {
 					"lv1": {
 						"expForNext": 200,
 						"skills": {
-							"UsingForce": true
+							"UsingFoce": true
 						}
 					}
 				}
@@ -595,22 +539,18 @@ var data = {
 	"my": {
 		"property": {
 			"hp": {
-				"default": 500,
 				"min": 30,
 				"max": 50
 			},
 			"defence": {
-				"default": 300,
 				"min": 15,
-				"max": 30
+				"max": 20
 			},
 			"attackPower": {
-				"default": 500,
 				"min": 45,
 				"max": 50
 			},
 			"agility": {
-				"default": 1.0,
 				"min": 1.0,
 				"max": 0.5
 			},

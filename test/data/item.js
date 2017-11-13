@@ -29,14 +29,14 @@ var data = {
 				"agility": {
 					"min": 0,
 					"max": 0
-				},
+				}
 			},
 			"dropRate": 30.0,
 			"rating": 2
 		},
 		"Blade": {
 			"type": "sword",
-			"skin": false,
+			"skin": false,			
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -61,14 +61,14 @@ var data = {
 				"agility": {
 					"min": 0,
 					"max": 0
-				},
+				}
 			},
 			"dropRate": 30.0,
 			"rating": 2
 		},
 		"MagicStaff": {
 			"type": "staff",
-			"skin": false,
+			"skin": false,			
 			"slotSize": {
 				"row": 1,
 				"col": 1
@@ -93,10 +93,42 @@ var data = {
 				"agility": {
 					"min": 0,
 					"max": 0
-				},
+				}
 			},
 			"dropRate": 20.0,
 			"rating": 4
+		},
+		"GreenBow": {
+			"type": "bow",
+			"skin": false,
+			"slotSize": {
+				"row": 1,
+				"col": 1
+			},
+			"price": {
+				"gameMoney": 50,
+				"cash": 0
+			},
+			"property": {
+				"hp": {
+					"min": 0,
+					"max": 0
+				},
+				"attackPower": {
+					"min": 300,
+					"max": 400
+				},
+				"defence": {
+					"min": 0,
+					"max": 0
+				},
+				"agility": {
+					"min": 0,
+					"max": 0
+				},
+			},
+			"dropRate": 30.0,
+			"rating": 1
 		}
 	},
 	"armor": {

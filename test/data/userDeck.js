@@ -56,7 +56,7 @@ var data = {
 			}
 		},
 		"deckList": {
-			"uid1": {
+			"gid1": {
 				"cardList": {
 					"uid1": "Lorem",
 					"uid2": "Lorem",
@@ -64,8 +64,8 @@ var data = {
 				},
 				"active": true
 			},
-			"uid2": {},
-			"uid3": {}
+			"gid2": {},
+			"gid3": {}
 		}
 	},
 	"jgj90@naver": {
@@ -102,7 +102,7 @@ var data = {
 			}
 		},
 		"deckList": {
-			"uid1": {
+			"gid1": {
 				"cardList": {
 					"uid1": "Lorem",
 					"uid2": "Lorem",
@@ -110,8 +110,8 @@ var data = {
 				},
 				"active": true
 			},
-			"uid2": {},
-			"uid3": {}
+			"gid2": {},
+			"gid3": {}
 		}
 	},
 	"pastelbook89@gmail": {
@@ -148,7 +148,7 @@ var data = {
 			}
 		},
 		"deckList": {
-			"uid1": {
+			"gid1": {
 				"cardList": {
 					"uid1": "Lorem",
 					"uid2": "Lorem",
@@ -156,8 +156,8 @@ var data = {
 				},
 				"active": true
 			},
-			"uid2": {},
-			"uid3": {}
+			"gid2": {},
+			"gid3": {}
 		}
 	},
 	"sinho0689@gmail": {
@@ -194,7 +194,7 @@ var data = {
 			}
 		},
 		"deckList": {
-			"uid1": {
+			"gid1": {
 				"cardList": {
 					"uid1": "Lorem",
 					"uid2": "Lorem",
@@ -202,8 +202,8 @@ var data = {
 				},
 				"active": true
 			},
-			"uid2": {},
-			"uid3": {}
+			"gid2": {},
+			"gid3": {}
 		}
 	},
 	"random_1487780669@gmail": {
@@ -240,7 +240,7 @@ var data = {
 			}
 		},
 		"deckList": {
-			"uid1": {
+			"gid1": {
 				"cardList": {
 					"uid1": "Lorem",
 					"uid2": "Lorem",
@@ -248,8 +248,8 @@ var data = {
 				},
 				"active": true
 			},
-			"uid2": {},
-			"uid3": {}
+			"gid2": {},
+			"gid3": {}
 		}
 	}
 };
@@ -257,7 +257,20 @@ var data = {
 _.forEach(userData, function(userValue, userKey) {
 	data[userKey] = {
 		cardList: {},
-		deckList: {}
+		deckList: {
+			gid1: {
+				cardList: {},
+				active: false
+			},
+			gid2: {
+				cardList: {},
+				active: false
+			},
+			gid3: {
+				cardList: {},
+				active: false
+			},
+		}
 	};
 
 	// cardList
@@ -308,9 +321,24 @@ _.forEach(userData, function(userValue, userKey) {
 				if (itemUid) {
 					data[userKey].cardList[uid].equipmemt[equipKey] = itemUid;
 				} else {
-					data[userKey].cardList[uid].equipmemt[equipKey] = ""
+					data[userKey].cardList[uid].equipmemt[equipKey] = "";
 				}
 			});
+		}
+	});
+
+	let cardKeyList = Object.keys(data[userKey].cardList);
+	// deckList
+	_.forEach(data[userKey].deckList, function(deckValue, deckKey) {
+		for (let idx = 0; idx < 3; idx++) {
+			let cardKeyVal = cardKeyList[idx];
+
+			if (cardKeyVal) {
+				data[userKey].deckList[deckKey].cardList["uid" + (idx+1)] = cardKeyVal;
+				_.pull(cardKeyList, cardKeyVal);
+				data[userKey].deckList[deckKey].active = true;
+			}
+
 		}
 	});
 

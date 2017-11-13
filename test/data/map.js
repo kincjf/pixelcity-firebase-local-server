@@ -100,7 +100,7 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"Sword": true
+							"BasicSword": true
 						},
 						"gameMoney": {
 							"min": 100,
