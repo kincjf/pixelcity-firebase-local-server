@@ -594,6 +594,7 @@ var data = {
 	},
 	"my": {
 		"property": {
+			// hp, defence, attackPower, agility의 경우 당장은 DB 모델링에 반영되어있지 않음
 			"hp": {
 				"default": 500,
 				"min": 30,
