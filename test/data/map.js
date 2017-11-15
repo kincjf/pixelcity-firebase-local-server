@@ -319,7 +319,42 @@ var data = {
 					}
 				}
 			},
-			"coap": {
+			"SpecialSpot": {
+				"type": "Normal",
+				"lat": 35.81161,
+				"lng": 127.15767,
+				"info": {
+					"ko-kr": {
+						"title": "특별장소",
+						"comment": "왠지 신비한 픽시가 나올것만 같다."
+					},
+					"en-us": {}
+				},
+				"property": {
+					"entranceFee": 10,
+					"monster": {
+						"list": {
+							"Singi": true
+						},
+						"min": 1,
+						"max": 1
+					},
+					"ratingLimit": {
+						"min": 1,
+						"max": 5
+					},
+					"reward": {
+						"dropItems": {
+							"GreenBow": true
+						},
+						"gameMoney": {
+							"min": 100,
+							"max": 500
+						}
+					}
+				}
+			},
+			"Coap": {
 				"type": "normal",
 				"lat": 35.84055,
 				"lng": 127.13173,

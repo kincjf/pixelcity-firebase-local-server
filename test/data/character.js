@@ -501,6 +501,51 @@ var data = {
 				}
 			}
 		},
+		"Singi": {
+			"elementType": "water",
+			"dropItems": {
+				"GreenBow": true,
+				"SilverCoin": true
+			},
+			"dropGameMoney": {
+				"min": 50,
+				"max": 60
+			},
+			"spawnRate": 20,
+			"rating": 2,
+			"monster": true,
+			"boss": false,
+			"property": {
+				"hp": {
+					"default": 3000,
+					"min": 250,
+					"max": 300
+				},
+				"defence": {
+					"default": 700,
+					"min": 60,
+					"max": 70
+				},
+				"attackPower": {
+					"default": 800,
+					"min": 70,
+					"max": 80
+				},
+				"agility": {
+					"default": 1.0,
+					"min": 0,
+					"max": 0
+				},
+				"byLevel": {
+					"lv1": {
+						"expForNext": 200,
+						"skills": {
+							"DontMess": true
+						}
+					}
+				}
+			}
+		},
 		"Sopleco": {
 			"elementType": "tree",
 			"dropItems": {
