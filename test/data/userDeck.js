@@ -285,12 +285,15 @@ _.forEach(userData, function(userValue, userKey) {
 			data[userKey].cardList[uid].name = characterKeyList[idx];
 			data[userKey].cardList[uid].property = {
 				level: 1,
-				hp: detailValue.property.hp.min,
-				attackPower: detailValue.property.attackPower.min,
-				defence: detailValue.property.defence.min,
-				agility: detailValue.property.agility.min,
 				exp: _.random(0, 200)
 			};
+
+			let level = data[userKey].cardList[uid].property.level;
+			data[userKey].cardList[uid].property.hp = detailValue.property.hp.default + (detailValue.property.hp.min * (level - 1));
+			data[userKey].cardList[uid].property.attackPower = detailValue.property.attackPower.default + (detailValue.property.attackPower.min * (level - 1));
+			data[userKey].cardList[uid].property.defence = detailValue.property.defence.default + (detailValue.property.defence.min * (level - 1));
+			data[userKey].cardList[uid].property.agility = detailValue.property.agility.default + (detailValue.property.agility.min * (level - 1));
+
 			data[userKey].cardList[uid].skills = {};
 
 			let skillLv = "lv" + data[userKey].cardList[uid].property.level;
