@@ -18,7 +18,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1000,
+					"default": 5000,
 					"min": 90,
 					"max": 100
 				},
@@ -63,7 +63,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 3000,
+					"default": 9000,
 					"min": 250,
 					"max": 300
 				},
@@ -109,7 +109,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1200,
+					"default": 5000,
 					"min": 110,
 					"max": 120
 				},
@@ -154,7 +154,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
+					"default": 6000,
 					"min": 145,
 					"max": 150
 				},
@@ -200,7 +200,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
+					"default": 6000,
 					"min": 145,
 					"max": 150
 				},
@@ -245,7 +245,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1600,
+					"default": 6000,
 					"min": 155,
 					"max": 160
 				},
@@ -290,7 +290,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
+					"default": 6000,
 					"min": 145,
 					"max": 150
 				},
@@ -336,7 +336,7 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1000,
+					"default": 5000,
 					"min": 90,
 					"max": 100
 				},
@@ -381,7 +381,7 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1500,
+					"default": 6000,
 					"min": 140,
 					"max": 150
 				},
@@ -427,7 +427,7 @@ var data = {
 			"boss": true,
 			"property": {
 				"hp": {
-					"default": 1000,
+					"default": 5000,
 					"min": 90,
 					"max": 100
 				},
@@ -472,7 +472,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 2000,
+					"default": 8000,
 					"min": 15,
 					"max": 20
 				},
@@ -517,7 +517,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 3000,
+					"default": 9000,
 					"min": 250,
 					"max": 300
 				},
@@ -562,7 +562,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 1500,
+					"default": 6000,
 					"min": 45,
 					"max": 50
 				},
@@ -607,7 +607,7 @@ var data = {
 			"boss": false,
 			"property": {
 				"hp": {
-					"default": 800,
+					"default": 5000,
 					"min": 45,
 					"max": 50
 				},
