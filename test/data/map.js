@@ -313,7 +313,6 @@ var data = {
 					"reward": {
 						"dropItems": {
 							"Blade": true,
-							"GreenBow": true,
 							"BronzeCoin": true
 						},
 						"gameMoney": {
