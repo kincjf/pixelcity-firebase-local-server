@@ -299,7 +299,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Sopleco": true
+							"Sopleco": true,
+							"Xyz": true,
+							"Pyok": true
 						},
 						"min": 1,
 						"max": 3
@@ -310,7 +312,9 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"Blade": true
+							"Blade": true,
+							"GreenBow": true,
+							"BronzeCoin": true
 						},
 						"gameMoney": {
 							"min": 100,

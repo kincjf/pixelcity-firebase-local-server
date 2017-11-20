@@ -28,7 +28,7 @@ var data = {
 					"max": 40
 				},
 				"attackPower": {
-					"default": 1000,
+					"default": 100,
 					"min": 90,
 					"max": 100
 				},
@@ -73,7 +73,7 @@ var data = {
 					"max": 70
 				},
 				"attackPower": {
-					"default": 800,
+					"default": 80,
 					"min": 70,
 					"max": 80
 				},
@@ -119,7 +119,7 @@ var data = {
 					"max": 50
 				},
 				"attackPower": {
-					"default": 1000,
+					"default": 100,
 					"min": 90,
 					"max": 100
 				},
@@ -164,7 +164,7 @@ var data = {
 					"max": 50
 				},
 				"attackPower": {
-					"default": 800,
+					"default": 80,
 					"min": 75,
 					"max": 80
 				},
@@ -210,7 +210,7 @@ var data = {
 					"max": 30
 				},
 				"attackPower": {
-					"default": 1000,
+					"default": 100,
 					"min": 50,
 					"max": 100
 				},
@@ -255,7 +255,7 @@ var data = {
 					"max": 100
 				},
 				"attackPower": {
-					"default": 1600,
+					"default": 160,
 					"min": 155,
 					"max": 160
 				},
@@ -300,7 +300,7 @@ var data = {
 					"max": 120
 				},
 				"attackPower": {
-					"default": 1500,
+					"default": 150,
 					"min": 145,
 					"max": 150
 				},
@@ -346,7 +346,7 @@ var data = {
 					"max": 40
 				},
 				"attackPower": {
-					"default": 1500,
+					"default": 150,
 					"min": 130,
 					"max": 150
 				},
@@ -391,7 +391,7 @@ var data = {
 					"max": 90
 				},
 				"attackPower": {
-					"default": 900,
+					"default": 90,
 					"min": 80,
 					"max": 90
 				},
@@ -437,7 +437,7 @@ var data = {
 					"max": 40
 				},
 				"attackPower": {
-					"default": 1200,
+					"default": 120,
 					"min": 110,
 					"max": 120
 				},
@@ -482,7 +482,7 @@ var data = {
 					"max": 100
 				},
 				"attackPower": {
-					"default": 1300,
+					"default": 130,
 					"min": 25,
 					"max": 30
 				},
@@ -527,7 +527,7 @@ var data = {
 					"max": 70
 				},
 				"attackPower": {
-					"default": 800,
+					"default": 80,
 					"min": 70,
 					"max": 80
 				},
@@ -572,7 +572,7 @@ var data = {
 					"max": 20
 				},
 				"attackPower": {
-					"default": 500,
+					"default": 50,
 					"min": 45,
 					"max": 50
 				},
@@ -617,7 +617,7 @@ var data = {
 					"max": 20
 				},
 				"attackPower": {
-					"default": 500,
+					"default": 50,
 					"min": 45,
 					"max": 50
 				},
