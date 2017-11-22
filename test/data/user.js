@@ -56,38 +56,21 @@ var data = {
 		"voteCount" : -56,
 		"baseLocation": {}
 	},
-	"random_1487780669@gmail" : {
+	"notworrw@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"createdAt" : "2011-06-14T04:12:36.123Z",
-		"email" : "random_1487780669@gmail.com",
-		"friendCount" : -38,
-		"gender" : "male",
-		"nickname" : "I'm stub~",
-		"type" : "public",
+		"email" : "notworrw@gmail.com",
+		"friendCount" : 0,
+		"gender" : "female",
+		"nickname" : "Jyu",
+		"type" : "admin",
 		"updatedAt" : "2011-06-14T04:12:36.123Z",
-		"userStatus" : -16,
-		"voteCount" : -56,
+		"userStatus" : 1,
+		"voteCount" : 15,
 		"baseLocation": {}
 	}
+	
 };
-
-_.forEach(data, function(value, key) {
-	data[key].birthday = moment.utc().format('YYYY-MM-DD');
-	data[key].createdAt = moment.utc().format('YYYY-MM-DD HH:mm:ss');
-	// data[key].friendCount = _.random(0, 500);  // userRelationship
-	data[key].nickname = value.email.split("@")[0];
-
-	if (_.eq(value.email, "pastelbook89@gmail.com")) {
-		data[key].type = "admin";
-	} else {
-		data[key].type = "public";
-	}
-
-	data[key].updatedAt = moment.utc().format('YYYY-MM-DD HH:mm:ss');
-	data[key].userStatus = 1;  // userRelationship
-	data[key].voteCount = _.random(0, 100);
-	data[key].baseLocation = {};
-});
 
 module.exports = data;
 
