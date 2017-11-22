@@ -19,7 +19,8 @@ var data = {
 					"monster": {
 						"list": {
 							"E3": true,
-							"Pyok": true
+							"Pyok": true,
+							"Spoon": true
 						},
 						"min": 1,
 						"max": 3
@@ -30,7 +31,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"BronzeRing": true
+							"BronzeRing": true,
+							"Redberry": true
 						},
 						"gameMoney": {
 							"min": 300,
@@ -54,7 +56,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Spoon": true
+							"Spoon": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 3
@@ -65,7 +69,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"Redberry": true
+							"Redberry": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -89,7 +94,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Doki": true
+							"Doki": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 5
@@ -100,7 +107,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"BasicSword": true
+							"BasicSword": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -124,7 +132,9 @@ var data = {
 					"entranceFee": 15,
 					"monster": {
 						"list": {
-							"Gangwoo": true
+							"Gangwoo": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 1
@@ -135,6 +145,7 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
+							"GreenBow": true,
 							"Blade": true
 						},
 						"gameMoney": {
@@ -159,7 +170,9 @@ var data = {
 					"entranceFee": 15,
 					"monster": {
 						"list": {
-							"Hwasa": true
+							"Hwasa": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 2
@@ -170,7 +183,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"MagicStaff": true
+							"MagicStaff": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -194,6 +208,8 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
+							"E3": true,
+							"Pyok": true,
 							"Sopleco": true
 						},
 						"min": 1,
@@ -205,7 +221,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"SilverCoin": true
+							"SilverCoin": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -229,7 +246,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Woolve": true
+							"Woolve": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 3
@@ -240,7 +259,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"GoldCoin": true
+							"GoldCoin": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -264,7 +284,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Xyz": true
+							"Xyz": true,
+							"Pyok": true,
+							"Sopleco": true
 						},
 						"min": 1,
 						"max": 3
@@ -275,7 +297,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"BronzeCoin": true
+							"BronzeCoin": true,
+							"Blade": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -348,7 +371,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"GreenBow": true
+							"GreenBow": true,
+							"BronzeCoin": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -373,7 +397,8 @@ var data = {
 					"monster": {
 						"list": {
 							"E3": true,
-							"Pyok": true
+							"Pyok": true,
+							"Inish": true
 						},
 						"min": 1,
 						"max": 3
@@ -384,7 +409,46 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"BronzeRing": true
+							"BronzeRing": true,
+							"BronzeCoin": true
+						},
+						"gameMoney": {
+							"min": 300,
+							"max": 500
+						}
+					}
+				}
+			},
+			"JeonjuUniversity": {
+				"type": "normal",
+				"lat": 35.80963,
+				"lng": 127.08756,
+				"info": {
+					"ko-kr": {
+						"title": "전주대학교",
+						"comment": "미인이 많이 있다는 소문을 갖고 있는 대학교이다, 소문이다."
+					},
+					"en-us": {}
+				},
+				"property": {
+					"entranceFee": 10,
+					"monster": {
+						"list": {
+							"E3": true,
+							"Pyok": true,
+							"Inish": true
+						},
+						"min": 1,
+						"max": 3
+					},
+					"ratingLimit": {
+						"min": 1,
+						"max": 3
+					},
+					"reward": {
+						"dropItems": {
+							"BronzeRing": true,
+							"BronzeCoin": true
 						},
 						"gameMoney": {
 							"min": 300,
@@ -408,7 +472,9 @@ var data = {
 					"entranceFee": 10,
 					"monster": {
 						"list": {
-							"Konga": true
+							"Konga": true,
+							"Pyok": true,
+							"Inish": true
 						},
 						"min": 1,
 						"max": 3
@@ -419,7 +485,8 @@ var data = {
 					},
 					"reward": {
 						"dropItems": {
-							"GreenBow": true
+							"GreenBow": true,
+							"BronzeCoin": true
 						},
 						"gameMoney": {
 							"min": 100,
@@ -450,7 +517,7 @@ var data = {
 					"min": 0,
 					"max": 0
 				},
-				"spawnRate": 60
+				"spawnRate": 10
 			},
 			"good": {
 				"exp": {
@@ -469,7 +536,7 @@ var data = {
 					"min": 1,
 					"max": 3
 				},
-				"spawnRate": 30
+				"spawnRate": 0
 			},
 			"better": {
 				"exp": {
@@ -488,7 +555,7 @@ var data = {
 					"min": 1,
 					"max": 5
 				},
-				"spawnRate": 10
+				"spawnRate": 30
 			},
 			"best": {
 				"exp": {
@@ -507,7 +574,7 @@ var data = {
 					"min": 5,
 					"max": 10
 				},
-				"spawnRate": 1
+				"spawnRate": 60
 			}
 		},
 		"eventItem": {}
