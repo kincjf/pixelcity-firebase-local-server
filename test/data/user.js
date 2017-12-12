@@ -68,8 +68,20 @@ var data = {
 		"userStatus" : 1,
 		"voteCount" : 15,
 		"baseLocation": {}
+	},
+	"random_1487780669@gmail": {
+		"birthday" : "2017-12-14T04:12:36.123Z",
+		"createdAt" : "2017-11-14T04:12:36.123Z",
+		"email" : "random_1487780669@gmail.com",
+		"friendCount" : 0,
+		"gender" : "female",
+		"nickname" : "I'm Random!",
+		"type" : "public",
+		"updatedAt" : "2017-11-14T04:12:36.123Z",
+		"userStatus" : 1,
+		"voteCount" : 15,
+		"baseLocation": {}
 	}
-	
 };
 
 module.exports = data;

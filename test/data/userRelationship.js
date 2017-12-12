@@ -94,6 +94,8 @@ var data = {
 	}
 };
 
+let blockUser = Object.keys(userData)[1] || "sinho0689@gmail";
+
 _.forEach(userData, function(value, key) {
 	data[key] = {
 		userStat: {},
@@ -110,6 +112,13 @@ _.forEach(userData, function(value, key) {
 			nickname: userData[fKey].nickname,
 			friendshipStatus: checkFriendshipData[key][fKey].status
 		};
+
+		if (blockUser && !_.eq(key, blockUser)) {
+			data[key].blockUsers[blockUser] = {
+				nickname: userData[blockUser].nickname
+			};
+		}
+
 	});
 
 	data[key].userStat.voteCount = value.voteCount;
