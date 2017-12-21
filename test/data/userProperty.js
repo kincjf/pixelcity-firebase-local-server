@@ -28,9 +28,8 @@ var data = {
 	"smadupset@naver": {
 		"level": 2,
 		"exp": 265,
-		"film": 27,
+		"ruby": 27,
 		"gold": 934,
-		"cash": 200,
 		"inventory": {
 			"c4ca4238a0b923820dcc509a6f75849b": {
 				"category": "Lorem",
@@ -88,7 +87,6 @@ var data = {
 				}
 			}
 		},
-		"bank": {},
 		"equipment": {
 			"weapon": {
 				"inventoryUid1": {}
@@ -104,9 +102,8 @@ var data = {
 	"jgj90@naver": {
 		"level": -71,
 		"exp": -4,
-		"film": -17,
+		"ruby": -17,
 		"gold": -75,
-		"cash": -63,
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
@@ -120,7 +117,6 @@ var data = {
 				}
 			}
 		},
-		"bank": {},
 		"equipment": {
 			"weapon": {
 				"inventoryUid1": {}
@@ -136,9 +132,8 @@ var data = {
 	"pastelbook89@gmail": {
 		"level": -71,
 		"exp": -4,
-		"film": -17,
+		"ruby": -17,
 		"gold": -75,
-		"cash": -63,
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
@@ -152,7 +147,6 @@ var data = {
 				}
 			}
 		},
-		"bank": {},
 		"equipment": {
 			"weapon": {
 				"inventoryUid1": {}
@@ -168,9 +162,8 @@ var data = {
 	"sinho0689@gmail": {
 		"level": -71,
 		"exp": -4,
-		"film": -17,
+		"ruby": -17,
 		"gold": -75,
-		"cash": -63,
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
@@ -184,7 +177,6 @@ var data = {
 				}
 			}
 		},
-		"bank": {},
 		"equipment": {
 			"weapon": {
 				"inventoryUid1": {}
@@ -200,9 +192,8 @@ var data = {
 	"random_1487780669@gmail": {
 		"level": -71,
 		"exp": -4,
-		"film": -17,
+		"ruby": -17,
 		"gold": -75,
-		"cash": -63,
 		"inventory": {
 			"uid": {
 				"name": "Lorem",
@@ -216,7 +207,6 @@ var data = {
 				}
 			}
 		},
-		"bank": {},
 		"equipment": {
 			"weapon": {
 				"inventoryUid1": {}
@@ -235,106 +225,123 @@ _.forEach(userData, function(userValue, userKey) {
 	data[userKey] = {
 		"level": _.random(0, 10),
 		"exp": _.random(0, 100),
-		"film": _.random(0, 100),
-		"gold": _.random(0, 1000),
-		"cash": _.random(0, 500)
+		"ruby": _.random(0, 100),
+		"gold": _.random(0, 1000)
 	};
 
-	data[userKey].inventory = {};
-	data[userKey].equipment = {
-		"weapon": {
-		},
-		"armor": {
-		},
-		"accessory": {
+	data[userKey].status = {
+		total: {
+			"eatenUser": _.random(0, 10),
+			"eatenPixel": _.random(0, 1000),
+			"score": _.random(0, 1000),
+			"playCount": _.random(0, 1000),
+			"survivalTime": _.random(0, 10000),		// second
 		}
 	};
-	data[userKey].bank = {};
+
+	data[userKey].status.best = {
+		"ranking": _.random(0, 10),
+		"eatenUser": data[userKey].status.total.eatenUser + _.random(0, 100),
+		"eatenPixel": data[userKey].status.total.eatenPixel + _.random(0, 100),
+		"score": data[userKey].status.total.score + _.random(0, 100),
+		"playCount": data[userKey].status.total.playCount + _.random(0, 1000),
+		"survivalTime": data[userKey].status.total.survivalTime + _.random(0, 1000),		// second
+	}
+
+	// data[userKey].inventory = {};
+	// data[userKey].equipment = {
+	// 	"weapon": {
+	// 	},
+	// 	"armor": {
+	// 	},
+	// 	"accessory": {
+	// 	}
+	// };
 
 	// inventory
-	_.forEach(tengableItemData, function(itemValue, itemKey) {
-		let uid = crypto.randomBytes(10).toString('hex');
-		let itemObj, itemObjKey;
-
-		switch (itemKey) {
-			case "weapon":
-				itemObj = tengableItemData.weapon;
-				itemObjKey = weaponKeyList;
-				break;
-			case "armor":
-				itemObj = tengableItemData.armor;
-				itemObjKey = armorKeyList;
-				break;
-			case "accessory":
-				itemObj = tengableItemData.accessory;
-				itemObjKey = accessoryKeyList;
-				break;
-			case "groceries":
-				itemObj = tengableItemData.groceries;
-				itemObjKey = groceriesKeyList;
-				break;
-		}
-
-		let idx = _.random(0, itemObjKey.length - 1);
-		let detailValue = itemObj[itemObjKey[idx]];
-
-		if (detailValue) {
-			data[userKey].inventory[uid] = {};
-			data[userKey].inventory[uid].category = itemKey
-			data[userKey].inventory[uid].type = detailValue.type;
-			data[userKey].inventory[uid].name = itemObjKey[idx];
-
-			data[userKey].inventory[uid].property = {
-				hp: detailValue.property.hp.min,
-				attackPower: detailValue.property.attackPower.min,
-				defence: detailValue.property.defence.min,
-				agility: detailValue.property.agility.min
-			};
-		}
-	});
+	// _.forEach(tengableItemData, function(itemValue, itemKey) {
+	// 	let uid = crypto.randomBytes(10).toString('hex');
+	// 	let itemObj, itemObjKey;
+  //
+	// 	switch (itemKey) {
+	// 		case "weapon":
+	// 			itemObj = tengableItemData.weapon;
+	// 			itemObjKey = weaponKeyList;
+	// 			break;
+	// 		case "armor":
+	// 			itemObj = tengableItemData.armor;
+	// 			itemObjKey = armorKeyList;
+	// 			break;
+	// 		case "accessory":
+	// 			itemObj = tengableItemData.accessory;
+	// 			itemObjKey = accessoryKeyList;
+	// 			break;
+	// 		case "groceries":
+	// 			itemObj = tengableItemData.groceries;
+	// 			itemObjKey = groceriesKeyList;
+	// 			break;
+	// 	}
+  //
+	// 	let idx = _.random(0, itemObjKey.length - 1);
+	// 	let detailValue = itemObj[itemObjKey[idx]];
+  //
+	// 	if (detailValue) {
+	// 		data[userKey].inventory[uid] = {};
+	// 		data[userKey].inventory[uid].category = itemKey
+	// 		data[userKey].inventory[uid].type = detailValue.type;
+	// 		data[userKey].inventory[uid].name = itemObjKey[idx];
+  //
+	// 		data[userKey].inventory[uid].property = {
+	// 			hp: detailValue.property.hp.min,
+	// 			attackPower: detailValue.property.attackPower.min,
+	// 			defence: detailValue.property.defence.min,
+	// 			agility: detailValue.property.agility.min
+	// 		};
+	// 	}
+	// });
 
 	// equipment
-	_.forEach(data[userKey].equipment, function(equipValue, equipKey) {
-		let uid = crypto.randomBytes(10).toString('hex');
-		let itemObj, itemObjKey, partObj;
-
-		switch (equipKey) {
-			case "weapon":
-				data[userKey].equipment.weapon = {};
-
-				itemObj = wearableItemData.weapon;
-				itemObjKey = weaponKeyList;
-				break;
-			case "armor":
-				data[userKey].equipment.armor = {};
-
-				itemObj = wearableItemData.armor;
-				itemObjKey = armorKeyList;
-				break;
-			case "accessory":
-				data[userKey].equipment.accessory = {};
-
-				itemObj = wearableItemData.accessory;
-				itemObjKey = accessoryKeyList;
-				break;
-		}
-
-		let idx = _.random(0, itemObjKey.length - 1);
-		let detailValue = itemObj[itemObjKey[idx]];
-
-		if (detailValue) {
-			data[userKey].equipment[equipKey][uid] = {};
-			partObj = data[userKey].equipment[equipKey][uid];
-
-			partObj.name = itemObjKey[idx];
-			partObj.property = {
-				hp: detailValue.property.hp.min,
-				attackPower: detailValue.property.attackPower.min,
-				defence: detailValue.property.defence.min,
-				agility: detailValue.property.agility.min
-			};
-		}
-	});
+	// _.forEach(data[userKey].equipment, function(equipValue, equipKey) {
+	// 	let uid = crypto.randomBytes(10).toString('hex');
+	// 	let itemObj, itemObjKey, partObj;
+  //
+	// 	switch (equipKey) {
+	// 		case "weapon":
+	// 			data[userKey].equipment.weapon = {};
+  //
+	// 			itemObj = wearableItemData.weapon;
+	// 			itemObjKey = weaponKeyList;
+	// 			break;
+	// 		case "armor":
+	// 			data[userKey].equipment.armor = {};
+  //
+	// 			itemObj = wearableItemData.armor;
+	// 			itemObjKey = armorKeyList;
+	// 			break;
+	// 		case "accessory":
+	// 			data[userKey].equipment.accessory = {};
+  //
+	// 			itemObj = wearableItemData.accessory;
+	// 			itemObjKey = accessoryKeyList;
+	// 			break;
+	// 	}
+  //
+	// 	let idx = _.random(0, itemObjKey.length - 1);
+	// 	let detailValue = itemObj[itemObjKey[idx]];
+  //
+	// 	if (detailValue) {
+	// 		data[userKey].equipment[equipKey][uid] = {};
+	// 		partObj = data[userKey].equipment[equipKey][uid];
+  //
+	// 		partObj.name = itemObjKey[idx];
+	// 		partObj.property = {
+	// 			hp: detailValue.property.hp.min,
+	// 			attackPower: detailValue.property.attackPower.min,
+	// 			defence: detailValue.property.defence.min,
+	// 			agility: detailValue.property.agility.min
+	// 		};
+	// 	}
+	// });
 
 });
 

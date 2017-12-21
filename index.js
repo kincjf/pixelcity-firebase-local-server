@@ -78,15 +78,12 @@ var database = firebase.database();
 
 var ref = database.ref();
 
-var character = database.ref("/character");
 var checkFriendship = database.ref("/checkFriendship");
 var history = database.ref("/history");
 var item = database.ref("/item");
 var map = database.ref("/map");
 var onlineUser = database.ref("/onlineUser");
-var skill = database.ref("/skill");
 var user = database.ref("/user");
-var userDeck = database.ref("/userDeck");
 var userProperty = database.ref("/userProperty");
 var userRelationship = database.ref("/userRelationship");
 
@@ -94,11 +91,6 @@ var userRelationship = database.ref("/userRelationship");
 // 	console.log('\n --- Got ref value --- \n');
 //	console.log(util.inspect(snap.val(), false, null));
 // });
-
-character.on('value', function(snap) {
-	console.log('\n --- Got character value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
 
 checkFriendship.on('value', function(snap) {
 	console.log('\n --- Got checkFriendship value --- \n');
@@ -125,18 +117,8 @@ onlineUser.on('value', function(snap) {
 	console.log(util.inspect(snap.val(), false, null));
 });
 
-skill.on('value', function(snap) {
-	console.log('\n --- Got skill value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
 user.on('value', function(snap) {
 	console.log('\n --- Got user value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-userDeck.on('value', function(snap) {
-	console.log('\n --- Got userDeck value --- \n');
 	console.log(util.inspect(snap.val(), false, null));
 });
 
