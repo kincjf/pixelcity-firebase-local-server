@@ -3,3 +3,4 @@
 *.export.json
 *.bak
 /build
+package-lock.json
