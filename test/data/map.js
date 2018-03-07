@@ -7,13 +7,6 @@ var data = {
 				"type": "normal",
 				"lat": 35.84890,
 				"lng": 127.12348,
-				"info": {
-					"ko-kr": {
-						"title": "덕진공원",
-						"comment": "연꽃이 아름다운 공원이다. 수영은 권하지 않는다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -45,13 +38,6 @@ var data = {
 				"type": "normal",
 				"lat": 35.8551,
 				"lng": 127.1387,
-				"info": {
-					"ko-kr": {
-						"title": "소리 문화의 전당",
-						"comment": "전주에서 각종 음악 행사가 행해지는 문화 공간이다. 가끔 무료공연도 관람 할수 있다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -83,13 +69,6 @@ var data = {
 				"type": "Boss",
 				"lat": 35.82552,
 				"lng": 127.17467,
-				"info": {
-					"ko-kr": {
-						"title": "아중저수지",
-						"comment": "아중리에 위치한 저수지 공원. 날씨만 좋다면 경관을 볼 수 있다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -121,13 +100,6 @@ var data = {
 				"type": "Boss",
 				"lat": 35.80918,
 				"lng": 127.13686,
-				"info": {
-					"ko-kr": {
-						"title": "용머리고개",
-						"comment": "용의머리 현상을 하고 있다고 하여 붙어진 지명이다. 일제시대때의 아픈 기억을 갖고 있다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 15,
 					"monster": {
@@ -159,13 +131,6 @@ var data = {
 				"type": "Boss",
 				"lat": 35.81430,
 				"lng": 127.15109,
-				"info": {
-					"ko-kr": {
-						"title": "한옥마을",
-						"comment": "언제나 사람이 북적거리는 전주의 명소이다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 15,
 					"monster": {
@@ -197,13 +162,6 @@ var data = {
 				"type": "normal",
 				"lat": 35.80112,
 				"lng": 127.09038,
-				"info": {
-					"ko-kr": {
-						"title": "전주 국립박물관",
-						"comment": "대한민국 국립 박물관 중 하나이다. 조상들의 지혜를 엿볼수 있다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -235,13 +193,6 @@ var data = {
 				"type": "Special",
 				"lat": 35.8342,
 				"lng": 127.1240,
-				"info": {
-					"ko-kr": {
-						"title": "전주천변",
-						"comment": "전주시민들의 휴식공간이다. 시간만 맞다면 아름다운 석양을 보며 싸이클을 즐길 수 있다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -273,13 +224,6 @@ var data = {
 				"type": "Normal",
 				"lat": 35.86810,
 				"lng": 127.06585,
-				"info": {
-					"ko-kr": {
-						"title": "전주월드컵경기장",
-						"comment": "2002월드컵때 지어진 축구경기장이다. 전북현대 화이팅!"
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -311,13 +255,6 @@ var data = {
 				"type": "Normal",
 				"lat": 35.8121,
 				"lng": 127.15719,
-				"info": {
-					"ko-kr": {
-						"title": "전주향교",
-						"comment": "우리 조상들의 얼을 느낄수 있는 공간이다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -349,13 +286,6 @@ var data = {
 				"type": "Normal",
 				"lat": 35.81161,
 				"lng": 127.15767,
-				"info": {
-					"ko-kr": {
-						"title": "특별장소",
-						"comment": "왠지 신비한 픽시가 나올것만 같다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -385,13 +315,6 @@ var data = {
 				"type": "normal",
 				"lat": 35.84055,
 				"lng": 127.13173,
-				"info": {
-					"ko-kr": {
-						"title": "코앞빌딩",
-						"comment": "개발자의 서식지이다. 커피를 사다주면 사랑받을 수 있는 곳."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -423,13 +346,6 @@ var data = {
 				"type": "normal",
 				"lat": 35.80963,
 				"lng": 127.08756,
-				"info": {
-					"ko-kr": {
-						"title": "전주대학교",
-						"comment": "미인이 많이 있다는 소문을 갖고 있는 대학교이다, 소문이다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -461,13 +377,6 @@ var data = {
 				"type": "Normal",
 				"lat": 35.8352130,
 				"lng": 127.1374249,
-				"info": {
-					"ko-kr": {
-						"title": "거북바위",
-						"comment": "전주 사방신 중 현무의 힘이 깃든 바위이다. 금암동의 이름의 어원이 되는 바위이다."
-					},
-					"en-us": {}
-				},
 				"property": {
 					"entranceFee": 10,
 					"monster": {
@@ -496,7 +405,297 @@ var data = {
 				}
 			}
 		},
-		"area": {}
+		"area": {},
+		"safezone": {
+			"DeokjinPark": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.847617,
+						"lng": 127.122567
+					},
+					"p2": {
+						"lat": 35.847356,
+						"lng": 127.122326
+					},
+					"p3": {
+						"lat": 35.847074,
+						"lng": 127.122357
+					},
+					"p4": {
+						"lat": 35.847183,
+						"lng": 127.122700
+					},
+					"p5": {
+						"lat": 35.847368,
+						"lng": 127.122877
+					}
+				}
+			},
+			"SoriHall": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.854978,
+						"lng": 127.137574
+					},
+					"p2": {
+						"lat": 35.854967,
+						"lng": 127.137727
+					},
+					"p3": {
+						"lat": 35.854774,
+						"lng": 127.137716
+					},
+					"p4": {
+						"lat": 35.854774,
+						"lng": 127.138057
+					},
+					"p5": {
+						"lat": 35.854590,
+						"lng": 127.138055
+					},
+					"p6": {
+						"lat": 35.854597,
+						"lng": 127.137568
+					}
+				}
+			},
+			"AJungReservoir": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.825309,
+						"lng": 127.174562
+					},
+					"p2": {
+						"lat": 35.825313,
+						"lng": 127.174618
+					},
+					"p3": {
+						"lat": 35.825279,
+						"lng": 127.174612
+					},
+					"p4": {
+						"lat": 35.825275,
+						"lng": 127.174584
+					}
+				}
+			},
+			"DragonHeadStreet": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.809399,
+						"lng": 127.137563
+					},
+					"p2": {
+						"lat": 35.809461,
+						"lng": 127.137633
+					},
+					"p3": {
+						"lat": 35.809432,
+						"lng": 127.137683
+					},
+					"p4": {
+						"lat": 35.809343,
+						"lng": 127.137574
+					}
+				}
+			},
+			"HanokVillage": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.814166,
+						"lng": 127.149302
+					},
+					"p2": {
+						"lat": 35.814209,
+						"lng": 127.149685
+					},
+					"p3": {
+						"lat": 35.814078,
+						"lng": 127.149721
+					},
+					"p4": {
+						"lat": 35.814001,
+						"lng": 127.149420
+					}
+				}
+			},
+			"NationalMuseum": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.801208,
+						"lng": 127.090416
+					},
+					"p2": {
+						"lat": 35.801189,
+						"lng": 127.090596
+					},
+					"p3": {
+						"lat": 35.801026,
+						"lng": 127.090538
+					},
+					"p4": {
+						"lat": 35.801063,
+						"lng": 127.090372
+					}
+				}
+			},
+			"WorldcupStadium": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.869230,
+						"lng": 127.067329
+					},
+					"p2": {
+						"lat": 35.869257,
+						"lng": 127.067844
+					},
+					"p3": {
+						"lat": 35.869154,
+						"lng": 127.067849
+					},
+					"p4": {
+						"lat": 35.869060,
+						"lng": 127.067350
+					}
+				}
+			},
+			"HyanGyo": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.812591,
+						"lng": 127.157198
+					},
+					"p2": {
+						"lat": 35.812593,
+						"lng": 127.157258
+					},
+					"p3": {
+						"lat": 35.812301,
+						"lng": 127.157268
+					},
+					"p4": {
+						"lat": 35.812297,
+						"lng": 127.157209
+					}
+				}
+			},
+			"SpecialSpot": {		// 덕진소방서 사무실로 하자
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.841836,
+						"lng": 127.135832
+					},
+					"p2": {
+						"lat": 35.841880,
+						"lng": 127.136048
+					},
+					"p3": {
+						"lat": 35.841757,
+						"lng": 127.136117
+					},
+					"p4": {
+						"lat": 35.841693,
+						"lng": 127.135897
+					}
+				}
+			},
+			"Coap": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.840628,
+						"lng": 127.131658
+					},
+					"p2": {
+						"lat": 35.840606,
+						"lng": 127.131850
+					},
+					"p3": {
+						"lat": 35.840489,
+						"lng": 127.131828
+					},
+					"p4": {
+						"lat": 35.840433,
+						"lng": 127.131644
+					}
+				}
+			},
+			"JeonjuUniversity": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.813909,
+						"lng": 127.088892
+					},
+					"p2": {
+						"lat": 35.813997,
+						"lng": 127.090448
+					},
+					"p3": {
+						"lat": 35.813780,
+						"lng": 127.090382
+					},
+					"p4": {
+						"lat": 35.813539,
+						"lng": 127.089257
+					}
+				}
+			},
+			"TurtleRock": {
+				"type": "polygon",
+				"height": 100,		// 단위: m
+				"radius": 0,		// 단위: m
+				"coord": {
+					"p1": {
+						"lat": 35.835170,
+						"lng": 127.137400
+					},
+					"p2": {
+						"lat": 35.835254,
+						"lng": 127.137496
+					},
+					"p3": {
+						"lat": 35.835034,
+						"lng": 127.137706
+					},
+					"p4": {
+						"lat": 35.834949,
+						"lng": 127.137624
+					}
+				}
+			}
+		}
 	},
 	"dynamic": {
 		"dots": {

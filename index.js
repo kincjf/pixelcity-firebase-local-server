@@ -9,6 +9,7 @@
 const util = require('util');
 const _ = require("lodash");
 
+
 var FirebaseServer = require('firebase-server');
 var firebase = require('firebase');
 var jsonfile = require('jsonfile');
@@ -37,7 +38,7 @@ _.forEach(data, function (value, key) {  // 개별로 찍어보자
 
 jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
 	console.error(err);
-})
+});
 
 // var data = jsonfile.readFileSync(filename);
 // var name = 'pixelcity-demo-48860';
