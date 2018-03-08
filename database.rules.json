@@ -1,0 +1,13 @@
+// No Read/Write permitted.
+// {
+//   "rules": {
+//     ".read": false,
+//     ".write": false
+//   }
+// }
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
