@@ -1,6 +1,6 @@
 {
     "GUID": "5be05ee0-6373-11e8-b161-332bb25f5bd5",
-    "lastModifTS": "2018-05-30T08:15:08.244Z",
+    "lastModifTS": "2018-05-30T09:14:47.475Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -25,6 +25,77 @@
             "mediaType": "",
             "method": "",
             "properties": [
+                {
+                    "GUID": "7dbe34e0-63e8-11e8-b4e1-c95b8da658fc",
+                    "description": "표정",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "face",
+                    "type": "document",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "properties": [
+                        {
+                            "GUID": "891fdf50-63e8-11e8-b4e1-c95b8da658fc",
+                            "description": "표정이 너무 다양해서 이름을 특정지을 수 없기 때문에 코드명으로 작성\n표정별 파일명 또한 코드명으로 통일\nface06, face09 <=> face06.png, face09.png",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "name": "name",
+                            "type": "document",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "properties": [
+                                {
+                                    "GUID": "9772dd50-63e8-11e8-b4e1-c95b8da658fc",
+                                    "description": "최소요구레벨",
+                                    "comments": "",
+                                    "dependencies": [],
+                                    "required": false,
+                                    "id": "",
+                                    "name": "minRequiredLevel",
+                                    "type": "numeric",
+                                    "mode": "",
+                                    "unit": "",
+                                    "minimum": "",
+                                    "exclusiveMinimum": false,
+                                    "maximum": "",
+                                    "exclusiveMaximum": false,
+                                    "multipleOf": "",
+                                    "divisibleBy": "",
+                                    "default": "",
+                                    "primaryKey": false,
+                                    "relationshipType": "",
+                                    "parentRelationship": "",
+                                    "childRelationships": [],
+                                    "foreignCollection": "",
+                                    "foreignField": [],
+                                    "enum": [],
+                                    "sample": ""
+                                }
+                            ],
+                            "minProperties": "",
+                            "maxProperties": "",
+                            "additionalProperties": false,
+                            "enum": []
+                        }
+                    ],
+                    "minProperties": "",
+                    "maxProperties": "",
+                    "additionalProperties": false,
+                    "enum": []
+                },
                 {
                     "additionalProperties": false,
                     "childRelationships": [],
@@ -5393,7 +5464,10 @@
         "b16a4e60-63d8-11e8-9827-1b2dcd18a456": "minRequiredLevel",
         "88fe2450-63d9-11e8-9827-1b2dcd18a456": "name",
         "f6768760-63df-11e8-a5ee-a9e643d8efde": "minRequiredLevel",
-        "76948870-63e0-11e8-a5ee-a9e643d8efde": "maxRequiredLevel"
+        "76948870-63e0-11e8-a5ee-a9e643d8efde": "maxRequiredLevel",
+        "7dbe34e0-63e8-11e8-b4e1-c95b8da658fc": "face",
+        "891fdf50-63e8-11e8-b4e1-c95b8da658fc": "name",
+        "9772dd50-63e8-11e8-b4e1-c95b8da658fc": "minRequiredLevel"
     },
     "definitions": {
         "type": "definitions",
