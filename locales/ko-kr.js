@@ -1,7 +1,64 @@
 "use strict";
 
 var data = {
+	"character": {
+		"model": {
+			"Square": {
+				"title": "네모",
+				"comment": "네모입니다"
+			},
+			"Trangle": {
+				"title": "세모",
+				"comment": "세모입니다"
+			},
+			"Circle": {
+				"title": "동그라미",
+				"comment": "동그라미입니다"
+			},
+			"Pentagon": {
+				"title": "오각형",
+				"comment": "오각형입니다"
+			}
+		},
+		"icon": {
+			"A": {
+				"title": "아이콘A",
+				"comment": "아이콘A입니다"
+			},
+			"B": {
+				"title": "아이콘B",
+				"comment": "아이콘B입니다"
+			},
+			"C": {
+				"title": "아이콘C",
+				"comment": "아이콘C입니다"
+			}
+		}
+	},
+
 	"map": {
+		"Seoul": {	// 서울 광화문
+			"title": "광주",
+			"comment": "서울 광화문"
+		},
+		"Busan": {	// 부산 광복로 광복동 주민센터
+			"title": "부산",
+			"comment": "부산 광복동 주민센터"
+		},
+		"Daejeon": {	// 대전 둔산동 갤러리아 타임월드
+			"title": "대전",
+			"comment": "대전 둔산동 갤러리아 타임월드"
+		},
+		"Gwangju": {	// 광주 국립아시아문화전당
+			"title": "광주",
+			"comment": "광주 국립아시아문화전당"
+		},
+		"Jeonju": {		// 전주 경기전 앞
+			"title": "전주",
+			"comment": "전주 경기전 앞"
+		},
+		// waypoint 종료
+
 		"DeokjinPark": {
 			"title": "덕진공원",
 			"comment": "연꽃이 아름다운 공원이다. 수영은 권하지 않는다."

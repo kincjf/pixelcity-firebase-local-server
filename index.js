@@ -80,6 +80,7 @@ var database = firebase.database();
 var ref = database.ref();
 
 var checkFriendship = database.ref("/checkFriendship");
+var character = database.ref("/checkFriendship");
 var history = database.ref("/history");
 var item = database.ref("/item");
 var map = database.ref("/map");
@@ -95,6 +96,11 @@ var userRelationship = database.ref("/userRelationship");
 
 checkFriendship.on('value', function(snap) {
 	console.log('\n --- Got checkFriendship value --- \n');
+	console.log(util.inspect(snap.val(), false, null));
+});
+
+checkFriendship.on('value', function(snap) {
+	console.log('\n --- Got character value --- \n');
 	console.log(util.inspect(snap.val(), false, null));
 });
 

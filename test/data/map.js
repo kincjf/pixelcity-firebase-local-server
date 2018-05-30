@@ -3,6 +3,38 @@
 var data = {
 	"static": {
 		"pixel": {
+			"Seoul": {	// 서울 광화문
+				"type": "waypoint",
+				"lat": 37.5759369,
+				"lng": 126.974627,
+				"property": {}
+			},
+			"Busan": {	// 부산 광복로 광복동 주민센터
+				"type": "waypoint",
+				"lat": 35.099905,
+				"lng": 129.030412,
+				"property": {}
+			},
+			"Daejeon": {	// 대전 둔산동 갤러리아 타임월드
+				"type": "waypoint",
+				"lat": 36.351502,
+				"lng": 127.378391,
+				"property": {}
+			},
+			"Gwangju": {	// 광주 국립아시아문화전당
+				"type": "waypoint",
+				"lat": 35.1470568,
+				"lng": 126.9194147,
+				"property": {}
+			},
+			"Jeonju": {		// 전주 경기전 앞
+				"type": "waypoint",
+				"lat": 35.8140889,
+				"lng": 127.1494826,
+				"property": {}
+			},
+			// waypoint 종료
+
 			"DeokjinPark": {
 				"type": "normal",
 				"lat": 35.84890,
@@ -251,7 +283,7 @@ var data = {
 					}
 				}
 			},
-			"Hyangyo": {
+			"HyanGyo": {
 				"type": "Normal",
 				"lat": 35.8121,
 				"lng": 127.15719,
@@ -695,90 +727,111 @@ var data = {
 					}
 				}
 			}
-		}
-	},
-	"dynamic": {
-		"dots": {
-			"normal": {
-				"exp": {
-					"min": 100,
-					"max": 150
-				},
-				"gameMoney": {
-					"min": 150,
-					"max": 200
-				},
-				"item": {
-					"minRating": 1,
-					"maxRating": 2
-				},
-				"cash": {
-					"min": 0,
-					"max": 0
-				},
-				"spawnRate": 10
+		},
+		"waypoint": {
+			"Seoul": {
+				"minRequiredLevel": 1,
+				"maxRequiredLevel": 10
 			},
-			"good": {
-				"exp": {
-					"min": 200,
-					"max": 250
-				},
-				"gameMoney": {
-					"min": 300,
-					"max": 350
-				},
-				"item": {
-					"minRating": 2,
-					"maxRating": 3
-				},
-				"cash": {
-					"min": 1,
-					"max": 3
-				},
-				"spawnRate": 0
+			"Busan": {
+				"minRequiredLevel": 1,
+				"maxRequiredLevel": 10
 			},
-			"better": {
-				"exp": {
-					"min": 300,
-					"max": 350
-				},
-				"gameMoney": {
-					"min": 400,
-					"max": 450
-				},
-				"item": {
-					"minRating": 3,
-					"maxRating": 4
-				},
-				"cash": {
-					"min": 1,
-					"max": 5
-				},
-				"spawnRate": 30
+			"Daejeon": {
+				"minRequiredLevel": 1,
+				"maxRequiredLevel": 10
 			},
-			"best": {
-				"exp": {
-					"min": 400,
-					"max": 450
-				},
-				"gameMoney": {
-					"min": 500,
-					"max": 550
-				},
-				"item": {
-					"minRating": 4,
-					"maxRating": 5
-				},
-				"cash": {
-					"min": 5,
-					"max": 10
-				},
-				"spawnRate": 60
+			"Gwangju": {
+				"minRequiredLevel": 5,
+				"maxRequiredLevel": 20
+			},
+			"Jeonju": {
+				"minRequiredLevel": 1,
+				"maxRequiredLevel": 20
 			}
 		},
-		"eventItem": {}
+		"dynamic": {
+			"dots": {
+				"normal": {
+					"exp": {
+						"min": 100,
+						"max": 150
+					},
+					"gameMoney": {
+						"min": 150,
+						"max": 200
+					},
+					"item": {
+						"minRating": 1,
+						"maxRating": 2
+					},
+					"cash": {
+						"min": 0,
+						"max": 0
+					},
+					"spawnRate": 10
+				},
+				"good": {
+					"exp": {
+						"min": 200,
+						"max": 250
+					},
+					"gameMoney": {
+						"min": 300,
+						"max": 350
+					},
+					"item": {
+						"minRating": 2,
+						"maxRating": 3
+					},
+					"cash": {
+						"min": 1,
+						"max": 3
+					},
+					"spawnRate": 0
+				},
+				"better": {
+					"exp": {
+						"min": 300,
+						"max": 350
+					},
+					"gameMoney": {
+						"min": 400,
+						"max": 450
+					},
+					"item": {
+						"minRating": 3,
+						"maxRating": 4
+					},
+					"cash": {
+						"min": 1,
+						"max": 5
+					},
+					"spawnRate": 30
+				},
+				"best": {
+					"exp": {
+						"min": 400,
+						"max": 450
+					},
+					"gameMoney": {
+						"min": 500,
+						"max": 550
+					},
+					"item": {
+						"minRating": 4,
+						"maxRating": 5
+					},
+					"cash": {
+						"min": 5,
+						"max": 10
+					},
+					"spawnRate": 60
+				}
+			},
+			"eventItem": {}
+		}
 	}
-}
-
+};
 
 module.exports = data;
