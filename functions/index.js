@@ -64,7 +64,7 @@ const validateFirebaseIdToken = (req, res, next) => {
 		console.log('Found "Authorization" header');
 		// Read the ID Token from the Authorization header.
 		idToken = req.headers.authorization.split('Bearer ')[1];
-	} else if(req.cookies) {
+	} else if (req.cookies) {
 		console.log('Found "__session" cookie');
 		// Read the ID Token from cookie.
 		idToken = req.cookies.__session;
@@ -93,40 +93,10 @@ app.get('/hello', (req, res) => {
 
 app.signupTrigger = functions.auth.user().onCreate((user) => {
 	let newUserRef = admin.database().ref('/user').push();		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
-	let newUserPropertyRef = admin.database().ref('/userProperty').child('${newUserRef.key}');		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
+	let newUserPropertyRef = admin.database().ref('/userProperty').child(newUserRef.key);		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
+	let date = moment().utc().format();
 
 	let userCountRef = db.ref("saving-data/count/user");
-	userCountRef.transaction(function (current_value) {
-		let userCount = (current_value || 0) + 1;
-
-		newUserPropertyRef.set({
-			"level": 1,
-			"exp": 0,
-			"ruby": 0,
-			"gold": 0,
-			"status": {
-				"total": {
-					"eatenUser": 0,
-					"eatenPixel": 0,
-					"score": 0,
-					"playCount": 0,
-					"survivalTime": 0
-				},
-				"best": {
-					"ranking": userCount,
-					"eatenUser": 0,
-					"eatenPixel": 0,
-					"score": 0,
-					"playCount": 0,
-					"survivalTime": 0
-				}
-			}
-		});
-
-		return userCount
-	});
-
-	let date = moment().utc().format();
 
 	newUserRef.set({
 		birthday: "",
@@ -140,6 +110,35 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 		"userStatus": 1,
 		"voteCount": 0,
 		"baseLocation": {}
+	}).then(res => {
+		return newUserPropertyRef.set({
+			"level": 1,
+			"exp": 0,
+			"ruby": 0,
+			"gold": 0,
+			"status": {
+				"total": {
+					"eatenUser": 0,
+					"eatenPixel": 0,
+					"score": 0,
+					"playCount": 0,
+					"survivalTime": 0
+				},
+				"best": {
+					"ranking": 0,
+					"eatenUser": 0,
+					"eatenPixel": 0,
+					"score": 0,
+					"playCount": 0,
+					"survivalTime": 0
+				}
+			}
+		}).then(res => {
+			return userCountRef.transaction(function (current_value) {
+				let userCount = (current_value || 0) + 1;
+				return userCountRef.update(userCount);
+			});
+		});
 	});
 });
 
