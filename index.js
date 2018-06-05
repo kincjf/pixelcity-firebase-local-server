@@ -18,7 +18,18 @@ var jwt = require('jsonwebtoken');
 var debug = require('debug')('firebase-server');
 const mkdirp = require("mkdirp");
 
-require('dotenv').config();
+var envPath
+if (process.env.NODE_ENV === "development") {
+	envPath = '.test.env';
+	console.log('Development Mode');
+} else if (process.env.NODE_ENV === "production") {
+	envPath = '.env';
+	console.log('Production Mode');
+} else {
+	throw new Error("no env file found.");
+}
+
+require('dotenv').config({path: envPath});
 
 var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
 var host = process.env.FIREBASE_HOST || 'test.firebaseio.com';
@@ -68,7 +79,7 @@ server._tokenValidator.decode = function(token) {
 };
 
 firebase.initializeApp({
-	databaseURL: 'ws://' + host + ':' + port
+	databaseURL: host + ':' + port
 });
 
 var database = firebase.database();

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pixelcity-demo-48860"
+    "default": "pixelcity-demo-48860",
+    "pixelcity-dev": "pixelcity-demo-48860"
   }
 }
