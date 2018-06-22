@@ -17,6 +17,8 @@
 
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const errorhandler = require('errorhandler');
+const notifier = require('node-notifier');
 
 const express = require('express');
 const cookieParser = require('cookie-parser')();
@@ -36,9 +38,24 @@ if (process.env.NODE_ENV === "development") {
 		credential: admin.credential.cert(serviceAccount),
 		databaseURL: process.env.FIREBASE_HOST + ':' + process.env.FIREBASE_PORT
 	});
+	app.use(errorhandler({
+		log: (err, str, req) => {
+			var title = 'Error in ' + req.method + ' ' + req.url;
+
+			notifier.notify({
+				title: title,
+				message: str
+			})
+		}
+	}));
+
 	console.log('Development Mode');
 } else {	// production level
 	admin.initializeApp();
+
+
+	// app.use(morgan("combined", {"stream": logger.stream}));
+
 	console.log('Production Mode');
 }
 
@@ -73,7 +90,7 @@ const validateFirebaseIdToken = (req, res, next) => {
 		res.status(403).send('Unauthorized');
 		return;
 	}
-	admin.auth().verifyIdToken(idToken).then((decodedIdToken) => {
+	return admin.auth().verifyIdToken(idToken).then((decodedIdToken) => {
 		console.log('ID Token correctly decoded', decodedIdToken);
 		req.user = decodedIdToken;
 		return next();
@@ -90,7 +107,10 @@ app.use(validateFirebaseIdToken);
 app.get('/hello', (req, res) => {
 	res.send(`Hello ${req.user.email}`);
 });
-
+/**
+ * user { uid, displayName, email, photoURL, emailVerified, phoneNumber }
+ * @type {CloudFunction<UserRecord>}
+ */
 app.signupTrigger = functions.auth.user().onCreate((user) => {
 	let newUserRef = admin.database().ref('/user').push();		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
 	let newUserPropertyRef = admin.database().ref('/userProperty').child(newUserRef.key);		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
@@ -98,7 +118,7 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 
 	let userCountRef = db.ref("saving-data/count/user");
 
-	newUserRef.set({
+	return newUserRef.set({
 		birthday: "",
 		createAt: date,
 		email: user.email,
@@ -107,9 +127,9 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 		nickname: "",
 		type: "public",		// 유저별 권한 - 조정 필요
 		updatedAt: date,
-		"userStatus": 1,
-		"voteCount": 0,
-		"baseLocation": {}
+		userStatus: 1,
+		voteCount: 0,
+		baseLocation: {}
 	}).then(res => {
 		return newUserPropertyRef.set({
 			"level": 1,
@@ -146,3 +166,27 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 // Requests need to be authorized by providing an `Authorization` HTTP header
 // with value `Bearer <Firebase ID Token>`.
 exports.api = functions.https.onRequest(app);
+
+// error handling
+if (process.env.NODE_ENV === "development") {
+	app.use(errorhandler({
+		log: (err, str, req) => {
+			var title = 'Error in ' + req.method + ' ' + req.url;
+
+			notifier.notify({
+				title: title,
+				message: str
+			});
+		}
+	}));
+} else {	// production level
+}
+
+app.use(function (err, req, res, next) {
+	var title = 'Error in ' + req.method + ' ' + req.url;
+
+	res.status(err.status || 500).json({
+		message: err.message,
+		title: title
+	});
+});
