@@ -9,13 +9,12 @@
 const util = require('util');
 const _ = require("lodash");
 
-
-var FirebaseServer = require('firebase-server');
+var Promise = require('bluebird');
+var admin = require('firebase-admin');
 var firebase = require('firebase');
 var jsonfile = require('jsonfile');
 var requestp = require('request-promise');
 var jwt = require('jsonwebtoken');
-var debug = require('debug')('firebase-server');
 const mkdirp = require("mkdirp");
 
 var envPath
@@ -32,38 +31,36 @@ if (process.env.NODE_ENV === "development") {
 require('dotenv').config({path: envPath});
 
 var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
-var host = process.env.FIREBASE_HOST || 'test.firebaseio.com';
 var port = process.env.FIREBASE_PORT || 3000;
 
 console.log("filename: " + filename);
-console.log("host: " + host);
+console.log("databaseURL: " + process.env.FIREBASE_DATABASE_URL);
 console.log("port: " + port);
 
-var data = require("./test/data");
+const common = require('./common');
+const objectToArray = common.objectToArray;
+const listAllUsers = common.listAllUsers;
+
+var initData = require("./test/data");
 mkdirp(process.env.FIREBASE_DB_BUILDDIR);
-_.forEach(data, function (value, key) {  // 개별로 찍어보자
+_.forEach(initData, function (value, key) {  // 개별로 찍어보자
 	jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + key + ".json", value, {spaces: 2, EOL: '\r\n'}, function(err) {
+		if (err) {
+			console.error(err);
+		}
+	});
+});
+
+// 전체
+jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, initData, {spaces: 2, EOL: '\r\n'}, function(err) {
+	if (err) {
 		console.error(err);
-	})
+	}
 });
-
-jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, data, {spaces: 2, EOL: '\r\n'}, function(err) {
-	console.error(err);
-});
-
-// var data = jsonfile.readFileSync(filename);
-// var name = 'pixelcity-demo-48860';
-// new FirebaseServer(5000, 'test.firebaseio.com', {
-// 	states: {
-// 		CA: 'California',
-// 		AL: 'Alabama',
-// 		KY: 'Kentucky'
-// 	}
-// });
 
 // https://stackoverflow.com/questions/37418372/firebase-where-is-my-account-secret-in-the-new-console
-var server = new FirebaseServer(port, host, data);
-server._tokenValidator.decode = function(token) {
+// var server = new FirebaseServer(port, host, data);
+// server._tokenValidator.decode = function(token) {
 	// firebase token verify를 위한 custom decoder
 	// 참고 : https://firebase.google.com/docs/auth/admin/verify-id-tokens?hl=ko
 	// var decoded = jwt.verify(token, pubkey, {
@@ -72,80 +69,50 @@ server._tokenValidator.decode = function(token) {
 	// 	iss: "https://securetoken.google.com/" + projectId,
 	// 	sub: uid
 	// });
-	var decoded = jwt.decode(token);
+	// var decoded = jwt.decode(token);
+  //
+	// debug('decode(token: %j, secret: %j) => %j', token, decoded);
+	// return decoded;
+// };
+var serviceAccount = require('./functions/test/pixelcity-test.json');
 
-	debug('decode(token: %j, secret: %j) => %j', token, decoded);
-	return decoded;
-};
-
-firebase.initializeApp({
-	databaseURL: host + ':' + port
+admin.initializeApp({
+	credential: admin.credential.cert(serviceAccount),
+	databaseURL: process.env.FIREBASE_DATABASE_URL
 });
 
-var database = firebase.database();
+admin.database().ref('/').remove().then(() => {
+	let users = [];
 
-// 원하는 listener를 달아서 변경된 값을 추적할때 모니터링 할 수 있음
-// https://firebase.google.com/docs/database/web/lists-of-data
-// https://firebase.google.com/docs/reference/node/firebase.database.DataSnapshot
+	return listAllUsers(admin, users).then(users => {
+		return Promise.each(users, (item) => {
+			return admin.auth().deleteUser(item.uid);
+		}).then(() => {
+			let userCountRef = admin.database().ref("saving-data/count");
+			return userCountRef.update({
+				"user": 0
+			});
+		});
+		// end clear data
+	}).then(() => {
+		return Promise.each(objectToArray(initData.user), (item, index, length) => {
+			item.value.uid = Object.keys(initData.user)[index];
+			item.value.password = "11112222";
+			return admin.auth().createUser(item.value);
+		});
+	}).then(() => {
+		return admin.database().ref('/').set(initData);
+	}).then((rootRef) => {
+		let userArr = [];
 
-var ref = database.ref();
+		return listAllUsers(admin, userArr).then((users) => {
+			let userCountRef = admin.database().ref("saving-data/count/user");
 
-var checkFriendship = database.ref("/checkFriendship");
-var character = database.ref("/checkFriendship");
-var history = database.ref("/history");
-var item = database.ref("/item");
-var map = database.ref("/map");
-var onlineUser = database.ref("/onlineUser");
-var user = database.ref("/user");
-var userProperty = database.ref("/userProperty");
-var userRelationship = database.ref("/userRelationship");
-
-// ref.on('value', function(snap) {
-// 	console.log('\n --- Got ref value --- \n');
-//	console.log(util.inspect(snap.val(), false, null));
-// });
-
-checkFriendship.on('value', function(snap) {
-	console.log('\n --- Got checkFriendship value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-checkFriendship.on('value', function(snap) {
-	console.log('\n --- Got character value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-history.on('value', function(snap) {
-	console.log('\n --- Got history value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-item.on('value', function(snap) {
-	console.log('\n --- Got item value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-map.on('value', function(snap) {
-	console.log('\n --- Got map value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-onlineUser.on('value', function(snap) {
-	console.log('\n --- Got onlineUser value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-user.on('value', function(snap) {
-	console.log('\n --- Got user value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-userProperty.on('value', function(snap) {
-	console.log('\n --- Got userProperty value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
-
-userRelationship.on('value', function(snap) {
-	console.log('\n --- Got userRelationship value --- \n');
-	console.log(util.inspect(snap.val(), false, null));
-});
+			return userCountRef.transaction(function (current_value) {
+				let userCount = users.length;
+				return userCount;
+			});
+		});
+		// end dump test data
+	});
+}).then(() => console.log("test data dump finish")).catch((err) => console.error("test data dump Error", err));

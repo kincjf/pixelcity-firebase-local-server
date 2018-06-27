@@ -6,8 +6,8 @@
   "scripts": {
     "server:dev": "cross-env NODE_ENV=development nodemon index.js pixelcity-demo-48860-export.json",
     "server:dev:log": "cross-env NODE_ENV=development DEBUG=firebase-server nodemon index.js pixelcity-demo-48860-export.json",
-    "server:debug": "cross-env NODE_ENV=development nodemon --debug index.js pixelcity-demo-48860-export.json",
-    "server:debug:log": "cross-env NODE_ENV=development DEBUG=firebase-server nodemon --debug index.js pixelcity-demo-48860-export.json",
+    "server:debug": "cross-env NODE_ENV=development nodemon --inspect index.js pixelcity-demo-48860-export.json",
+    "server:debug:log": "cross-env NODE_ENV=development DEBUG=firebase-server nodemon --inspect index.js pixelcity-demo-48860-export.json",
     "test": "npm run lint && npm run cover",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "debug": "mocha",

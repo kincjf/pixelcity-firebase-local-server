@@ -9,6 +9,9 @@ These are the Firebase Command Line Interface (CLI) Tools. They can be used to:
 
 To get started with the Firebase CLI, read the full list of commands below or check out the [hosting-specific CLI documentation](https://firebase.google.com/docs/hosting/quickstart).
 
+개별 온라인 개발환경, Unit Test를 위해서 test/ 폴더에 [pixelcity-test.json](https://firebase.google.com/docs/functions/unit-testing?hl=ko) 파일을 삽입함
+
+참고: https://firebase.google.com/docs/functions/unit-testing?hl=ko 
 
 ## Installation
 
