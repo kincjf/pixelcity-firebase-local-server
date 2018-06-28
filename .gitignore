@@ -6,3 +6,5 @@
 package-lock.json
 node_modules
 pixelcity-demo-48860-firebase-adminsdk-r2yz0-4d28c93f47.json
+/.cookie
+*.log
