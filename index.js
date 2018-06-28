@@ -34,7 +34,6 @@ var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export
 var port = process.env.FIREBASE_PORT || 3000;
 
 console.log("filename: " + filename);
-console.log("databaseURL: " + process.env.FIREBASE_DATABASE_URL);
 console.log("port: " + port);
 
 const common = require('./common');
@@ -74,11 +73,12 @@ jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, initData, 
 	// debug('decode(token: %j, secret: %j) => %j', token, decoded);
 	// return decoded;
 // };
-var serviceAccount = require('./functions/test/pixelcity-test.json');
+var projectConfig = require("./functions/test/firebase-test-config.json");
+var serviceAccount = require('./functions/test/gcloud-pixelcity-test.json');
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
-	databaseURL: process.env.FIREBASE_DATABASE_URL
+	databaseURL: projectConfig.databaseURL
 });
 
 admin.database().ref('/').remove().then(() => {

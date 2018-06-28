@@ -40,17 +40,24 @@ const sinon = require('sinon');
 const requestp = require("request-promise");
 const admin = require('firebase-admin');
 const firebase = require('firebase');
-// Require and initialize firebase-functions-test in "online mode" with your project's
-// credentials and service account key.
-const cloudFunctions = require('../index');
 
-var projectConfig = {
-	databaseURL: process.env.FIREBASE_DATABASE_URL,
-	// databaseURL: process.env.FIREBASE_HOST + ':' + process.env.FIREBASE_PORT,
-	projectId: process.env.FIREBASE_PROJECT_ID,
-	storageBucket: process.env.FIREBASE_STORAGE_BUCKET
+if (process.env.NODE_ENV === "development") {
+	envPath = '../.test.env';
+	require('dotenv').config({path: envPath});
+
+	console.log('Development Test Mode');
+} else {	// production level
+	envPath = '../.env';
+	require('dotenv').config({path: envPath});
+
+	console.log('Production Test Mode');
 }
-const test = require('firebase-functions-test')(projectConfig, './test/pixelcity-test.json');
+
+// emulator 에러로 인한 환경변수 강제설정
+var projectConfig = require("./firebase-test-config");
+process.env.FIREBASE_CONFIG = JSON.stringify(projectConfig);
+
+const test = require('firebase-functions-test')(projectConfig, './test/gcloud-pixelcity-test.json');
 const common = require("../../common");
 const objectToArray = common.objectToArray;
 const listAllUsers = common.listAllUsers;
@@ -58,7 +65,8 @@ const listAllUsers = common.listAllUsers;
 describe('Test Cloud Functions', () => {
 	let initData;
 	let uid = "antiqueUid";
-	let myFunctions = cloudFunctions;
+	let myFunctions = require('../index');
+
 	// before((done) => {
 	// 	initData = require("../../build/pixelcity-demo-48860.export");
 	// 	done();
@@ -74,6 +82,8 @@ describe('Test Cloud Functions', () => {
 		// This includes our cloud functions, which can now be accessed at myFunctions.makeUppercase
 		// and myFunctions.addMessage
 		initData = require("../../build/pixelcity-demo-48860.export");
+		// myFunctions = require('../index');
+
 		// Do cleanup tasks.
 		test.cleanup();
 
@@ -192,13 +202,12 @@ describe('Test Cloud Functions', () => {
 				uid: uid,
 				email: "testandtest.net"
 			};
-			let mockRefPath = 'user/' + mockVal.uid;
-			const snap = test.database.makeDataSnapshot(mockVal, mockRefPath, admin.app());
+			const snap = test.auth.makeUserRecord(mockVal);
 
 			// Wrap the makeUppercase function
 			const wrappedSignupTrigger = test.wrap(myFunctions.signupTrigger);
 			// Call the wrapped function with the snapshot you constructed.
-			return wrappedSignupTrigger(snap).then(() => {
+			wrappedSignupTrigger(snap).then(() => {
 				// Read the value of the data at messages/11111/uppercase. Because `admin.initializeApp()` is
 				// called in functions/index.js, there's already a Firebase app initialized. Otherwise, add
 				// `admin.initializeApp()` before this line.
@@ -237,7 +246,7 @@ describe('Test Cloud Functions', () => {
 				}
 			});
 			// Call the wrapped function with the snapshot you constructed.
-			return wrappedUpdateNicknameTrigger(change).then(() => {
+			wrappedUpdateNicknameTrigger(change).then(() => {
 				// Read the value of the data at messages/11111/uppercase. Because `admin.initializeApp()` is
 				// called in functions/index.js, there's already a Firebase app initialized. Otherwise, add
 				// `admin.initializeApp()` before this line.

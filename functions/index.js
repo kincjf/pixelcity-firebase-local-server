@@ -34,20 +34,14 @@ console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
 if (process.env.NODE_ENV === "development") {
 	envPath = '../.test.env';
 	require('dotenv').config({path: envPath});
-	serviceAccount = require("./test/pixelcity-test.json");
+	serviceAccount = require("./test/gcloud-pixelcity-test.json");
 
-	var projectConfig = {
-		databaseURL: process.env.FIREBASE_DATABASE_URL,
-		// databaseURL: process.env.FIREBASE_HOST + ':' + process.env.FIREBASE_PORT,
-		projectId: process.env.FIREBASE_PROJECT_ID,
-		storageBucket: process.env.FIREBASE_STORAGE_BUCKET
-	};
+	var projectConfig = require("./test/firebase-test-config.json");
 	console.log(projectConfig);
 
 	admin.initializeApp({
 		credential: admin.credential.cert(serviceAccount),
-		databaseURL: process.env.FIREBASE_DATABASE_URL
-		// databaseURL: "https://pixelcity-test1.firebaseio.com"
+		databaseURL: projectConfig.databaseURL
 	});
 
 	console.log('Development Mode');
@@ -114,7 +108,7 @@ app.get('/hello', (req, res) => {
  * @type {CloudFunction<UserRecord>}
  */
 exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
-	let user = event.val();
+	let user = event;
 	let date = moment().utc().format();
 
 	return admin.database().ref('/user').child(user.uid).set({
@@ -174,59 +168,59 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
  * @type {CloudFunction<UserRecord>}
  */
 exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
-	let user = event.val();
+	let user = event.data;
 	let date = moment().utc().format();
 
-	return admin.database().ref('/user').child(user.uid).set({
-		id: user.uid,
-		type: "public",		// 유저별 권한 - 조정 필요
-		email: user.email,
-		userStatus: 1,
-		nickname: "",
-		createAt: date,
-		updatedAt: date,
-		voteCount: 0,
-		friendCount: 0,
-		mobilePhone: "",
-		gender: "",
-		birthday: "",
-		baseLocation: {}
-	}).then(newUserRef => {
-		let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
-
-		return newUserPropertyRef.set({
-			"level": 1,
-			"exp": 0,
-			"ruby": 0,
-			"gold": 0,
-			"status": {
-				"total": {
-					"eatenUser": 0,
-					"eatenPixel": 0,
-					"score": 0,
-					"playCount": 0,
-					"survivalTime": 0
-				},
-				"best": {
-					"ranking": 0,
-					"eatenUser": 0,
-					"eatenPixel": 0,
-					"score": 0,
-					"playCount": 0,
-					"survivalTime": 0
-				}
-			}
-		});
-	}).then(newUserPropertyRef => {
-		let userCountRef = admin.database().ref("saving-data/count/user");
-
-		return userCountRef.transaction(function (current_value) {
-			let userCount = (current_value || 0) + 1;
-			return userCount;
-		});
-	}).catch(err => {
-		return Promise.reject(err);
-	});
+	// return admin.database().ref('/user').child(user.uid).set({
+	// 	id: user.uid,
+	// 	type: "public",		// 유저별 권한 - 조정 필요
+	// 	email: user.email,
+	// 	userStatus: 1,
+	// 	nickname: "",
+	// 	createAt: date,
+	// 	updatedAt: date,
+	// 	voteCount: 0,
+	// 	friendCount: 0,
+	// 	mobilePhone: "",
+	// 	gender: "",
+	// 	birthday: "",
+	// 	baseLocation: {}
+	// }).then(newUserRef => {
+	// 	let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
+  //
+	// 	return newUserPropertyRef.set({
+	// 		"level": 1,
+	// 		"exp": 0,
+	// 		"ruby": 0,
+	// 		"gold": 0,
+	// 		"status": {
+	// 			"total": {
+	// 				"eatenUser": 0,
+	// 				"eatenPixel": 0,
+	// 				"score": 0,
+	// 				"playCount": 0,
+	// 				"survivalTime": 0
+	// 			},
+	// 			"best": {
+	// 				"ranking": 0,
+	// 				"eatenUser": 0,
+	// 				"eatenPixel": 0,
+	// 				"score": 0,
+	// 				"playCount": 0,
+	// 				"survivalTime": 0
+	// 			}
+	// 		}
+	// 	});
+	// }).then(newUserPropertyRef => {
+	// 	let userCountRef = admin.database().ref("saving-data/count/user");
+  //
+	// 	return userCountRef.transaction(function (current_value) {
+	// 		let userCount = (current_value || 0) + 1;
+	// 		return userCount;
+	// 	});
+	// }).catch(err => {
+	// 	return Promise.reject(err);
+	// });
 });
 
 /**
