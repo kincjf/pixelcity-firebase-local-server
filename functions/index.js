@@ -153,6 +153,8 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 		});
 	}).then(newUserPropertyRef => {
 		let userCountRef = admin.database().ref("saving-data/count/user");
+		let log = `signupTrigger():  Success create ${user.uid}`;
+		console.log(log);
 
 		return userCountRef.transaction(function (current_value) {
 			let userCount = (current_value || 0) + 1;
@@ -168,62 +170,18 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
  * @type {CloudFunction<UserRecord>}
  */
 exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
-	let user = event.data;
+	let user = event;
 	let date = moment().utc().format();
 
-	// return admin.database().ref('/user').child(user.uid).set({
-	// 	id: user.uid,
-	// 	type: "public",		// 유저별 권한 - 조정 필요
-	// 	email: user.email,
-	// 	userStatus: 1,
-	// 	nickname: "",
-	// 	createAt: date,
-	// 	updatedAt: date,
-	// 	voteCount: 0,
-	// 	friendCount: 0,
-	// 	mobilePhone: "",
-	// 	gender: "",
-	// 	birthday: "",
-	// 	baseLocation: {}
-	// }).then(newUserRef => {
-	// 	let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
-  //
-	// 	return newUserPropertyRef.set({
-	// 		"level": 1,
-	// 		"exp": 0,
-	// 		"ruby": 0,
-	// 		"gold": 0,
-	// 		"status": {
-	// 			"total": {
-	// 				"eatenUser": 0,
-	// 				"eatenPixel": 0,
-	// 				"score": 0,
-	// 				"playCount": 0,
-	// 				"survivalTime": 0
-	// 			},
-	// 			"best": {
-	// 				"ranking": 0,
-	// 				"eatenUser": 0,
-	// 				"eatenPixel": 0,
-	// 				"score": 0,
-	// 				"playCount": 0,
-	// 				"survivalTime": 0
-	// 			}
-	// 		}
-	// 	});
-	// }).then(newUserPropertyRef => {
-	// 	let userCountRef = admin.database().ref("saving-data/count/user");
-  //
-	// 	return userCountRef.transaction(function (current_value) {
-	// 		let userCount = (current_value || 0) + 1;
-	// 		return userCount;
-	// 	});
-	// }).catch(err => {
-	// 	return Promise.reject(err);
-	// });
+	// nakama-js에는 deleteUser가 없다
+
+	let log = `deleteUserTrigger():  Success delete ${user.uid}`;
+	console.log(log);
+	return Promise.resolve(log);
 });
 
 /**
+ * 구현중
  * nickname 업데이트시 운영서버(nakama)에 자동 업데이트함
  * @type {CloudFunction<DeltaSnapshot>}
  */
@@ -238,9 +196,12 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 
 	let newNickname = change.after.val();
 
-	// 클라이언트에서 닉네임 중복체크를 한 nickname이 오거나, 서버에서 닉네임 중복체크하기
+	// 클라이언트에서 닉네임 중복체크를 한 후 unique한 nickname이 와야함
+	// 1. nakama server에서 userId에 해당하는 유저가 존재하는지 확인
+	// 2. 해당 유저가 존재하는 경우 updateAccount 실행
+	// 3. 해당 유저가 존재하지 않는 경우 getNakamaSession(create=true) 실행
 	return nakama.getNakamaSession(userId, newNickname).then((session) => {
-		let log = `updateNicknameTrigger():  Success change ${userId}'s username as ${session.username}`;
+		let log = `updateNicknameTrigger():  Success change ${userId} username as ${session.username}`;
 		console.log(log);
 		return Promise.resolve(log);
 		// return client.updateAccount(session, {

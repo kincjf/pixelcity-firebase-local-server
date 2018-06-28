@@ -14,7 +14,7 @@ const getNakamaClient = () => {
 			nakamaClient = new nakamajs.Client("defaultkey", "127.0.0.1", 7350);
 			nakamaClient.ssl = false;
 		} else {	// production
-			nakamaClient = new nakamajs.Client("defaultkey", "127.0.0.1", 7350);
+			nakamaClient = new nakamajs.Client("defaultkey", "137.116.172.1", 7350);
 			nakamaClient.ssl = false;
 		}
 	}
@@ -42,8 +42,6 @@ const getNakamaSession = function (uid, nickname) {
 		}
 
 		client = getNakamaClient();
-		// 브라우저 fetch()를 사용하기 위해서 강제 inject 실행
-		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with
 		return client.authenticateCustom(options).then(session => {
 			nakamaSession = session;
 			return Promise.resolve(nakamaSession);

@@ -81,7 +81,7 @@ admin.initializeApp({
 	databaseURL: projectConfig.databaseURL
 });
 
-admin.database().ref('/').remove().then(() => {
+return admin.database().ref('/').remove().then(() => {
 	let users = [];
 
 	return listAllUsers(admin, users).then(users => {
