@@ -6,7 +6,6 @@ var _ = require('lodash');
 var data = {
 	"99999@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "99999@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -19,7 +18,6 @@ var data = {
 	},
 	"88888@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "88888@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -32,7 +30,6 @@ var data = {
 	},
 	"77777@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "77777@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -45,7 +42,6 @@ var data = {
 	},
 	"66666@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "66666@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -58,7 +54,6 @@ var data = {
 	},
 	"55555@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "55555@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -71,7 +66,6 @@ var data = {
 	},
 	"44444@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "44444@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -84,7 +78,6 @@ var data = {
 	},
 	"33333@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "33333@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -97,7 +90,6 @@ var data = {
 	},
 	"22222@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "22222@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -110,7 +102,6 @@ var data = {
 	},
 	"11111@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "11111@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -123,7 +114,6 @@ var data = {
 	},
 	"9999@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "9999@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -136,7 +126,6 @@ var data = {
 	},
 	"8888@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "8888@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -149,7 +138,6 @@ var data = {
 	},
 	"7777@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "7777@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -162,7 +150,6 @@ var data = {
 	},
 	"6666@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "6666@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -175,7 +162,6 @@ var data = {
 	},
 	"5555@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "5555@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -188,7 +174,6 @@ var data = {
 	},
 	"4444@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "4444@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -201,7 +186,6 @@ var data = {
 	},
 	"3333@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "3333@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -214,7 +198,6 @@ var data = {
 	},
 	"2222@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "2222@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -227,7 +210,6 @@ var data = {
 	},
 	"1111@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "1111@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -240,7 +222,6 @@ var data = {
 	},
 	"smadupset@naver" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "smadupset@naver.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -253,7 +234,6 @@ var data = {
 	},
 	"jgj90@naver" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "jgj90@naver.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -266,7 +246,6 @@ var data = {
 	},
 	"pastelbook89@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "pastelbook89@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -279,7 +258,6 @@ var data = {
 	},
 	"sinho0689@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "sinho0689@gmail.com",
 		"friendCount" : 0,
 		"gender" : "male",
@@ -292,7 +270,6 @@ var data = {
 	},
 	"notworrw@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
-		"createdAt" : "2011-06-14T04:12:36.123Z",
 		"email" : "notworrw@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -305,7 +282,6 @@ var data = {
 	},
 	"random_1487780669@gmail": {
 		"birthday" : "2017-12-14T04:12:36.123Z",
-		"createdAt" : "2017-11-14T04:12:36.123Z",
 		"email" : "random_1487780669@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
@@ -320,7 +296,7 @@ var data = {
 
 _.forEach(data, function(value, key) {
 	data[key].birthday = moment.utc().format();
-	data[key].createdAt = moment.utc().format();
+	// data[key].createdAt = moment.utc().format();
 	data[key].updatedAt = moment.utc().format();
 });
 

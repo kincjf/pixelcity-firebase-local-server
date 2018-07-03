@@ -15,12 +15,17 @@
  */
 'use strict';
 
-const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const functions = require('firebase-functions');
+const errorhandler = require('errorhandler');
+const Promise = require('bluebird');
+const moment = require('moment');
 
 const express = require('express');
 const cookieParser = require('cookie-parser')();
 const cors = require('cors')({origin: true});
+
+const nakama = require('./nakama');
 const app = express();
 
 var envPath, serviceAccount;
@@ -29,18 +34,23 @@ console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
 if (process.env.NODE_ENV === "development") {
 	envPath = '../.test.env';
 	require('dotenv').config({path: envPath});
-	console.log('databaseURL: ' + process.env.FIREBASE_HOST + ":" + process.env.FIREBASE_PORT);
-	serviceAccount = require("../pixelcity-demo-48860-firebase-adminsdk-r2yz0-4d28c93f47.json");
+	serviceAccount = require("./test/gcloud-pixelcity-test.json");
+
+	var projectConfig = require("./test/firebase-test-config.json");
+	console.log(projectConfig);
 
 	admin.initializeApp({
 		credential: admin.credential.cert(serviceAccount),
-		databaseURL: process.env.FIREBASE_HOST + ':' + process.env.FIREBASE_PORT
+		databaseURL: projectConfig.databaseURL
 	});
+
 	console.log('Development Mode');
 } else {	// production level
 	admin.initializeApp();
+
 	console.log('Production Mode');
 }
+
 
 // Express middleware that validates Firebase ID Tokens passed in the Authorization HTTP header.
 // The Firebase ID token needs to be passed as a Bearer token in the Authorization HTTP header like this:
@@ -73,7 +83,7 @@ const validateFirebaseIdToken = (req, res, next) => {
 		res.status(403).send('Unauthorized');
 		return;
 	}
-	admin.auth().verifyIdToken(idToken).then((decodedIdToken) => {
+	return admin.auth().verifyIdToken(idToken).then((decodedIdToken) => {
 		console.log('ID Token correctly decoded', decodedIdToken);
 		req.user = decodedIdToken;
 		return next();
@@ -88,29 +98,36 @@ app.use(cookieParser);
 app.use(validateFirebaseIdToken);
 
 app.get('/hello', (req, res) => {
-	res.send(`Hello ${req.user.email}`);
+	let name = req.user ? "World" : "How can you access?";
+	res.status(200).send(`Hello? ${name}`);
 });
 
-app.signupTrigger = functions.auth.user().onCreate((user) => {
-	let newUserRef = admin.database().ref('/user').push();		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
-	let newUserPropertyRef = admin.database().ref('/userProperty').child(newUserRef.key);		// .com이 key로 들어가지 않기 때문에 uniqid로 변환함
+/**
+ * 회원가입시 기본정보 셋팅
+ * user { uid, displayName, email, photoURL, emailVerified, phoneNumber }
+ * @type {CloudFunction<UserRecord>}
+ */
+exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
+	let user = event;
 	let date = moment().utc().format();
 
-	let userCountRef = db.ref("saving-data/count/user");
-
-	newUserRef.set({
-		birthday: "",
-		createAt: date,
-		email: user.email,
-		friendCount: 0,
-		gender: "",
-		nickname: "",
+	return admin.database().ref('/user').child(user.uid).set({
+		id: user.uid,
 		type: "public",		// 유저별 권한 - 조정 필요
+		email: user.email,
+		userStatus: 1,
+		nickname: "",
+		createAt: date,
 		updatedAt: date,
-		"userStatus": 1,
-		"voteCount": 0,
-		"baseLocation": {}
-	}).then(res => {
+		voteCount: 0,
+		friendCount: 0,
+		mobilePhone: "",
+		gender: "",
+		birthday: "",
+		baseLocation: {}
+	}).then(newUserRef => {
+		let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
+
 		return newUserPropertyRef.set({
 			"level": 1,
 			"exp": 0,
@@ -133,12 +150,104 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 					"survivalTime": 0
 				}
 			}
-		}).then(res => {
-			return userCountRef.transaction(function (current_value) {
-				let userCount = (current_value || 0) + 1;
-				return userCountRef.update(userCount);
-			});
 		});
+	}).then(newUserPropertyRef => {
+		let userCountRef = admin.database().ref("saving-data/count/user");
+
+		return userCountRef.transaction(function (current_value) {
+			let userCount = (current_value || 0) + 1;
+			return userCount;
+		});
+	}).catch(err => {
+		return Promise.reject(err);
+	});
+});
+
+/**
+ * 구현중
+ * @type {CloudFunction<UserRecord>}
+ */
+exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
+	let user = event.data;
+	let date = moment().utc().format();
+
+	// return admin.database().ref('/user').child(user.uid).set({
+	// 	id: user.uid,
+	// 	type: "public",		// 유저별 권한 - 조정 필요
+	// 	email: user.email,
+	// 	userStatus: 1,
+	// 	nickname: "",
+	// 	createAt: date,
+	// 	updatedAt: date,
+	// 	voteCount: 0,
+	// 	friendCount: 0,
+	// 	mobilePhone: "",
+	// 	gender: "",
+	// 	birthday: "",
+	// 	baseLocation: {}
+	// }).then(newUserRef => {
+	// 	let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
+  //
+	// 	return newUserPropertyRef.set({
+	// 		"level": 1,
+	// 		"exp": 0,
+	// 		"ruby": 0,
+	// 		"gold": 0,
+	// 		"status": {
+	// 			"total": {
+	// 				"eatenUser": 0,
+	// 				"eatenPixel": 0,
+	// 				"score": 0,
+	// 				"playCount": 0,
+	// 				"survivalTime": 0
+	// 			},
+	// 			"best": {
+	// 				"ranking": 0,
+	// 				"eatenUser": 0,
+	// 				"eatenPixel": 0,
+	// 				"score": 0,
+	// 				"playCount": 0,
+	// 				"survivalTime": 0
+	// 			}
+	// 		}
+	// 	});
+	// }).then(newUserPropertyRef => {
+	// 	let userCountRef = admin.database().ref("saving-data/count/user");
+  //
+	// 	return userCountRef.transaction(function (current_value) {
+	// 		let userCount = (current_value || 0) + 1;
+	// 		return userCount;
+	// 	});
+	// }).catch(err => {
+	// 	return Promise.reject(err);
+	// });
+});
+
+/**
+ * nickname 업데이트시 운영서버(nakama)에 자동 업데이트함
+ * @type {CloudFunction<DeltaSnapshot>}
+ */
+exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname').onUpdate((change, context) => {
+	let client = nakama.getNakamaClient();
+	let userId;
+	if (!context.params.userId) {
+		userId = change.after.ref.parent.key;
+	} else {
+		userId = context.params.userId;
+	}
+
+	let newNickname = change.after.val();
+
+	// 클라이언트에서 닉네임 중복체크를 한 nickname이 오거나, 서버에서 닉네임 중복체크하기
+	return nakama.getNakamaSession(userId, newNickname).then((session) => {
+		let log = `updateNicknameTrigger():  Success change ${userId}'s username as ${session.username}`;
+		console.log(log);
+		return Promise.resolve(log);
+		// return client.updateAccount(session, {
+		// 	username: newNickname
+		// });
+	}).catch(err => {
+		return Promise.reject(err);
 	});
 });
 
@@ -146,3 +255,24 @@ app.signupTrigger = functions.auth.user().onCreate((user) => {
 // Requests need to be authorized by providing an `Authorization` HTTP header
 // with value `Bearer <Firebase ID Token>`.
 exports.api = functions.https.onRequest(app);
+
+// error handling
+if (process.env.NODE_ENV === "development") {
+	app.use(errorhandler({
+		log: (err, str, req) => {
+			var title = 'Error in ' + req.method + ' ' + req.url;
+			console.error(title, err);
+		}
+	}));
+} else {	// production level
+}
+
+app.use(function (err, req, res, next) {
+	var title = 'Error in ' + req.method + ' ' + req.url;
+	console.error(title, err);
+
+	res.status(err.status || 500).json({
+		message: err.message,
+		title: title
+	});
+});

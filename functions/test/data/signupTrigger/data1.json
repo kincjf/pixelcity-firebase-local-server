@@ -1,0 +1,9 @@
+{
+  "event": {
+    "data": {
+		"uid": "testUniqueId",
+		"email": "test@email.com"
+	}
+  },
+  "context": {}
+}
