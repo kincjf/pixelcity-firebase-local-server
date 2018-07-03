@@ -81,13 +81,15 @@ admin.initializeApp({
 	databaseURL: projectConfig.databaseURL
 });
 
-admin.database().ref('/').remove().then(() => {
+return admin.database().ref('/').remove().then(() => {
+	console.log("Complete Delete Database");
 	let users = [];
 
 	return listAllUsers(admin, users).then(users => {
 		return Promise.each(users, (item) => {
 			return admin.auth().deleteUser(item.uid);
 		}).then(() => {
+			console.log("Complete Delete User");
 			let userCountRef = admin.database().ref("saving-data/count");
 			return userCountRef.update({
 				"user": 0
@@ -101,9 +103,11 @@ admin.database().ref('/').remove().then(() => {
 			return admin.auth().createUser(item.value);
 		});
 	}).then(() => {
+		console.log("Complete Create User");
 		return admin.database().ref('/').set(initData);
 	}).then((rootRef) => {
 		let userArr = [];
+		console.log("Complete Create Database");
 
 		return listAllUsers(admin, userArr).then((users) => {
 			let userCountRef = admin.database().ref("saving-data/count/user");
