@@ -1,25 +1,30 @@
 require('jsdom-global')();
+
+const functions = require('firebase-functions');
 const nakamajs = require("@heroiclabs/nakama-js");
 const Promise = require('bluebird');
 
 // nakama-js 사용을 위한 설정
 require("./set-global-variable");
 
-var nakamaClient;
-var nakamaSession;
+const FUNCTIONS_CONFIG = functions.config().service;
 
+/**
+ * firebase cloud function 사용시 공유 전역변수를 최소화 해야겠다.
+ * @returns {*}
+ */
 const getNakamaClient = () => {
-	if (!nakamaClient) {
-		if (process.env.NODE_ENV === "development") {
-			nakamaClient = new nakamajs.Client("defaultkey", "127.0.0.1", 7350);
-			nakamaClient.ssl = false;
-		} else {	// production
-			nakamaClient = new nakamajs.Client("defaultkey", "137.116.172.1", 7350);
-			nakamaClient.ssl = false;
-		}
+	let client;
+
+	if (process.env.NODE_ENV === "development") {
+		client = new nakamajs.Client(process.env.NAKAMA_SERVER_KEY, process.env.NAKAMA_HOST, process.env.NAKAMA_PORT);
+		client.ssl = false;
+	} else {	// production
+		client = new nakamajs.Client(FUNCTIONS_CONFIG.nakama.serverkey, FUNCTIONS_CONFIG.nakama.host, FUNCTIONS_CONFIG.nakama.port);
+		client.ssl = false;
 	}
 
-	return nakamaClient;
+	return client;
 }
 exports.getNakamaClient = getNakamaClient;
 
@@ -30,25 +35,28 @@ exports.getNakamaClient = getNakamaClient;
  */
 const getNakamaSession = function (uid, nickname) {
 	let options, client;
+
 	if (!uid) {
-		return Promise.reject(new Error("getNakamaSession: no uid"));
+		let log = `getNakamaSession: no uid: ${uid}`;
+		console.error(new Error(log));
+		return Promise.reject(log);
 	}
 
-	if (!nakamaSession) {
-		if (nickname) {
-			options = {id: uid, create: true, username: nickname};
-		} else {
-			options = {id: uid};
-		}
-
-		client = getNakamaClient();
-		return client.authenticateCustom(options).then(session => {
-			nakamaSession = session;
-			return Promise.resolve(nakamaSession);
-		});
+	if (nickname) {
+		options = {id: uid, create: true, username: nickname};
 	} else {
-		return Promise.resolve(nakamaSession);
+		options = {id: uid};
 	}
+
+	console.log(`getNakamaSession(): options ${JSON.stringify(options)}`);
+
+	client = getNakamaClient();
+	return client.authenticateCustom(options).then(session => {
+		return Promise.resolve(session);
+	}).catch(err => {
+		console.error(new Error(err));
+		return Promise.reject(err);
+	});
 }
 exports.getNakamaSession = getNakamaSession;
 

@@ -17,6 +17,7 @@
     "bluebird": "^3.5.1",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
+    "delay": "^3.0.0",
     "errorhandler": "^1.5.0",
     "express": "^4.16.3",
     "firebase-admin": "^5.12.0",

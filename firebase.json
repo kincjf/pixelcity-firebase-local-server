@@ -4,15 +4,16 @@
   },
   "functions": {
     "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
-    ],
+      "npm --prefix \"functions\" run lint"
+	],
     "source": "functions",
 	  "ignore": [
 		  "firebase.json",
 		  "**/node_modules/**",
 		  "package-lock.json",
 		  "README.md",
-		  "*.bak"
+		  "*.bak",
+		  "test/**"
 	  ]
   }
 }

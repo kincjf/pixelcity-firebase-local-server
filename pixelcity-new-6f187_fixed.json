@@ -1,6 +1,6 @@
 {
-    "GUID": "5be05ee0-6373-11e8-b161-332bb25f5bd5",
-    "lastModifTS": "2018-06-21T21:33:27.249Z",
+    "GUID": "4b09f490-7fb2-11e8-bdf0-7968a318782d",
+    "lastModifTS": "2018-07-04T18:04:48.173Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -248,188 +248,6 @@
             "resources": "",
             "transaction": "",
             "type": "object"
-        },
-        {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "description": "- uid에 해당하는 유저에게 친구추가요청이 들어왔는지 확인하고 알려주는 정보를 가지고 있음\n- ",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": [
-                {
-                    "type": "document",
-                    "primaryKey": false,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "eb92a850-b27e-11e7-9f09-bdad62d616f7",
-                    "childRelationships": [],
-                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                    "foreignField": [
-                        "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                        "e087d270-b268-11e7-871f-7b17e2011dce"
-                    ],
-                    "properties": [
-                        {
-                            "type": "document",
-                            "primaryKey": false,
-                            "relationshipType": "Foreign Key",
-                            "parentRelationship": "77b302a0-b4da-11e7-84c0-6dfc4bcdc55c",
-                            "childRelationships": [],
-                            "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                            "foreignField": [
-                                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                "e087d270-b268-11e7-871f-7b17e2011dce"
-                            ],
-                            "properties": [
-                                {
-                                    "GUID": "1048f930-74c4-11e8-ac5a-c372e22ec8bc",
-                                    "description": "replicate value of key",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "id",
-                                    "type": "string",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "format": "",
-                                    "default": "",
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": ""
-                                },
-                                {
-                                    "GUID": "25e0c660-74c4-11e8-ac5a-c372e22ec8bc",
-                                    "description": "초대한 userId",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "fromUserId",
-                                    "type": "string",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "format": "",
-                                    "default": "",
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": ""
-                                },
-                                {
-                                    "GUID": "499c1d20-74c4-11e8-ac5a-c372e22ec8bc",
-                                    "description": "나를 초대한 User nickname",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "fromUserName",
-                                    "type": "string",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "format": "",
-                                    "default": "",
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": ""
-                                },
-                                {
-                                    "type": "string",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "format": "",
-                                    "default": "",
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": "",
-                                    "GUID": "77b302a1-b4da-11e7-84c0-6dfc4bcdc55c",
-                                    "description": "초대메시지를 받았을 때 응답 현황\n\"pending\" : 대기중 =>  0\n\"accept\" : 허용 => -1\n\"decline\" : 거절 => -1\n\n허용, 거절시 invitor 관련 object가 삭제됨",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "status"
-                                },
-                                {
-                                    "type": "string",
-                                    "minLength": "",
-                                    "maxLength": "",
-                                    "pattern": "",
-                                    "format": "",
-                                    "default": "",
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "enum": [],
-                                    "sample": "",
-                                    "GUID": "77b302a2-b4da-11e7-84c0-6dfc4bcdc55c",
-                                    "description": "친구 요청시 보낸 메시지",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "message"
-                                }
-                            ],
-                            "dependencies": [],
-                            "minProperties": "",
-                            "maxProperties": "",
-                            "additionalProperties": false,
-                            "enum": [],
-                            "GUID": "77b2db90-b4da-11e7-84c0-6dfc4bcdc55c",
-                            "description": "초대 메시지를 전송한 사람의 uid",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
-                            "name": "invitorUid"
-                        }
-                    ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
-                    "additionalProperties": false,
-                    "enum": [],
-                    "GUID": "beae0af0-b27e-11e7-9f09-bdad62d616f7",
-                    "description": "초대 메시지를 받은 사람의 uid",
-                    "comments": "",
-                    "required": false,
-                    "id": "",
-                    "name": "uid"
-                }
-            ],
-            "isRestfulApi": false,
-            "collectionName": "checkFriendship",
-            "GUID": "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-            "bucketId": "00726820-adf5-11e7-9d59-3d1b8f31c52e",
-            "definitions": {
-                "GUID": "2d4e0740-b247-11e7-b0ed-a3d949779943",
-                "properties": [],
-                "type": "definitions"
-            }
         },
         {
             "GUID": "cda31bf0-b1e7-11e7-b0ed-a3d949779943",
@@ -2868,127 +2686,6 @@
             "bucketId": "00726820-adf5-11e7-9d59-3d1b8f31c52e"
         },
         {
-            "GUID": "77077c90-b049-11e7-a26a-5d2d4eff1d8f",
-            "type": "object",
-            "description": "현재 접속했는 유저 목록",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": false,
-            "properties": [
-                {
-                    "type": "document",
-                    "primaryKey": true,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "082cbe70-b274-11e7-9f09-bdad62d616f7",
-                    "childRelationships": [],
-                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                    "foreignField": [
-                        "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                        "e087d270-b268-11e7-871f-7b17e2011dce"
-                    ],
-                    "properties": [
-                        {
-                            "GUID": "4f8748c0-7511-11e8-ac5a-c372e22ec8bc",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "id",
-                            "type": "string",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "format": "",
-                            "default": "",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": ""
-                        },
-                        {
-                            "GUID": "579b75e0-7511-11e8-ac5a-c372e22ec8bc",
-                            "description": "현재 접속한 유저인지 확인하기 위한 값\nuser[uid].sessions의 key 값중 하나 이상과 일치해야함",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "sessionId",
-                            "type": "string",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "format": "",
-                            "default": "",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "enum": [],
-                            "sample": ""
-                        },
-                        {
-                            "type": "string",
-                            "minLength": "",
-                            "maxLength": "",
-                            "pattern": "",
-                            "format": "",
-                            "default": "",
-                            "primaryKey": false,
-                            "relationshipType": "Foreign Master",
-                            "parentRelationship": "ec85e2f0-b273-11e7-9f09-bdad62d616f7",
-                            "childRelationships": [],
-                            "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                            "foreignField": [
-                                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                "e087d270-b268-11e7-871f-7b17e2011dce",
-                                "044a0700-b269-11e7-871f-7b17e2011dce"
-                            ],
-                            "enum": [],
-                            "sample": "",
-                            "GUID": "967b84f0-b273-11e7-9f09-bdad62d616f7",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "nickname"
-                        }
-                    ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
-                    "additionalProperties": false,
-                    "enum": [],
-                    "GUID": "a3844920-b246-11e7-b0ed-a3d949779943",
-                    "description": "",
-                    "comments": "",
-                    "required": true,
-                    "id": "",
-                    "name": "uid"
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "77099f70-b049-11e7-a26a-5d2d4eff1d8f"
-            },
-            "collectionName": "onlineUser",
-            "isRestfulApi": false,
-            "mediaType": "",
-            "method": "",
-            "transaction": "",
-            "resources": "",
-            "endPoint": "",
-            "bucketId": "00726820-adf5-11e7-9d59-3d1b8f31c52e"
-        },
-        {
             "GUID": "183244c0-21cd-11e8-b5af-67ed915ef375",
             "type": "object",
             "description": "동적 데이터 번역용",
@@ -3280,13 +2977,7 @@
                     "relationshipType": "",
                     "parentRelationship": "",
                     "childRelationships": [
-                        "082cbe70-b274-11e7-9f09-bdad62d616f7",
-                        "6a3893e0-b275-11e7-9f09-bdad62d616f7",
-                        "1e07f5e0-b277-11e7-9f09-bdad62d616f7",
-                        "cc0cda60-b27d-11e7-9f09-bdad62d616f7",
-                        "eb92a850-b27e-11e7-9f09-bdad62d616f7",
                         "b62e7c60-b27f-11e7-9f09-bdad62d616f7",
-                        "77b302a0-b4da-11e7-84c0-6dfc4bcdc55c",
                         "28174700-b4f9-11e7-90cb-c3cb05afb185"
                     ],
                     "foreignCollection": "",
@@ -3299,7 +2990,7 @@
                             "dependencies": [],
                             "required": false,
                             "id": "",
-                            "name": "id",
+                            "name": "uid",
                             "type": "string",
                             "minLength": "",
                             "maxLength": "",
@@ -3357,22 +3048,6 @@
                             "primaryKey": false,
                             "name": "nickname",
                             "GUID": "044a0700-b269-11e7-871f-7b17e2011dce",
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "childRelationships": [
-                                "ec85e2f0-b273-11e7-9f09-bdad62d616f7",
-                                "d2e0e660-b27d-11e7-9f09-bdad62d616f7",
-                                "fd2424f0-b27d-11e7-9f09-bdad62d616f7"
-                            ]
-                        },
-                        {
-                            "type": "string",
-                            "primaryKey": false,
-                            "format": "date-time",
-                            "name": "createdAt",
-                            "GUID": "07ab3360-b269-11e7-871f-7b17e2011dce",
                             "relationshipType": "",
                             "parentRelationship": "",
                             "foreignCollection": "",
@@ -3473,71 +3148,6 @@
                             "required": false,
                             "id": "",
                             "name": "baseLocation"
-                        },
-                        {
-                            "GUID": "fa346140-74cb-11e8-ac5a-c372e22ec8bc",
-                            "description": "해당 유저(uid)의 대화를 듣고싶지 않은 경우",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "muted",
-                            "type": "document",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "properties": [
-                                {
-                                    "GUID": "d02b7620-74d7-11e8-ac5a-c372e22ec8bc",
-                                    "description": "true시 mute, false값은 없음",
-                                    "comments": "",
-                                    "dependencies": [],
-                                    "required": false,
-                                    "id": "",
-                                    "name": "uid",
-                                    "type": "boolean",
-                                    "default": "",
-                                    "enum": [],
-                                    "primaryKey": false,
-                                    "relationshipType": "",
-                                    "parentRelationship": "",
-                                    "childRelationships": [],
-                                    "foreignCollection": "",
-                                    "foreignField": [],
-                                    "sample": ""
-                                }
-                            ],
-                            "minProperties": "",
-                            "maxProperties": "",
-                            "additionalProperties": false,
-                            "enum": [],
-                            "error": {
-                                "name": false
-                            }
-                        },
-                        {
-                            "GUID": "52e33310-7513-11e8-ac5a-c372e22ec8bc",
-                            "description": "현재 접속한 유저인지 확인하기 위한 값, 몇번 접속했는지도 파악 할 수 있음\nonlineUser[uid].sessionId값과 일치해야함",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "sessions",
-                            "type": "document",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "properties": [],
-                            "minProperties": "",
-                            "maxProperties": "",
-                            "additionalProperties": false,
-                            "enum": []
                         }
                     ],
                     "dependencies": [],
@@ -3546,7 +3156,7 @@
                     "additionalProperties": false,
                     "enum": [],
                     "GUID": "e087d270-b268-11e7-871f-7b17e2011dce",
-                    "description": "firebase의 uid의 경우 이메일 로그인 후 SNS 로그인을 했을 경우\n기존 이메일 로그인 uid 값이 사라지기 때문에 email을 uid로 설정하는게 로직설정시 좋다\nkey 값에 .을 넣지 못하지 때문에 \".com\", \".net\"을 삭제한 값이 들어간다\nex> \"smadupset@naver.com => smadupset@naver\"",
+                    "description": "firebase uid\n\n- 참고사항\nfirebase의 uid의 경우 최초 email/PWD 로그인 후 SNS에 가입된 동일 email로 로그인을 했을 경우\n기존 이메일/PWD로 가입한 상태가 SNS로 가입한 상태로 바뀐다(uid 값은 그대로임) ",
                     "comments": "",
                     "required": true,
                     "id": "",
@@ -4876,254 +4486,12 @@
                 "properties": [],
                 "type": "definitions"
             }
-        },
-        {
-            "GUID": "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-            "type": "object",
-            "description": "친구/블록유저 관계과 확정이 되었을 때 관련 내용이 저장되는 obj",
-            "comments": "",
-            "$schema": "",
-            "additionalProperties": true,
-            "properties": [
-                {
-                    "type": "document",
-                    "primaryKey": true,
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "6a3893e0-b275-11e7-9f09-bdad62d616f7",
-                    "childRelationships": [],
-                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                    "foreignField": [
-                        "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                        "e087d270-b268-11e7-871f-7b17e2011dce"
-                    ],
-                    "properties": [
-                        {
-                            "type": "document",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                            "foreignField": [],
-                            "properties": [
-                                {
-                                    "type": "document",
-                                    "primaryKey": false,
-                                    "relationshipType": "Foreign Key",
-                                    "parentRelationship": "1e07f5e0-b277-11e7-9f09-bdad62d616f7",
-                                    "childRelationships": [],
-                                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                    "foreignField": [
-                                        "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                        "e087d270-b268-11e7-871f-7b17e2011dce"
-                                    ],
-                                    "properties": [
-                                        {
-                                            "GUID": "f210ffa0-74d0-11e8-ac5a-c372e22ec8bc",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "required": false,
-                                            "id": "",
-                                            "name": "id",
-                                            "type": "string",
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "format": "",
-                                            "default": "",
-                                            "primaryKey": false,
-                                            "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "enum": [],
-                                            "sample": ""
-                                        },
-                                        {
-                                            "GUID": "f3e3eae0-74d0-11e8-ac5a-c372e22ec8bc",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "required": false,
-                                            "id": "",
-                                            "name": "friendUid",
-                                            "type": "string",
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "format": "",
-                                            "default": "",
-                                            "primaryKey": false,
-                                            "relationshipType": "",
-                                            "parentRelationship": "",
-                                            "childRelationships": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "enum": [],
-                                            "sample": ""
-                                        },
-                                        {
-                                            "type": "string",
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "format": "",
-                                            "default": "",
-                                            "primaryKey": false,
-                                            "relationshipType": "Foreign Master",
-                                            "parentRelationship": "fd2424f0-b27d-11e7-9f09-bdad62d616f7",
-                                            "childRelationships": [],
-                                            "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                            "foreignField": [
-                                                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                                "e087d270-b268-11e7-871f-7b17e2011dce",
-                                                "044a0700-b269-11e7-871f-7b17e2011dce"
-                                            ],
-                                            "enum": [],
-                                            "sample": "",
-                                            "GUID": "1e07f5e1-b277-11e7-9f09-bdad62d616f7",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "required": false,
-                                            "id": "",
-                                            "name": "nickname"
-                                        }
-                                    ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
-                                    "additionalProperties": false,
-                                    "enum": [],
-                                    "GUID": "1e07ced0-b277-11e7-9f09-bdad62d616f7",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "uid"
-                                }
-                            ],
-                            "dependencies": [],
-                            "minProperties": "",
-                            "maxProperties": "",
-                            "additionalProperties": false,
-                            "enum": [],
-                            "GUID": "5b590d50-b275-11e7-9f09-bdad62d616f7",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
-                            "name": "friends"
-                        },
-                        {
-                            "type": "document",
-                            "primaryKey": false,
-                            "relationshipType": "",
-                            "parentRelationship": "",
-                            "childRelationships": [],
-                            "foreignCollection": "",
-                            "foreignField": [],
-                            "properties": [
-                                {
-                                    "type": "document",
-                                    "primaryKey": false,
-                                    "relationshipType": "Foreign Key",
-                                    "parentRelationship": "cc0cda60-b27d-11e7-9f09-bdad62d616f7",
-                                    "childRelationships": [],
-                                    "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                    "foreignField": [
-                                        "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                        "e087d270-b268-11e7-871f-7b17e2011dce"
-                                    ],
-                                    "properties": [
-                                        {
-                                            "type": "string",
-                                            "minLength": "",
-                                            "maxLength": "",
-                                            "pattern": "",
-                                            "format": "",
-                                            "default": "",
-                                            "primaryKey": false,
-                                            "relationshipType": "Foreign Master",
-                                            "parentRelationship": "d2e0e660-b27d-11e7-9f09-bdad62d616f7",
-                                            "childRelationships": [],
-                                            "foreignCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                            "foreignField": [
-                                                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                                                "e087d270-b268-11e7-871f-7b17e2011dce",
-                                                "044a0700-b269-11e7-871f-7b17e2011dce"
-                                            ],
-                                            "enum": [],
-                                            "sample": "",
-                                            "GUID": "bb8ac760-b27d-11e7-9f09-bdad62d616f7",
-                                            "description": "",
-                                            "comments": "",
-                                            "dependencies": [],
-                                            "required": false,
-                                            "id": "",
-                                            "name": "nickname"
-                                        }
-                                    ],
-                                    "dependencies": [],
-                                    "minProperties": "",
-                                    "maxProperties": "",
-                                    "additionalProperties": false,
-                                    "enum": [],
-                                    "GUID": "b032e0f0-b27d-11e7-9f09-bdad62d616f7",
-                                    "description": "",
-                                    "comments": "",
-                                    "required": false,
-                                    "id": "",
-                                    "name": "uid"
-                                }
-                            ],
-                            "dependencies": [],
-                            "minProperties": "",
-                            "maxProperties": "",
-                            "additionalProperties": false,
-                            "enum": [],
-                            "GUID": "7738d980-b27d-11e7-9f09-bdad62d616f7",
-                            "description": "",
-                            "comments": "",
-                            "required": false,
-                            "id": "",
-                            "name": "blockUsers"
-                        }
-                    ],
-                    "dependencies": [],
-                    "minProperties": "",
-                    "maxProperties": "",
-                    "additionalProperties": false,
-                    "enum": [],
-                    "GUID": "3ae03760-b275-11e7-9f09-bdad62d616f7",
-                    "description": "",
-                    "comments": "",
-                    "required": true,
-                    "id": "",
-                    "name": "uid"
-                }
-            ],
-            "definitions": {
-                "type": "definitions",
-                "properties": [],
-                "GUID": "127eedb0-addf-11e7-9d59-3d1b8f31c52e"
-            },
-            "collectionName": "userRelationship",
-            "isRestfulApi": false,
-            "mediaType": "",
-            "method": "",
-            "transaction": "",
-            "resources": "",
-            "endPoint": "",
-            "bucketId": "00726820-adf5-11e7-9d59-3d1b8f31c52e"
         }
     ],
     "buckets": [
         {
             "GUID": "0e54d860-b287-11e7-9f09-bdad62d616f7",
-            "name": "게임 정보 관리",
+            "name": "게임 관리 정보",
             "type": "bucket",
             "description": "",
             "comments": "",
@@ -5143,16 +4511,13 @@
         },
         {
             "GUID": "00726820-adf5-11e7-9d59-3d1b8f31c52e",
-            "name": "유저 정보 관리",
+            "name": "유저 관리 정보",
             "type": "bucket",
             "description": "",
             "comments": "",
             "collectionIds": [
                 "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-                "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
                 "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                "77077c90-b049-11e7-a26a-5d2d4eff1d8f",
                 "cda31bf0-b1e7-11e7-b0ed-a3d949779943",
                 "e796ddc0-74ca-11e8-ac5a-c372e22ec8bc"
             ],
@@ -5167,199 +4532,6 @@
     ],
     "views": [],
     "relationships": [
-        {
-            "GUID": "d2e0e660-b27d-11e7-9f09-bdad62d616f7",
-            "name": "New Relationship(6)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Master",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce",
-                "044a0700-b269-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-                "3ae03760-b275-11e7-9f09-bdad62d616f7",
-                "7738d980-b27d-11e7-9f09-bdad62d616f7",
-                "b032e0f0-b27d-11e7-9f09-bdad62d616f7",
-                "bb8ac760-b27d-11e7-9f09-bdad62d616f7"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "fd2424f0-b27d-11e7-9f09-bdad62d616f7",
-            "name": "New Relationship(7)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Master",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce",
-                "044a0700-b269-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-                "3ae03760-b275-11e7-9f09-bdad62d616f7",
-                "5b590d50-b275-11e7-9f09-bdad62d616f7",
-                "1e07ced0-b277-11e7-9f09-bdad62d616f7",
-                "1e07f5e1-b277-11e7-9f09-bdad62d616f7"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "eb92a850-b27e-11e7-9f09-bdad62d616f7",
-            "name": "New Relationship(10)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-                "beae0af0-b27e-11e7-9f09-bdad62d616f7"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "b62e7c60-b27f-11e7-9f09-bdad62d616f7",
-            "name": "New Relationship(8)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "cda31bf0-b1e7-11e7-b0ed-a3d949779943",
-            "childField": [
-                "cda31bf0-b1e7-11e7-b0ed-a3d949779943",
-                "5f66c1d0-b27f-11e7-9f09-bdad62d616f7"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "77b302a0-b4da-11e7-84c0-6dfc4bcdc55c",
-            "name": "New Relationship(1)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-                "beae0af0-b27e-11e7-9f09-bdad62d616f7",
-                "77b2db90-b4da-11e7-84c0-6dfc4bcdc55c"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "28174700-b4f9-11e7-90cb-c3cb05afb185",
-            "name": "New Relationship(3)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
-                "e087d270-b268-11e7-871f-7b17e2011dce"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                "76a603d0-b4f8-11e7-90cb-c3cb05afb185"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "32bf7220-c6e4-11e7-a80a-477e173eace3",
-            "name": "New Relationship",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-                "6eff17a0-c634-11e7-a80a-477e173eace3",
-                "9b237240-c634-11e7-a80a-477e173eace3",
-                "d731e5a0-c634-11e7-a80a-477e173eace3"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                "76a603d0-b4f8-11e7-90cb-c3cb05afb185",
-                "a321a630-b4f8-11e7-90cb-c3cb05afb185",
-                "b973e9c0-b4f8-11e7-90cb-c3cb05afb185",
-                "1102aa80-c6e4-11e7-a80a-477e173eace3"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "3de68490-c6e4-11e7-a80a-477e173eace3",
-            "name": "New Relationship(4)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-                "6eff17a0-c634-11e7-a80a-477e173eace3",
-                "9b237240-c634-11e7-a80a-477e173eace3",
-                "9b237241-c634-11e7-a80a-477e173eace3"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                "76a603d0-b4f8-11e7-90cb-c3cb05afb185",
-                "a321a630-b4f8-11e7-90cb-c3cb05afb185",
-                "b973e9c0-b4f8-11e7-90cb-c3cb05afb185",
-                "0879e9a0-c6e4-11e7-a80a-477e173eace3"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "4d670610-c6e4-11e7-a80a-477e173eace3",
-            "name": "New Relationship(11)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-            "parentField": [
-                "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
-                "6eff17a0-c634-11e7-a80a-477e173eace3"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-            "childField": [
-                "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                "76a603d0-b4f8-11e7-90cb-c3cb05afb185",
-                "a321a630-b4f8-11e7-90cb-c3cb05afb185",
-                "b973e9c0-b4f8-11e7-90cb-c3cb05afb185",
-                "d570e130-c6e3-11e7-a80a-477e173eace3"
-            ],
-            "childCardinality": "1"
-        },
         {
             "GUID": "49bd4dd0-21cf-11e8-b5af-67ed915ef375",
             "name": "fk map.static.pixel.locationId to translate.ko-kr.map.locationId",
@@ -5555,9 +4727,6 @@
         "b79a83f5-b4fa-11e7-90cb-c3cb05afb185": "defence",
         "b79a83f6-b4fa-11e7-90cb-c3cb05afb185": "attackPower",
         "b79a83f7-b4fa-11e7-90cb-c3cb05afb185": "agility",
-        "77b2db90-b4da-11e7-84c0-6dfc4bcdc55c": "invitorUid",
-        "77b302a1-b4da-11e7-84c0-6dfc4bcdc55c": "status",
-        "77b302a2-b4da-11e7-84c0-6dfc4bcdc55c": "message",
         "4b05aca0-b28f-11e7-9f09-bdad62d616f7": "spawnRate",
         "40a54590-b28f-11e7-9f09-bdad62d616f7": "cash",
         "40a54591-b28f-11e7-9f09-bdad62d616f7": "min",
@@ -5573,21 +4742,16 @@
         "2272b622-b28f-11e7-9f09-bdad62d616f7": "max",
         "213326b4-b28e-11e7-9f09-bdad62d616f7": "New Field",
         "7e26ca9a-b287-11e7-9f09-bdad62d616f7": "New Field",
-        "1e07ced0-b277-11e7-9f09-bdad62d616f7": "uid",
-        "1e07f5e1-b277-11e7-9f09-bdad62d616f7": "nickname",
-        "5b590d50-b275-11e7-9f09-bdad62d616f7": "friends",
         "5b590d51-b275-11e7-9f09-bdad62d616f7": "[0]*",
         "5b590d52-b275-11e7-9f09-bdad62d616f7": "uid",
         "5b590d54-b275-11e7-9f09-bdad62d616f7": "nickname",
         "5b590d55-b275-11e7-9f09-bdad62d616f7": "friendshipStatus",
-        "967b84f0-b273-11e7-9f09-bdad62d616f7": "nickname",
         "734ce960-b269-11e7-9f09-bdad62d616f7": "mobilePhone",
         "6f063f00-b269-11e7-9f09-bdad62d616f7": "birthday",
         "66067960-b269-11e7-9f09-bdad62d616f7": "gender",
         "5cfd3de0-b269-11e7-9f09-bdad62d616f7": "friendCount",
         "59024280-b269-11e7-9f09-bdad62d616f7": "voteCount",
         "0c31a5e0-b269-11e7-871f-7b17e2011dce": "updatedAt",
-        "07ab3360-b269-11e7-871f-7b17e2011dce": "createdAt",
         "044a0700-b269-11e7-871f-7b17e2011dce": "nickname",
         "f62b3860-b268-11e7-871f-7b17e2011dce": "userStatus",
         "f22c4560-b268-11e7-871f-7b17e2011dce": "email",
@@ -5599,20 +4763,17 @@
         "74cc36c0-add1-11e7-9d59-3d1b8f31c52e": "New Group",
         "7a62b9b0-add1-11e7-9d59-3d1b8f31c52e": "map",
         "7532aed0-add3-11e7-9d59-3d1b8f31c52e": "uid",
-        "127e9f90-addf-11e7-9d59-3d1b8f31c52e": "userRelationship",
         "32e0ed00-adef-11e7-9d59-3d1b8f31c52e": "New Group",
-        "37529f00-adef-11e7-9d59-3d1b8f31c52e": "checkFriendship",
         "b2e68410-adef-11e7-9d59-3d1b8f31c52e": "invitor",
         "437c6220-adf4-11e7-9d59-3d1b8f31c52e": "myVoteCount",
         "8b267bb0-adf4-11e7-9d59-3d1b8f31c52e": "myFr",
         "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e": "userProperty",
-        "00726820-adf5-11e7-9d59-3d1b8f31c52e": "유저 정보 관리",
+        "00726820-adf5-11e7-9d59-3d1b8f31c52e": "유저 관리 정보",
         "48118530-adf5-11e7-9d59-3d1b8f31c52e": "New Group(1)",
         "60127e30-ae79-11e7-88eb-2f454f239157": "[6]",
         "079d13a0-ae79-11e7-88eb-2f454f239157": "hp",
         "c43a2430-ae79-11e7-88eb-2f454f239157": "normal",
         "ce29ef20-ae79-11e7-88eb-2f454f239157": "special",
-        "77077c90-b049-11e7-a26a-5d2d4eff1d8f": "onlineUser",
         "ff03f540-b17c-11e7-b0ed-a3d949779943": "New Field",
         "8dca4e00-b182-11e7-b0ed-a3d949779943": "normal",
         "96731a00-b182-11e7-b0ed-a3d949779943": "special",
@@ -5627,13 +4788,7 @@
         "81c67910-b1e3-11e7-b0ed-a3d949779943": "eventItem",
         "aa1c2301-b1e4-11e7-b0ed-a3d949779943": "New Field",
         "cda31bf0-b1e7-11e7-b0ed-a3d949779943": "history",
-        "a3844920-b246-11e7-b0ed-a3d949779943": "uid",
         "e087d270-b268-11e7-871f-7b17e2011dce": "uid",
-        "3ae03760-b275-11e7-9f09-bdad62d616f7": "uid",
-        "7738d980-b27d-11e7-9f09-bdad62d616f7": "blockUsers",
-        "b032e0f0-b27d-11e7-9f09-bdad62d616f7": "uid",
-        "bb8ac760-b27d-11e7-9f09-bdad62d616f7": "nickname",
-        "beae0af0-b27e-11e7-9f09-bdad62d616f7": "uid",
         "5f66c1d0-b27f-11e7-9f09-bdad62d616f7": "uid",
         "70345cc0-b27f-11e7-9f09-bdad62d616f7": "maps",
         "a29676d0-b27f-11e7-9f09-bdad62d616f7": "quests",
@@ -5641,7 +4796,7 @@
         "bdea5050-b27f-11e7-9f09-bdad62d616f7": "locationId",
         "c3240d40-b27f-11e7-9f09-bdad62d616f7": "uid",
         "c721c7c0-b27f-11e7-9f09-bdad62d616f7": "uid",
-        "0e54d860-b287-11e7-9f09-bdad62d616f7": "게임 정보 관리",
+        "0e54d860-b287-11e7-9f09-bdad62d616f7": "게임 관리 정보",
         "d93adf60-b288-11e7-9f09-bdad62d616f7": "baseLocation",
         "d2a549b0-b28d-11e7-9f09-bdad62d616f7": "pixel",
         "cab7e900-b28e-11e7-9f09-bdad62d616f7": "dots",
@@ -5715,24 +4870,14 @@
         "7dbe34e0-63e8-11e8-b4e1-c95b8da658fc": "face",
         "891fdf50-63e8-11e8-b4e1-c95b8da658fc": "name",
         "9772dd50-63e8-11e8-b4e1-c95b8da658fc": "minRequiredLevel",
-        "1048f930-74c4-11e8-ac5a-c372e22ec8bc": "id",
-        "25e0c660-74c4-11e8-ac5a-c372e22ec8bc": "fromUserId",
-        "499c1d20-74c4-11e8-ac5a-c372e22ec8bc": "fromUserName",
-        "6c004850-74c4-11e8-ac5a-c372e22ec8bc": "id",
+        "6c004850-74c4-11e8-ac5a-c372e22ec8bc": "uid",
         "e796ddc0-74ca-11e8-ac5a-c372e22ec8bc": "notification",
         "f72c1fc0-74ca-11e8-ac5a-c372e22ec8bc": "uid",
         "091c8fd0-74cb-11e8-ac5a-c372e22ec8bc": "fromUserId",
         "1b31ed00-74cb-11e8-ac5a-c372e22ec8bc": "timestamp",
         "292d2e10-74cb-11e8-ac5a-c372e22ec8bc": "notificationType",
         "3d935910-74cb-11e8-ac5a-c372e22ec8bc": "data",
-        "fa346140-74cb-11e8-ac5a-c372e22ec8bc": "muted",
-        "f210ffa0-74d0-11e8-ac5a-c372e22ec8bc": "id",
-        "f3e3eae0-74d0-11e8-ac5a-c372e22ec8bc": "friendUid",
-        "7be90e40-74d4-11e8-ac5a-c372e22ec8bc": "read",
-        "d02b7620-74d7-11e8-ac5a-c372e22ec8bc": "uid",
-        "4f8748c0-7511-11e8-ac5a-c372e22ec8bc": "id",
-        "579b75e0-7511-11e8-ac5a-c372e22ec8bc": "sessionId",
-        "52e33310-7513-11e8-ac5a-c372e22ec8bc": "sessions"
+        "7be90e40-74d4-11e8-ac5a-c372e22ec8bc": "read"
     },
     "definitions": {
         "type": "definitions",
@@ -6373,7 +5518,7 @@
                     {
                         "GUID": "256ef8a0-adcd-11e7-9d59-3d1b8f31c52e",
                         "x": 467,
-                        "y": 150,
+                        "y": 152,
                         "width": 272,
                         "height": 282,
                         "color": {}
@@ -6381,7 +5526,7 @@
                     {
                         "GUID": "3b9b64b0-adcd-11e7-9d59-3d1b8f31c52e",
                         "x": 504,
-                        "y": 743,
+                        "y": 613,
                         "width": 315,
                         "height": 403,
                         "color": {}
@@ -6389,47 +5534,23 @@
                     {
                         "GUID": "7a62b9b0-add1-11e7-9d59-3d1b8f31c52e",
                         "x": 100,
-                        "y": 1157,
+                        "y": 1027,
                         "width": 400,
                         "height": 895.0000457763672,
                         "color": {}
                     },
                     {
-                        "GUID": "127e9f90-addf-11e7-9d59-3d1b8f31c52e",
-                        "x": 922,
-                        "y": 329,
-                        "width": 300,
-                        "height": 175,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "37529f00-adef-11e7-9d59-3d1b8f31c52e",
-                        "x": 468,
-                        "y": 442,
-                        "width": 293,
-                        "height": 129,
-                        "color": {}
-                    },
-                    {
                         "GUID": "fd7ef1b0-adf4-11e7-9d59-3d1b8f31c52e",
-                        "x": 100,
-                        "y": 294,
+                        "x": 101,
+                        "y": 150,
                         "width": 297,
                         "height": 340,
                         "color": {}
                     },
                     {
-                        "GUID": "77077c90-b049-11e7-a26a-5d2d4eff1d8f",
-                        "x": 109,
-                        "y": 150,
-                        "width": 261,
-                        "height": 98,
-                        "color": {}
-                    },
-                    {
                         "GUID": "cda31bf0-b1e7-11e7-b0ed-a3d949779943",
                         "x": 944,
-                        "y": 150,
+                        "y": 152,
                         "width": 249,
                         "height": 146,
                         "color": {}
@@ -6437,7 +5558,7 @@
                     {
                         "GUID": "183244c0-21cd-11e8-b5af-67ed915ef375",
                         "x": 106.11764705882354,
-                        "y": 937.0588235294117,
+                        "y": 807.0588235294117,
                         "width": 309,
                         "height": 180,
                         "color": {}
@@ -6445,15 +5566,15 @@
                     {
                         "GUID": "643e7f90-636e-11e8-b161-332bb25f5bd5",
                         "x": 102,
-                        "y": 753,
+                        "y": 623,
                         "width": 308,
                         "height": 165.99998474121094,
                         "color": {}
                     },
                     {
                         "GUID": "e796ddc0-74ca-11e8-ac5a-c372e22ec8bc",
-                        "x": 933.8219178082193,
-                        "y": 586,
+                        "x": 921.8219178082193,
+                        "y": 332,
                         "width": 286,
                         "height": 124,
                         "color": {}
@@ -6476,7 +5597,7 @@
                         "GUID": "32e0ed00-adef-11e7-9d59-3d1b8f31c52e"
                     },
                     {
-                        "x": 60,
+                        "x": 61,
                         "y": 80,
                         "GUID": "00726820-adf5-11e7-9d59-3d1b8f31c52e"
                     },
@@ -6487,7 +5608,7 @@
                     },
                     {
                         "x": 60,
-                        "y": 673,
+                        "y": 543,
                         "GUID": "0e54d860-b287-11e7-9f09-bdad62d616f7"
                     }
                 ],

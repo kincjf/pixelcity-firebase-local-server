@@ -3,6 +3,7 @@
 var moment = require('moment');
 var _ = require('lodash');
 
+// nickname: 띄어쓰기, 특수문자가 없어야 함
 var data = {
 	// "99999@gmail" : {
 	// 	"birthday" : "2011-06-14T04:12:36.123Z",
@@ -244,18 +245,18 @@ var data = {
 	// 	"voteCount" : 0,
 	// 	"baseLocation": {}
 	// },
-	// "pastelbook89@gmail" : {
-	// 	"birthday" : "2011-06-14T04:12:36.123Z",
-	// 	"email" : "pastelbook89@gmail.com",
-	// 	"friendCount" : 0,
-	// 	"gender" : "female",
-	// 	"nickname" : "pastelbook89지메일",
-	// 	"type" : "admin",
-	// 	"updatedAt" : "2011-06-14T04:12:36.123Z",
-	// 	"userStatus" : 1,
-	// 	"voteCount" : 0,
-	// 	"baseLocation": {}
-	// },
+	"pastelbook89@gmail" : {
+		"birthday" : "2011-06-14T04:12:36.123Z",
+		"email" : "pastelbook89@gmail.com",
+		"friendCount" : 0,
+		"gender" : "female",
+		"nickname" : "pastelbook89지메일",
+		"type" : "admin",
+		"updatedAt" : "2011-06-14T04:12:36.123Z",
+		"userStatus" : 1,
+		"voteCount" : 0,
+		"baseLocation": {}
+	},
 	"sinho0689@gmail" : {
 		"birthday" : "2011-06-14T04:12:36.123Z",
 		"email" : "sinho0689@gmail.com",
@@ -268,24 +269,24 @@ var data = {
 		"voteCount" : 0,
 		"baseLocation": {}
 	},
-	// "notworrw@gmail" : {
-	// 	"birthday" : "2011-06-14T04:12:36.123Z",
-	// 	"email" : "notworrw@gmail.com",
-	// 	"friendCount" : 0,
-	// 	"gender" : "female",
-	// 	"nickname" : "Jyu",
-	// 	"type" : "admin",
-	// 	"updatedAt" : "2011-06-14T04:12:36.123Z",
-	// 	"userStatus" : 1,
-	// 	"voteCount" : 15,
-	// 	"baseLocation": {}
-	// },
+	"notworrw@gmail" : {
+		"birthday" : "2011-06-14T04:12:36.123Z",
+		"email" : "notworrw@gmail.com",
+		"friendCount" : 0,
+		"gender" : "female",
+		"nickname" : "Jyu",
+		"type" : "admin",
+		"updatedAt" : "2011-06-14T04:12:36.123Z",
+		"userStatus" : 1,
+		"voteCount" : 15,
+		"baseLocation": {}
+	},
 	"random_1487780669@gmail": {
 		"birthday" : "2017-12-14T04:12:36.123Z",
 		"email" : "random_1487780669@gmail.com",
 		"friendCount" : 0,
 		"gender" : "female",
-		"nickname" : "I'm Random!",
+		"nickname" : "ImRandom",
 		"type" : "public",
 		"updatedAt" : "2017-11-14T04:12:36.123Z",
 		"userStatus" : 1,
