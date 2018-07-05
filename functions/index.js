@@ -1,17 +1,6 @@
 /**
- * Copyright 2016 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * cloud function은 진짜 간단한 로직만 해야겠다
+ * 특히 trigger는 간단한 로직만 해야겠음
  */
 'use strict';
 
@@ -20,6 +9,7 @@ const functions = require('firebase-functions');
 const errorhandler = require('errorhandler');
 const Promise = require('bluebird');
 const moment = require('moment');
+const delay = require('delay');
 
 const express = require('express');
 const cookieParser = require('cookie-parser')();
@@ -29,7 +19,9 @@ const nakama = require('./nakama');
 const app = express();
 
 var envPath, serviceAccount;
-console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
+
+const FUNCTIONS_CONFIG = functions.config();
+console.log(`FUNCTIONS_CONFIG: ${JSON.stringify(FUNCTIONS_CONFIG)}`);
 
 if (process.env.NODE_ENV === "development") {
 	envPath = '../.test.env';
@@ -51,6 +43,12 @@ if (process.env.NODE_ENV === "development") {
 	console.log('Production Mode');
 }
 
+console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
+console.log(`process.env.NAKAMA_*: ${JSON.stringify({
+	NAKAMA_SERVER_KEY: process.env.NAKAMA_SERVER_KEY,
+	NAKAMA_HOST: process.env.NAKAMA_HOST,
+	NAKAMA_PORT: process.env.NAKAMA_PORT
+})}`);
 
 // Express middleware that validates Firebase ID Tokens passed in the Authorization HTTP header.
 // The Firebase ID token needs to be passed as a Bearer token in the Authorization HTTP header like this:
@@ -111,20 +109,31 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 	let user = event;
 	let date = moment().utc().format();
 
-	return admin.database().ref('/user').child(user.uid).set({
-		id: user.uid,
-		type: "public",		// 유저별 권한 - 조정 필요
-		email: user.email,
-		userStatus: 1,
-		nickname: "",
-		createAt: date,
-		updatedAt: date,
-		voteCount: 0,
-		friendCount: 0,
-		mobilePhone: "",
-		gender: "",
-		birthday: "",
-		baseLocation: {}
+	let ref = admin.database().ref('/user').child(user.uid);
+
+	return ref.once("value").then((snapshot) => {
+		if (snapshot.exists()) {
+			let log = `signupTrigger():  Exist User ${user.uid}`;
+			console.error(new Error(log));
+			return Promise.reject(log);
+		} else {
+			return Promise.resolve();
+		}
+	}).then(() => {
+		return ref.set({
+			id: user.uid,
+			type: "public",		// 유저별 권한 - 조정 필요
+			email: user.email,
+			userStatus: 1,
+			// nickname: "", updateNicknameTrigger()가 불필요하게 발동될 수 있음
+			updatedAt: date,
+			voteCount: 0,
+			friendCount: 0,
+			mobilePhone: "",
+			gender: "",
+			birthday: "",
+			baseLocation: {}
+		});
 	}).then(newUserRef => {
 		let newUserPropertyRef = admin.database().ref('/userProperty').child(user.uid);
 
@@ -161,7 +170,7 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 			return userCount;
 		});
 	}).catch(err => {
-		return Promise.reject(err);
+		console.error(new Error(err));
 	});
 });
 
@@ -171,13 +180,33 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
  */
 exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
 	let user = event;
-	let date = moment().utc().format();
+	let ref = admin.database().ref('/user').child(user.uid);
+
+	return ref.once("value").then((snapshot) => {
+		if (!snapshot.exists()) {
+			let log = `deleteUserTrigger():  User doesn't exist`;
+			console.error(new Error(log));
+			return Promise.reject(log);
+		} else {
+			return Promise.resolve();
+		}
+	}).then(() => {
+		if (process.env.NODE_ENV && (process.env.NODE_ENV === "development")) {
+			return admin.database().ref('/user').child(user.uid).remove();
+		} else {	// production mode
+			return admin.database().ref('/user').child(user.uid).update({
+				userStatus: -1
+			});
+		}
+	}).then(() => {
+		let log = `deleteUserTrigger():  Success delete ${user.uid} - set userStatus as -1`;
+		console.log(log);
+		return Promise.resolve(log);
+	}).catch(err => {
+		console.error(new Error(err));
+	});
 
 	// nakama-js에는 deleteUser가 없다
-
-	let log = `deleteUserTrigger():  Success delete ${user.uid}`;
-	console.log(log);
-	return Promise.resolve(log);
 });
 
 /**
@@ -196,19 +225,32 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 
 	let newNickname = change.after.val();
 
+	console.log(`updateNicknameTrigger(): options ${JSON.stringify({
+		userId: userId,
+		newNickname: newNickname
+	})}`);
+
 	// 클라이언트에서 닉네임 중복체크를 한 후 unique한 nickname이 와야함
 	// 1. nakama server에서 userId에 해당하는 유저가 존재하는지 확인
 	// 2. 해당 유저가 존재하는 경우 updateAccount 실행
 	// 3. 해당 유저가 존재하지 않는 경우 getNakamaSession(create=true) 실행
 	return nakama.getNakamaSession(userId, newNickname).then((session) => {
-		let log = `updateNicknameTrigger():  Success change ${userId} username as ${session.username}`;
+		// nakama server에서 DB에 처리가 될 때 까지 시간을 지연
+		return delay(1000, session);
+	}).then(session => {
+		return client.updateAccount(session, {
+			// id: userId,		id는 변경되지 않는다
+			username: newNickname,
+			display_name: userId		// 대신 fbuser.uid를 display_name에 삽입함
+		});
+	}).then((result) => {
+		let log = `updateNicknameTrigger():  Success update ${userId} - set nickname as ${newNickname} \n`;
+		log += JSON.stringify(result);
+
 		console.log(log);
 		return Promise.resolve(log);
-		// return client.updateAccount(session, {
-		// 	username: newNickname
-		// });
 	}).catch(err => {
-		return Promise.reject(err);
+		console.error(new Error(err));
 	});
 });
 
@@ -218,22 +260,22 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 exports.api = functions.https.onRequest(app);
 
 // error handling
-if (process.env.NODE_ENV === "development") {
-	app.use(errorhandler({
-		log: (err, str, req) => {
-			var title = 'Error in ' + req.method + ' ' + req.url;
-			console.error(title, err);
-		}
-	}));
-} else {	// production level
-}
-
-app.use(function (err, req, res, next) {
-	var title = 'Error in ' + req.method + ' ' + req.url;
-	console.error(title, err);
-
-	res.status(err.status || 500).json({
-		message: err.message,
-		title: title
-	});
-});
+// if (process.env.NODE_ENV === "development") {
+// 	app.use(errorhandler({
+// 		log: (err, str, req) => {
+// 			var title = 'Error in ' + req.method + ' ' + req.url;
+// 			console.error(title, err);
+// 		}
+// 	}));
+// } else {	// production level
+// }
+//
+// app.use(function (err, req, res, next) {
+// 	var title = 'Error in ' + req.method + ' ' + req.url;
+// 	console.error(title, err);
+//
+// 	res.status(err.status || 500).json({
+// 		message: err.message,
+// 		title: title
+// 	});
+// });

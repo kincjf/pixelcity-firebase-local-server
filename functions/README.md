@@ -28,6 +28,10 @@ npm install -g firebase-tools
 
 This will provide you with the globally accessible `firebase` command.
 
+```bash
+firebase functions:config:set service.env=developmentservice.nakama.serverkey="defaultkey" \
+service.nakama.host=137.116.172.1 service.nakama.port=7350
+```
 
 ## Commands
 

@@ -11,10 +11,9 @@ const _ = require("lodash");
 
 var Promise = require('bluebird');
 var admin = require('firebase-admin');
-var firebase = require('firebase');
 var jsonfile = require('jsonfile');
-var requestp = require('request-promise');
-var jwt = require('jsonwebtoken');
+var delay = require('delay');
+
 const mkdirp = require("mkdirp");
 
 var envPath
@@ -104,7 +103,19 @@ return admin.database().ref('/').remove().then(() => {
 		});
 	}).then(() => {
 		console.log("Complete Create User");
-		return admin.database().ref('/').set(initData);
+
+		// createUserTrigger가 작동되는 시간을 보장해주어야 함
+		return delay(1000, "delay for createUserTrigger()");
+	}).then(msg => {
+		return admin.database().ref('/').set(initData).then(() => {
+			// 한번에 넣으면 updateNicknameTrigger가 발동이 안됨
+
+			return Promise.each(objectToArray(initData.user), (item, index, length) => {
+				return admin.database().ref(`/user/${item.value.uid}`).update({
+					nickname: "NEW"+item.value.nickname
+				});
+			});
+		});
 	}).then((rootRef) => {
 		let userArr = [];
 		console.log("Complete Create Database");

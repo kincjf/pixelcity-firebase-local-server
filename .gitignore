@@ -5,8 +5,8 @@
 /build
 package-lock.json
 node_modules
-pixelcity-demo-48860-firebase-adminsdk-r2yz0-4d28c93f47.json
 *.log
 /functions/test/firebase-test-config.json
 /functions/test/gcloud-pixelcity-test.json
 /.cookie
+/%RESOURCE_DIR%
