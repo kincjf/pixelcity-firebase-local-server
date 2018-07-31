@@ -25,200 +25,200 @@ let wearableItemData = {
 
 // user 수만큼 있음
 var data = {
-	"smadupset@naver": {
-		"level": 2,
-		"exp": 265,
-		"ruby": 27,
-		"gold": 934,
-		"inventory": {
-			"c4ca4238a0b923820dcc509a6f75849b": {
-				"category": "Lorem",
-				"type": "Lorem",
-				"name": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			},
-			"c81e728d9d4c2f636f067f89cc14862c": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			},
-			"eccbc87e4b5ce2fe28308fd9f2a7baf3": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			},
-			"a87ff679a2f3e71d9181a67b7542122c": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			},
-			"c4ca4238a0b923820dcc5": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			}
-		},
-		"equipment": {
-			"weapon": {
-				"inventoryUid1": {}
-			},
-			"armor": {
-				"inventoryUid2": {}
-			},
-			"accessory": {
-				"inventoryUid3": {}
-			}
-		}
-	},
-	"jgj90@naver": {
-		"level": -71,
-		"exp": -4,
-		"ruby": -17,
-		"gold": -75,
-		"inventory": {
-			"uid": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			}
-		},
-		"equipment": {
-			"weapon": {
-				"inventoryUid1": {}
-			},
-			"armor": {
-				"inventoryUid2": {}
-			},
-			"accessory": {
-				"inventoryUid3": {}
-			}
-		}
-	},
-	"pastelbook89@gmail": {
-		"level": -71,
-		"exp": -4,
-		"ruby": -17,
-		"gold": -75,
-		"inventory": {
-			"uid": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			}
-		},
-		"equipment": {
-			"weapon": {
-				"inventoryUid1": {}
-			},
-			"armor": {
-				"inventoryUid2": {}
-			},
-			"accessory": {
-				"inventoryUid3": {}
-			}
-		}
-	},
-	"sinho0689@gmail": {
-		"level": -71,
-		"exp": -4,
-		"ruby": -17,
-		"gold": -75,
-		"inventory": {
-			"uid": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			}
-		},
-		"equipment": {
-			"weapon": {
-				"inventoryUid1": {}
-			},
-			"armor": {
-				"inventoryUid2": {}
-			},
-			"accessory": {
-				"inventoryUid3": {}
-			}
-		}
-	},
-	"random_1487780669@gmail": {
-		"level": -71,
-		"exp": -4,
-		"ruby": -17,
-		"gold": -75,
-		"inventory": {
-			"uid": {
-				"name": "Lorem",
-				"category": "Lorem",
-				"type": "Lorem",
-				"property": {
-					"hp": -46,
-					"defence": -34,
-					"attackPower": 94,
-					"agility": -32
-				}
-			}
-		},
-		"equipment": {
-			"weapon": {
-				"inventoryUid1": {}
-			},
-			"armor": {
-				"inventoryUid2": {}
-			},
-			"accessory": {
-				"inventoryUid3": {}
-			}
-		}
-	}
+	// "smadupset@naver": {
+		// "level": 2,
+		// "exp": 265,
+		// "ruby": 27,
+		// "gold": 934,
+		// "inventory": {
+			// "c4ca4238a0b923820dcc509a6f75849b": {
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "name": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// },
+			// "c81e728d9d4c2f636f067f89cc14862c": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// },
+			// "eccbc87e4b5ce2fe28308fd9f2a7baf3": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// },
+			// "a87ff679a2f3e71d9181a67b7542122c": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// },
+			// "c4ca4238a0b923820dcc5": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// }
+		// },
+		// "equipment": {
+			// "weapon": {
+				// "inventoryUid1": {}
+			// },
+			// "armor": {
+				// "inventoryUid2": {}
+			// },
+			// "accessory": {
+				// "inventoryUid3": {}
+			// }
+		// }
+	// },
+	// "jgj90@naver": {
+		// "level": -71,
+		// "exp": -4,
+		// "ruby": -17,
+		// "gold": -75,
+		// "inventory": {
+			// "uid": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// }
+		// },
+		// "equipment": {
+			// "weapon": {
+				// "inventoryUid1": {}
+			// },
+			// "armor": {
+				// "inventoryUid2": {}
+			// },
+			// "accessory": {
+				// "inventoryUid3": {}
+			// }
+		// }
+	// },
+	// "pastelbook89@gmail": {
+		// "level": -71,
+		// "exp": -4,
+		// "ruby": -17,
+		// "gold": -75,
+		// "inventory": {
+			// "uid": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// }
+		// },
+		// "equipment": {
+			// "weapon": {
+				// "inventoryUid1": {}
+			// },
+			// "armor": {
+				// "inventoryUid2": {}
+			// },
+			// "accessory": {
+				// "inventoryUid3": {}
+			// }
+		// }
+	// },
+	// "sinho0689@gmail": {
+		// "level": -71,
+		// "exp": -4,
+		// "ruby": -17,
+		// "gold": -75,
+		// "inventory": {
+			// "uid": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// }
+		// },
+		// "equipment": {
+			// "weapon": {
+				// "inventoryUid1": {}
+			// },
+			// "armor": {
+				// "inventoryUid2": {}
+			// },
+			// "accessory": {
+				// "inventoryUid3": {}
+			// }
+		// }
+	// },
+	// "random_1487780669@gmail": {
+		// "level": -71,
+		// "exp": -4,
+		// "ruby": -17,
+		// "gold": -75,
+		// "inventory": {
+			// "uid": {
+				// "name": "Lorem",
+				// "category": "Lorem",
+				// "type": "Lorem",
+				// "property": {
+					// "hp": -46,
+					// "defence": -34,
+					// "attackPower": 94,
+					// "agility": -32
+				// }
+			// }
+		// },
+		// "equipment": {
+			// "weapon": {
+				// "inventoryUid1": {}
+			// },
+			// "armor": {
+				// "inventoryUid2": {}
+			// },
+			// "accessory": {
+				// "inventoryUid3": {}
+			// }
+		// }
+	// }
 };
 
 _.forEach(userData, function(userValue, userKey) {
