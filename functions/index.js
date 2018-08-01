@@ -125,7 +125,7 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 			type: "public",		// 유저별 권한 - 조정 필요
 			email: user.email,
 			userStatus: 1,
-			// nickname: "", updateNicknameTrigger()가 불필요하게 발동될 수 있음
+			nickname: "",
 			updatedAt: date,
 			voteCount: 0,
 			friendCount: 0,
