@@ -6,7 +6,7 @@
 
 const admin = require('firebase-admin');
 const functions = require('firebase-functions');
-const errorhandler = require('errorhandler');
+// const errorhandler = require('errorhandler');
 const Promise = require('bluebird');
 const moment = require('moment');
 const delay = require('delay');
@@ -114,7 +114,7 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 	return ref.once("value").then((snapshot) => {
 		if (snapshot.exists()) {
 			let log = `signupTrigger():  Exist User ${user.uid}`;
-			console.error(new Error(log));
+			console.warn(log);
 			return Promise.reject(log);
 		} else {
 			return Promise.resolve();
@@ -170,7 +170,7 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 			return userCount;
 		});
 	}).catch(err => {
-		console.error(new Error(err));
+		console.error(err);
 	});
 });
 
@@ -185,7 +185,7 @@ exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
 	return ref.once("value").then((snapshot) => {
 		if (!snapshot.exists()) {
 			let log = `deleteUserTrigger():  User doesn't exist`;
-			console.error(new Error(log));
+			console.warn(log);
 			return Promise.reject(log);
 		} else {
 			return Promise.resolve();
@@ -203,7 +203,7 @@ exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
 		console.log(log);
 		return Promise.resolve(log);
 	}).catch(err => {
-		console.error(new Error(err));
+		console.error(err);
 	});
 
 	// nakama-js에는 deleteUser가 없다
@@ -250,7 +250,7 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 		console.log(log);
 		return Promise.resolve(log);
 	}).catch(err => {
-		console.error(new Error(err));
+		console.error(err);
 	});
 });
 

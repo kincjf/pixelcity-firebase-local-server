@@ -151,7 +151,8 @@ describe('Test Cloud Functions', () => {
 		}).then(() => done()).catch((err) => done(err));
 	});
 
-	describe('api.hello', (done) => {
+	// api는 firebase service에서만 테스트 가능
+	describe('api.hello ByService', (done) => {
 		// Test Case: setting messages/11111/original to 'input' should cause 'INPUT' to be written to
 		// messages/11111/uppercase
 		before((done) => {
@@ -194,7 +195,7 @@ describe('Test Cloud Functions', () => {
 		});
 	});
 
-	describe('signupTrigger', () => {
+	describe('signupTriggerByEmulator', () => {
 		before((done) => {
 			done();	// done()을 안하면 멈춰서 다음 case로 넘어가지지 않는다
 		});
@@ -233,7 +234,10 @@ describe('Test Cloud Functions', () => {
 		});
 	});
 
-	describe('updateNicknameTrigger', () => {
+	// describe('signupTriggerByService', () => {
+	// });
+
+	describe('updateNicknameTriggerByEmulator', () => {
 		it('should occur updateNicknameTrigger when user nickname updated(cloud database onUpdate)', (done) => {
 			// [START assertOnline]
 			// Create a DataSnapshot with the value 'input' and the reference path 'messages/11111/original'.
@@ -296,4 +300,7 @@ describe('Test Cloud Functions', () => {
 			// [END assertOnline]
 		});
 	});
+
+	// describe('updateNicknameTriggerByService', () => {
+	// });
 });

@@ -38,7 +38,7 @@ const getNakamaSession = function (uid, nickname) {
 
 	if (!uid) {
 		let log = `getNakamaSession: no uid: ${uid}`;
-		console.error(new Error(log));
+		console.warn(log);
 		return Promise.reject(log);
 	}
 
@@ -54,7 +54,7 @@ const getNakamaSession = function (uid, nickname) {
 	return client.authenticateCustom(options).then(session => {
 		return Promise.resolve(session);
 	}).catch(err => {
-		console.error(new Error(err));
+		console.error(err);
 		return Promise.reject(err);
 	});
 }

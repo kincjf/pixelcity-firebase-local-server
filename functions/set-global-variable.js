@@ -8,6 +8,6 @@ module.exports = (function () {
 		global.fetch = window.fetch || global.window.fetch;
 		global.FileReader = window.FileReader || global.window.FileReader;
 	} else {
-		console.error(new Error("not found global.window cause fail to use nakama-js"));
+		console.error("not found global.window cause fail to use nakama-js");
 	}
 })();

@@ -1,6 +1,6 @@
 ## 사용 방법
 
-README.md가 있는 폴더에 아래의 이름에 해당하는 파일을 삽입한다
+####1. README.md가 있는 폴더에 아래의 이름에 해당하는 파일을 삽입한다
 
 "firebase-test-config.json" 
 ```
@@ -32,3 +32,22 @@ firebase 설정 -> 프로젝트 설정 -> 웹앱 추가 후 config 정보 삽입
 }
 ```
 firebase 설정 -> 프로젝트 설정 -> 사비스계정 -> Firebase Admin SDK -> 새 비공개 키 생성 후 config 정보 삽입
+
+
+####2. 아래의 값에 해당하는 firebase functions config를 입력한다
+```
+{
+  "service": {
+    "env": "development OR production",
+    "nakama": {
+      "port": "NAKAMA_PORT",
+      "host": "NAKAMA_SERVER_IP",
+      "serverkey": "NAKAMA_SERVER_KEY"
+    }
+  }
+}
+```
+참고: https://firebase.google.com/docs/functions/config-env?hl=ko
+
+
+####3. firebase deploy를 통한 배포
