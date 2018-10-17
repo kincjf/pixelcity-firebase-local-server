@@ -19,19 +19,9 @@
 
 // Follow the instructions in uppercase/README.md for running these tests
 
+var path = require("path");
+
 // Chai is a commonly used library for creating unit test suites. It is easily extended with plugins.
-
-// if (process.env.NODE_ENV === "development") {
-// 	envPath = '../.test.env';
-// 	console.log('Development Test Mode');
-// } else {	// production level
-// 	envPath = '../.env';
-// 	console.log('Production Test Mode');
-// }
-//
-// require('dotenv').config({path: envPath});
-// console.log('databaseURL: ' + process.env.FIREBASE_HOST + ":" + process.env.FIREBASE_PORT);
-
 const chai = require('chai');
 const assert = chai.assert;
 const Promise = require("bluebird");
@@ -41,28 +31,44 @@ const requestp = require("request-promise");
 const admin = require('firebase-admin');
 const firebase = require('firebase');
 const delay = require('delay');
-const nakama = require("../nakama");
 
+var envPath, firebaseServiceAccount, firebaseWebConfig;
 if (process.env.NODE_ENV === "development") {
-	envPath = '../.test.env';
-	require('dotenv').config({path: envPath});
+	envPath = '../config/dev/.dev.env';
+	console.log('Development Mode');
+} else if (process.env.NODE_ENV === "alpha-test") {
+	envPath = '../config/alpha/.alpha.env';
+	console.log('Alpha-Test Mode');
+} else if (process.env.NODE_ENV === "production") {
+	envPath = '../config/prod/.prod.env';
+	console.log('Production Mode');
+} else {
+	throw new Error("no env file found.");
+}
 
-	console.log('Development Test Mode');
-} else {	// production level
-	envPath = '../.env';
-	require('dotenv').config({path: envPath});
+require('dotenv').config({path: envPath});
+let ENV_FLAG = process.env.ENV_FLAG;
+var filename = process.env.FIREBASE_DB_FILEPATH || `pixelcity-new-${ENV_FLAG}.export.json`;
+var buildDir = process.env.FIREBASE_DB_BUILDDIR || "build";
 
-	console.log('Production Test Mode');
+if (!(process.env.FIREBASE_SERVICE_ACCOUNT && process.env.FIREBASE_WEB_CONFIG)) {
+	console.log("Usage: " + __filename + " FIREBASE_*=SOME_PARAM");
+	process.exit(-1);
+} else {
+	firebaseServiceAccount = `../config/${ENV_FLAG}/${process.env.FIREBASE_SERVICE_ACCOUNT}`;
+	firebaseWebConfig = `../../config/${ENV_FLAG}/${process.env.FIREBASE_WEB_CONFIG}`;
 }
 
 // emulator 에러로 인한 환경변수 강제설정
-var projectConfig = require("./firebase-test-config");
+var projectConfig = require(firebaseWebConfig);
 process.env.FIREBASE_CONFIG = JSON.stringify(projectConfig);
 
-const test = require('firebase-functions-test')(projectConfig, './test/gcloud-pixelcity-test.json');
+const test = require('firebase-functions-test')(projectConfig, firebaseServiceAccount);
 const common = require("../../common");
 const objectToArray = common.objectToArray;
 const listAllUsers = common.listAllUsers;
+
+const nakama = require("../nakama");
 
 describe('Test Cloud Functions', () => {
 	let initData;
@@ -82,7 +88,7 @@ describe('Test Cloud Functions', () => {
 		// Require index.js and save the exports inside a namespace called myFunctions.
 		// This includes our cloud functions, which can now be accessed at myFunctions.makeUppercase
 		// and myFunctions.addMessage
-		initData = require("../../build/pixelcity-demo-48860.export");
+		initData = require(path.join("../../", buildDir, filename));
 		// myFunctions = require('../index');
 
 		// Do cleanup tasks.
@@ -242,12 +248,12 @@ describe('Test Cloud Functions', () => {
 			// [START assertOnline]
 			// Create a DataSnapshot with the value 'input' and the reference path 'messages/11111/original'.
 			let uid = Object.keys(initData.user)[0];  // 첫번째 user의 key값, 바꿔서 해보자
-
+			let user = initData.user[uid];  // 첫번째 user의 key값, 바꿔서 해보자\
 
 			// ${uid}에 해당하는 유저 정보가 생성되어있는것을 전제로 함
-			const beforeSnap = test.database.makeDataSnapshot("beforeSnapName", `/user/${uid}/nickname`, admin.app());
+			const beforeSnap = test.database.makeDataSnapshot(user.nickname, `/user/${uid}/nickname`);
 			// Make snapshot for state of database after the change
-			const afterSnap = test.database.makeDataSnapshot("afterSnapName", `/user/${uid}/nickname`, admin.app());
+			const afterSnap = test.database.makeDataSnapshot("afterSnapName", `/user/${uid}/nickname`);
 			const change = test.makeChange(beforeSnap, afterSnap);
 
 			const wrappedUpdateNicknameTrigger = test.wrap(myFunctions.updateNicknameTrigger, {

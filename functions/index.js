@@ -15,40 +15,39 @@ const express = require('express');
 const cookieParser = require('cookie-parser')();
 const cors = require('cors')({origin: true});
 
-const nakama = require('./nakama');
 const app = express();
 
-var envPath, serviceAccount;
-
-const FUNCTIONS_CONFIG = functions.config();
-console.log(`FUNCTIONS_CONFIG: ${JSON.stringify(FUNCTIONS_CONFIG)}`);
-
+var envPath, serviceAccount, projectConfig;
 if (process.env.NODE_ENV === "development") {
-	envPath = '../.test.env';
+	envPath = '../config/dev/.dev.env';
 	require('dotenv').config({path: envPath});
-	serviceAccount = require("./test/gcloud-pixelcity-test.json");
+	console.log("FIREBASE_SERVICE_ACCOUNT: " + process.env.FIREBASE_SERVICE_ACCOUNT);
+	console.log("FIREBASE_WEB_CONFIG: " + process.env.FIREBASE_WEB_CONFIG);
 
-	var projectConfig = require("./test/firebase-test-config.json");
-	console.log(projectConfig);
+	let ENV_FLAG = process.env.ENV_FLAG;
+	serviceAccount = require(`../config/${ENV_FLAG}/${process.env.FIREBASE_SERVICE_ACCOUNT}`);
+	projectConfig = require(`../config/${ENV_FLAG}/${process.env.FIREBASE_WEB_CONFIG}`);
 
 	admin.initializeApp({
 		credential: admin.credential.cert(serviceAccount),
 		databaseURL: projectConfig.databaseURL
 	});
 
+	console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
+	console.log(`process.env.NAKAMA_*: ${JSON.stringify({
+		NAKAMA_SERVER_KEY: process.env.NAKAMA_SERVER_KEY,
+		NAKAMA_HOST: process.env.NAKAMA_HOST,
+		NAKAMA_PORT: process.env.NAKAMA_PORT
+	})}`);
 	console.log('Development Mode');
-} else {	// production level
+} else {	// alpha-test, production
 	admin.initializeApp();
-
 	console.log('Production Mode');
 }
 
-console.log('process.env.NODE_ENV == ' + process.env.NODE_ENV);
-console.log(`process.env.NAKAMA_*: ${JSON.stringify({
-	NAKAMA_SERVER_KEY: process.env.NAKAMA_SERVER_KEY,
-	NAKAMA_HOST: process.env.NAKAMA_HOST,
-	NAKAMA_PORT: process.env.NAKAMA_PORT
-})}`);
+const nakama = require('./nakama');
+const FUNCTIONS_CONFIG = functions.config();
+console.log(`FUNCTIONS_CONFIG: ${JSON.stringify(FUNCTIONS_CONFIG)}`);
 
 // Express middleware that validates Firebase ID Tokens passed in the Authorization HTTP header.
 // The Firebase ID token needs to be passed as a Bearer token in the Authorization HTTP header like this:

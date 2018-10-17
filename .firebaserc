@@ -2,6 +2,6 @@
   "projects": {
     "default": "pixelcity-dev",
     "pixelcity-dev": "pixelcity-dev",
-    "pixelcity-test-alpha": "pixelcity-test1"
+    "pixelcity-alpha-test": "pixelcity-test1"
   }
 }

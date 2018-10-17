@@ -6,7 +6,7 @@
 package-lock.json
 node_modules
 *.log
-/functions/test/firebase-test-config.json
-/functions/test/gcloud-pixelcity-test.json
+/functions/**/firebase-dev-config.json
+/functions/**/gcloud-pixelcity-dev.json
 /.cookie
 /%RESOURCE_DIR%

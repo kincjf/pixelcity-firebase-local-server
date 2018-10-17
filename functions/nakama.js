@@ -16,7 +16,7 @@ const FUNCTIONS_CONFIG = functions.config().service;
 const getNakamaClient = () => {
 	let client;
 
-	if (process.env.NODE_ENV === "development") {
+	if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "alpha-test" || process.env.NODE_ENV === "production") {
 		client = new nakamajs.Client(process.env.NAKAMA_SERVER_KEY, process.env.NAKAMA_HOST, process.env.NAKAMA_PORT);
 		client.ssl = false;
 	} else {	// production

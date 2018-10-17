@@ -1,9 +1,3 @@
-/*
- * firebase-server 0.11.0
- * License: MIT.
- * Copyright (C) 2013, 2014, Uri Shaked.
- */
-
 'use strict';
 
 const util = require('util');
@@ -16,30 +10,41 @@ var delay = require('delay');
 
 const mkdirp = require("mkdirp");
 
-var envPath
+var envPath, firebaseServiceAccount, firebaseWebConfig;
 if (process.env.NODE_ENV === "development") {
-	envPath = '.test.env';
+	envPath = './config/dev/.dev.env';
 	console.log('Development Mode');
+} else if (process.env.NODE_ENV === "alpha-test") {
+	envPath = './config/alpha/.alpha.env';
+	console.log('Alpha-Test Mode');
 } else if (process.env.NODE_ENV === "production") {
-	envPath = '.env';
+	envPath = './config/prod/.prod.env';
 	console.log('Production Mode');
 } else {
 	throw new Error("no env file found.");
 }
 
 require('dotenv').config({path: envPath});
+let ENV_FLAG = process.env.ENV_FLAG;
+console.log("FIREBASE_SERVICE_ACCOUNT: " + process.env.FIREBASE_SERVICE_ACCOUNT);
+console.log("FIREBASE_WEB_CONFIG: " + process.env.FIREBASE_WEB_CONFIG);
 
-var filename = process.env.FIREBASE_DB_FILEPATH ||  'pixelcity-demo-48860.export.json';
-var port = process.env.FIREBASE_PORT || 3000;
+if (!(process.env.FIREBASE_SERVICE_ACCOUNT && process.env.FIREBASE_WEB_CONFIG)) {
+	console.log("Usage: " + __filename + " FIREBASE_*=SOME_PARAM");
+	process.exit(-1);
+} else {
+	firebaseServiceAccount = `./config/${ENV_FLAG}/${process.env.FIREBASE_SERVICE_ACCOUNT}`;
+	firebaseWebConfig = `./config/${ENV_FLAG}/${process.env.FIREBASE_WEB_CONFIG}`;
+}
 
+var filename = process.env.FIREBASE_DB_FILEPATH || `pixelcity-new-${ENV_FLAG}.export.json`;
 console.log("filename: " + filename);
-console.log("port: " + port);
 
 const common = require('./common');
 const objectToArray = common.objectToArray;
 const listAllUsers = common.listAllUsers;
 
-var initData = require("./test/data");
+var initData = require("./data");
 mkdirp(process.env.FIREBASE_DB_BUILDDIR);
 _.forEach(initData, function (value, key) {  // 개별로 찍어보자
 	jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + key + ".json", value, {spaces: 2, EOL: '\r\n'}, function(err) {
@@ -56,24 +61,8 @@ jsonfile.writeFile(process.env.FIREBASE_DB_BUILDDIR + "/" + filename, initData, 
 	}
 });
 
-// https://stackoverflow.com/questions/37418372/firebase-where-is-my-account-secret-in-the-new-console
-// var server = new FirebaseServer(port, host, data);
-// server._tokenValidator.decode = function(token) {
-	// firebase token verify를 위한 custom decoder
-	// 참고 : https://firebase.google.com/docs/auth/admin/verify-id-tokens?hl=ko
-	// var decoded = jwt.verify(token, pubkey, {
-	// 	algorithms: ["RS256"],
-	// 	audience: projectId,		// Firebase 프로젝트 ID(Firebase 프로젝트의 고유 식별자)여야 합니다. 프로젝트 콘솔의 URL에서 확인할 수 있습니다.
-	// 	iss: "https://securetoken.google.com/" + projectId,
-	// 	sub: uid
-	// });
-	// var decoded = jwt.decode(token);
-  //
-	// debug('decode(token: %j, secret: %j) => %j', token, decoded);
-	// return decoded;
-// };
-var projectConfig = require("./functions/test/firebase-test-config.json");
-var serviceAccount = require('./functions/test/gcloud-pixelcity-test.json');
+var projectConfig = require(firebaseWebConfig);
+var serviceAccount = require(firebaseServiceAccount);
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
