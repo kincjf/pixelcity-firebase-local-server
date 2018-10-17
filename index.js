@@ -119,4 +119,7 @@ return admin.database().ref('/').remove().then(() => {
 		});
 		// end dump test data
 	});
-}).then(() => console.log("test data dump finish")).catch((err) => console.error("test data dump Error", err));
+}).then(() => {
+	console.log("test data dump finish");
+	process.exit(0);
+}).catch((err) => console.error("test data dump Error", err));

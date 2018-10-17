@@ -17,9 +17,14 @@ const cors = require('cors')({origin: true});
 
 const app = express();
 
-var envPath, serviceAccount, projectConfig;
-if (process.env.NODE_ENV === "development") {
-	envPath = '../config/dev/.dev.env';
+let envPath, serviceAccount, projectConfig;
+if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "alpha-test") {
+	if (process.env.NODE_ENV === "development") {
+		envPath = '../config/dev/.dev.env';
+	} else if (process.env.NODE_ENV === "alpha-test") {
+		envPath = '../config/alpha/.alpha.env';
+	}
+
 	require('dotenv').config({path: envPath});
 	console.log("FIREBASE_SERVICE_ACCOUNT: " + process.env.FIREBASE_SERVICE_ACCOUNT);
 	console.log("FIREBASE_WEB_CONFIG: " + process.env.FIREBASE_WEB_CONFIG);
@@ -39,13 +44,11 @@ if (process.env.NODE_ENV === "development") {
 		NAKAMA_HOST: process.env.NAKAMA_HOST,
 		NAKAMA_PORT: process.env.NAKAMA_PORT
 	})}`);
-	console.log('Development Mode');
-} else {	// alpha-test, production
+} else {	// process.env.NODE_ENV === "production"
 	admin.initializeApp();
 	console.log('Production Mode');
 }
 
-const nakama = require('./nakama');
 const FUNCTIONS_CONFIG = functions.config();
 console.log(`FUNCTIONS_CONFIG: ${JSON.stringify(FUNCTIONS_CONFIG)}`);
 
@@ -58,10 +61,10 @@ const validateFirebaseIdToken = (req, res, next) => {
 
 	if ((!req.headers.authorization || !req.headers.authorization.startsWith('Bearer ')) &&
 		!(req.cookies && req.cookies.__session)) {
-		console.error('No Firebase ID token was passed as a Bearer token in the Authorization header.',
+		console.error(new Error('No Firebase ID token was passed as a Bearer token in the Authorization header.',
 			'Make sure you authorize your request by providing the following HTTP header:',
 			'Authorization: Bearer <Firebase ID Token>',
-			'or by passing a "__session" cookie.');
+			'or by passing a "__session" cookie.'));
 		res.status(403).send('Unauthorized');
 		return;
 	}
@@ -161,7 +164,7 @@ exports.signupTrigger = functions.auth.user().onCreate((event, context) => {
 		});
 	}).then(newUserPropertyRef => {
 		let userCountRef = admin.database().ref("saving-data/count/user");
-		let log = `signupTrigger():  Success create ${user.uid}`;
+		let log = `Success create ${user.uid}`;
 		console.log(log);
 
 		return userCountRef.transaction(function (current_value) {
@@ -183,7 +186,7 @@ exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
 
 	return ref.once("value").then((snapshot) => {
 		if (!snapshot.exists()) {
-			let log = `deleteUserTrigger():  User doesn't exist`;
+			let log = `User doesn't exist`;
 			console.warn(log);
 			return Promise.reject(log);
 		} else {
@@ -198,7 +201,7 @@ exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
 			});
 		}
 	}).then(() => {
-		let log = `deleteUserTrigger():  Success delete ${user.uid} - set userStatus as -1`;
+		let log = `Success delete ${user.uid} - set userStatus as -1`;
 		console.log(log);
 		return Promise.resolve(log);
 	}).catch(err => {
@@ -214,6 +217,8 @@ exports.deleteUserTrigger = functions.auth.user().onDelete((event, context) => {
  * @type {CloudFunction<DeltaSnapshot>}
  */
 exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname').onUpdate((change, context) => {
+	const nakama = require('./nakama');
+
 	let client = nakama.getNakamaClient();
 	let userId;
 	if (!context.params.userId) {
@@ -224,7 +229,7 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 
 	let newNickname = change.after.val();
 
-	console.log(`updateNicknameTrigger(): options ${JSON.stringify({
+	console.log(`options ${JSON.stringify({
 		userId: userId,
 		newNickname: newNickname
 	})}`);
@@ -243,7 +248,7 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 			display_name: userId		// 대신 fbuser.uid를 display_name에 삽입함
 		});
 	}).then((result) => {
-		let log = `updateNicknameTrigger():  Success update ${userId} - set nickname as ${newNickname} \n`;
+		let log = `Success update ${userId} - set nickname as ${newNickname} \n`;
 		log += JSON.stringify(result);
 
 		console.log(log);
@@ -257,24 +262,3 @@ exports.updateNicknameTrigger = functions.database.ref('/user/{userId}/nickname'
 // Requests need to be authorized by providing an `Authorization` HTTP header
 // with value `Bearer <Firebase ID Token>`.
 exports.api = functions.https.onRequest(app);
-
-// error handling
-// if (process.env.NODE_ENV === "development") {
-// 	app.use(errorhandler({
-// 		log: (err, str, req) => {
-// 			var title = 'Error in ' + req.method + ' ' + req.url;
-// 			console.error(title, err);
-// 		}
-// 	}));
-// } else {	// production level
-// }
-//
-// app.use(function (err, req, res, next) {
-// 	var title = 'Error in ' + req.method + ' ' + req.url;
-// 	console.error(title, err);
-//
-// 	res.status(err.status || 500).json({
-// 		message: err.message,
-// 		title: title
-// 	});
-// });
