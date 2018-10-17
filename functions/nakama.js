@@ -8,9 +8,8 @@ const Promise = require('bluebird');
 require("./set-global-variable");
 
 const FUNCTIONS_CONFIG = functions.config().service;
-
 /**
- * firebase cloud function 사용시 공유 전역변수를 최소화 해야겠다.
+ * firebase cloud function 사용시 공유 전역변수를 최소화 해야한다.
  * @returns {*}
  */
 const getNakamaClient = () => {
