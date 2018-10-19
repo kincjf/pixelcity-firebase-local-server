@@ -4,9 +4,9 @@
   "description": "Simple Firebase Server",
   "main": "index.js",
   "scripts": {
-    "server:dev": "cross-env NODE_ENV=development nodemon index.js",
+    "server:dev": "cross-env NODE_ENV=development node index.js",
     "server:dev:debug": "cross-env NODE_ENV=development nodemon --inspect index.js",
-    "server:alpha": "cross-env NODE_ENV=alpha-test nodemon index.js",
+    "server:alpha": "cross-env NODE_ENV=alpha-test node index.js",
     "server:alpha:debug": "cross-env NODE_ENV=development nodemon --inspect index.js",
     "test": "npm run lint && npm run cover",
     "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",

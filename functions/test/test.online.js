@@ -191,7 +191,7 @@ describe('Test Cloud Functions', () => {
 						};
 
 						return requestp(options).then((body) => {
-							assert.isOk(body, 'get response is ok');
+							assert.isOk(body, '[get response is ok?]');
 							return Promise.resolve();
 						});
 					});
@@ -225,13 +225,13 @@ describe('Test Cloud Functions', () => {
 				return admin.database().ref('userProperty/' + mockVal.uid).once('value').then((createdSnap) => {
 					let val = createdSnap.val();
 					// Assert that the value is the uppercased version of our input.
-					assert.equal(val.level, 1, `userProperty/${mockVal.uid}/level: ${val.level}`);
+					assert.equal(val.level, 1, `[userProperty/${mockVal.uid}/level: ${val.level}]`);
 
 					return admin.database().ref("saving-data/count/user").once('value').then((currentSnap) => {
 						let currentUserLength = currentSnap.val();
 						let prevUserLength = objectToArray(initData.user).length;
 
-						assert.equal(currentUserLength, prevUserLength + 1, `saving-data/count/user: ${currentUserLength}`);
+						assert.equal(currentUserLength, prevUserLength + 1, `[value of saving-data/count/user? - ${currentUserLength}]`);
 						return Promise.resolve();
 					});
 				}).then(() => done()).catch((err) => done(err));
@@ -281,11 +281,10 @@ describe('Test Cloud Functions', () => {
 						return result.newClient.getUsers(result.newSession, null, ["afterSnapName"]).then(result => {
 							if (result.users || result.users.length > 0) {
 								result.users.forEach(user => {
-									// assert.equal("afterSnapName", user.username, `nakama - user.id: ${user.id}, user.username: ${user.username}`);
-
 									// update가 되었을때 nakama server가 변경이 되는지 비교를 해야됨
-									// assert.equal(parentKey, user.custom_id,
-									// 	`nakama.user.id: ${user.id}, firebase.user.id: ${parentKey}, nakama.user.custom_id: ${user.custom_id}`);
+									assert.equal("afterSnapName", user.username,
+										`[firebase.user.nickname(changed) == nakama.user.username? - nakama.user.id: ${user.id}, nakama.user.username: ${user.username}]`);
+									return Promise.resolve();
 								});
 							} else {
 								return Promise.reject(new Error("wrappedUpdateNicknameTrigger(): no nakama User(username:afterSnapName) found"));
@@ -296,8 +295,12 @@ describe('Test Cloud Functions', () => {
 					}).then(() => {
 						// wrap function은 실제 firebase의 trigger를 발생시키는 것이 아니기 database trigger 이벤트가 발생하지 않음
 						// 하단의 조건은 실패하지만, 값 확인을 위해서 작성함
-						assert.equal("afterSnapName", currentNickname, `firebase - user/${uid}/nickname: ${currentNickname}`);
-						return Promise.resolve();
+						return admin.database().ref(`/user/${uid}/nickname`).once('value').then((snap, context) => {
+							let currentNickname = snap.val();
+							assert.equal("afterSnapName", currentNickname,
+								`[firebase.user.nickname has changed? - firebase user/${uid}/nickname: ${currentNickname}]`);
+							return Promise.resolve();
+						});
 					})
 
 					// Assert that the value is the uppercased version of our input.

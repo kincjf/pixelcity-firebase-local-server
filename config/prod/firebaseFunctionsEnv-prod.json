@@ -3,7 +3,7 @@
 		"nakama": {
 			"serverkey": "defaultkey",
 			"host": "nakama-prod.festico.kr",
-			"port": "7350"
+			"port": 7350
 		},
 		"env": "prod"
 	}

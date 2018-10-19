@@ -121,5 +121,5 @@ return admin.database().ref('/').remove().then(() => {
 	});
 }).then(() => {
 	console.log("test data dump finish");
-	return Promise.resolve("test data dump finish");
+	process.exit(0);
 }).catch((err) => console.error("test data dump Error", err));

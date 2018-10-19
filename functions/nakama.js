@@ -15,10 +15,10 @@ const FUNCTIONS_CONFIG = functions.config().service;
 const getNakamaClient = () => {
 	let client;
 
-	if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "alpha-test" || process.env.NODE_ENV === "production") {
+	if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "alpha-test") {
 		client = new nakamajs.Client(process.env.NAKAMA_SERVER_KEY, process.env.NAKAMA_HOST, process.env.NAKAMA_PORT);
 		client.ssl = false;
-	} else {	// production
+	} else {	// process.env.NODE_ENV === "production"
 		client = new nakamajs.Client(FUNCTIONS_CONFIG.nakama.serverkey, FUNCTIONS_CONFIG.nakama.host, FUNCTIONS_CONFIG.nakama.port);
 		client.ssl = false;
 	}
@@ -29,22 +29,23 @@ exports.getNakamaClient = getNakamaClient;
 
 /**
  *
- * @param uid
- * @returns {Promise<*>}
+ * @param custom_id
+ * @param nickname
+ * @returns {*}
  */
-const getNakamaSession = function (uid, nickname) {
+const getNakamaSession = function (custom_id, nickname) {
 	let options, client;
 
-	if (!uid) {
-		let log = `getNakamaSession: no uid: ${uid}`;
+	if (!custom_id) {
+		let log = `getNakamaSession: no custom_id: ${custom_id}`;
 		console.warn(log);
 		return Promise.reject(log);
 	}
 
 	if (nickname) {
-		options = {id: uid, create: true, username: nickname};
+		options = {id: custom_id, create: true, username: nickname};
 	} else {
-		options = {id: uid};
+		options = {id: custom_id};
 	}
 
 	console.log(`getNakamaSession(): options ${JSON.stringify(options)}`);
