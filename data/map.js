@@ -871,8 +871,9 @@ var data = {
 			}
 		},
 
+		//** 여기서부터.. **//
 
-		"modern_build_01": {
+		"modern_build_01": {		//국립무형유산원
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -919,7 +920,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Big",
+					"objectId": "Modern_Muhyung",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -956,7 +957,7 @@ var data = {
 			}
 		},
 
-		"modern_build_01-1": {
+		"modern_build_01-1": {		//무형유산원 주차장(좌)
 			"type": "area",
 			"shape": "polygon",
 			"coord": [
@@ -964,22 +965,22 @@ var data = {
 					"lat": 35.810343,
 					"lng": 127.157409,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.810315,
 					"lng": 127.157924,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.809967,
 					"lng": 127.157895,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.809997,
@@ -1003,7 +1004,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Parking",
+					"objectId": "Modern_Parking_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1040,34 +1041,34 @@ var data = {
 			}
 		},
 
-		"modern_build_01-2": {
+		"modern_build_01-2": {		//무형유산원 주차장(우)
 			"type": "area",
 			"shape": "polygon",
 			"coord": [
 				{
-					"lat": 35.810387,
-					"lng": 127.157990,
+					"lat": 35.810403,
+					"lng": 127.160916,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
-					"lat": 35.809657,
-					"lng": 127.157919,
+					"lat": 35.810411,
+					"lng": 127.161353,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
-					"lat": 35.809484,
-					"lng": 127.160751,
+					"lat": 35.809677,
+					"lng": 127.161280,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
-					"lat": 35.810214,
-					"lng": 127.160811,
+					"lat": 35.809709,
+					"lng": 127.160810,
 					"alt": 0,
 					"isWidthPoint": false,
 					"isLengthPoint": false
@@ -1087,7 +1088,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Parking",
+					"objectId": "Modern_Parking_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1124,7 +1125,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-1": {
+		"modern_build_02-1": {		// 한벽문화관(좌)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1132,22 +1133,22 @@ var data = {
 					"lat": 35.812279,
 					"lng": 127.158403,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812314,
 					"lng": 127.158732,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812158,
 					"lng": 127.158757,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812114,
@@ -1171,7 +1172,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Part1",
+					"objectId": "Modern_Hanbyuk_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1208,7 +1209,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-2": {
+		"modern_build_02-2": {		// 한벽문화관(중)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1216,22 +1217,22 @@ var data = {
 					"lat": 35.812210,
 					"lng": 127.158560,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812252,
 					"lng": 127.158979,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812150,
 					"lng": 127.159004,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812107,
@@ -1255,7 +1256,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Part2",
+					"objectId": "Modern_Hanbyuk_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1292,7 +1293,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-3": {
+		"modern_build_02-3": {		//한벽문화관(우)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1300,22 +1301,22 @@ var data = {
 					"lat": 35.812267,
 					"lng": 127.158903,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812296,
 					"lng": 127.159136,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812199,
 					"lng": 127.159151,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.812179,
@@ -1339,7 +1340,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Part3",
+					"objectId": "Modern_Hanbyuk_03",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1376,7 +1377,7 @@ var data = {
 			}
 		},
 
-		"modern_build_03-1": {
+		"modern_build_03-1": {		// 한벽루(하단)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1384,22 +1385,22 @@ var data = {
 					"lat": 35.811945,
 					"lng": 127.159179,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.811879,
 					"lng": 127.159188,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811900,
 					"lng": 127.159443,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811971,
@@ -1423,7 +1424,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Part1",
+					"objectId": "Modern_Hanbyuk-Ru_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1460,7 +1461,7 @@ var data = {
 			}
 		},
 
-		"modern_build_03-2": {
+		"modern_build_03-2": {		// 한벽루(상단)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1468,15 +1469,15 @@ var data = {
 					"lat": 35.812216,
 					"lng": 127.159318,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812224,
 					"lng": 127.159422,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811906,
@@ -1490,7 +1491,7 @@ var data = {
 					"lng": 127.159478,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				}
 			],
 			"model": {
@@ -1507,7 +1508,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Modern_Architecture_Part2",
+					"objectId": "Modern_Hanbyuk-Ru_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1544,7 +1545,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_01": {
+		"hanok_build_01": { 		//한벽문화관 한옥(하단)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1553,20 +1554,20 @@ var data = {
 					"lng": 127.158211,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811742,
 					"lng": 127.158233,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811750,
 					"lng": 127.158373,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
@@ -1591,7 +1592,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Small",
+					"objectId": "Hanok_Hanbyuk_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1628,7 +1629,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_02": {
+		"hanok_build_02": {			//한벽문화관 한옥(상단)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1636,22 +1637,22 @@ var data = {
 					"lat": 35.812036,
 					"lng": 127.158311,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812066,
 					"lng": 127.158546,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811968,
 					"lng": 127.158564,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811945,
@@ -1675,7 +1676,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Small",
+					"objectId": "Hanok_Hanbyuk_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1712,7 +1713,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_03-1": {
+		"hanok_build_03-1": {		//완판본문화관(상)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1720,22 +1721,22 @@ var data = {
 					"lat": 35.812008,
 					"lng": 127.157796,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812035,
 					"lng": 127.158099,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811947,
 					"lng": 127.158108,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811918,
@@ -1796,7 +1797,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_03-2": {
+		"hanok_build_03-2": {		//완판본문화관(하)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1804,22 +1805,22 @@ var data = {
 					"lat": 35.811935,
 					"lng": 127.158008,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.811947,
 					"lng": 127.158108,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811826,
 					"lng": 127.158125,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811821,
@@ -1880,7 +1881,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_04-1": {
+		"hanok_build_04-1": {		//향교문화관(상)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1888,22 +1889,22 @@ var data = {
 					"lat": 35.811978,
 					"lng": 127.157308,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.812012,
 					"lng": 127.157660,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811912,
 					"lng": 127.157672,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811888,
@@ -1964,7 +1965,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_04-2": {
+		"hanok_build_04-2": {		//향교문화관(하)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1972,22 +1973,22 @@ var data = {
 					"lat": 35.811888,
 					"lng": 127.157320,
 					"alt": 0,
-					"isWidthPoint": false,
+					"isWidthPoint": true,
 					"isLengthPoint": false
 				},
 				{
 					"lat": 35.811895,
 					"lng": 127.157437,
 					"alt": 0,
-					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isWidthPoint": true,
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811782,
 					"lng": 127.157456,
 					"alt": 0,
 					"isWidthPoint": false,
-					"isLengthPoint": false
+					"isLengthPoint": true
 				},
 				{
 					"lat": 35.811769,
@@ -2048,9 +2049,9 @@ var data = {
 			}
 		},
 
-		"festival_booth_01": {
+		"festival_booth_01": {		//임의설치 부스, 천동로
 			"type": "booth",
-			"shape": "point",
+			"shape": "pixel",
 			"coord": [
 				{
 					"lat": 35.810783,
@@ -2111,7 +2112,7 @@ var data = {
 			}
 		},
 
-		"parking_area_01": {
+		"parking_area_01": {		//남부시장 주차장
 			"type": "area",
 			"shape": "polygon",
 			"coord": [
@@ -2194,7 +2195,7 @@ var data = {
 				"maxRequiredLevel": 0
 			}
 		},
-		"parking_area_02": {
+		"parking_area_02": {		//남부시장 주차정
 			"type": "area",
 			"shape": "polygon",
 			"coord": [
