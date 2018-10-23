@@ -21,11 +21,14 @@ let readFile = function (dirname) {
 			}
 		})
 		.forEach(function (file) {
-			var model = require(path.join(dirname, file));
-			var extname = path.extname(file);
-			var basename = path.basename(file, extname);
+			let extname = path.extname(file);
 
-			data[basename] = model;
+			if (extname === ".js") {
+				let model = require(path.join(dirname, file));
+				let basename = path.basename(file, extname);
+
+				data[basename] = model;
+			}
 		});
 }
 

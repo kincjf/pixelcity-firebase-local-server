@@ -1,6 +1,6 @@
 {
     "GUID": "b3fb26e0-d6a1-11e8-9bd6-7d4e3308a7ae",
-    "lastModifTS": "2018-10-23T08:57:43.257Z",
+    "lastModifTS": "2018-10-23T15:36:00.314Z",
     "persistenceSchemaVersion": "2",
     "description": "",
     "comments": "",
@@ -1412,6 +1412,28 @@
                                     "primaryKey": true,
                                     "properties": [
                                         {
+                                            "childRelationships": [],
+                                            "comments": "",
+                                            "default": "",
+                                            "dependencies": [],
+                                            "description": "\"hanok\": 한옥\n\"building\": 빌딩\n\"booth\": 축제 부스\n\"waypoint\": 웨이포인트\n\"safezone\": 안전지대\n\"area\": 기타 polygon으로 표현되는 위치\n\n향후 바뀔 수 있음, 지역 설명이 들어갈수도 있고, 다른 이벤트 게임이 적용 될수도 있음",
+                                            "enum": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "format": "",
+                                            "GUID": "a5b8eb11-d31a-11e8-9b1a-254fdb783791",
+                                            "maxLength": "",
+                                            "minLength": "",
+                                            "name": "type",
+                                            "parentRelationship": "",
+                                            "pattern": "",
+                                            "relationshipType": "",
+                                            "required": true,
+                                            "sample": "",
+                                            "id": "",
+                                            "type": "string"
+                                        },
+                                        {
                                             "additionalProperties": false,
                                             "childRelationships": [],
                                             "comments": "",
@@ -1615,28 +1637,6 @@
                                             "error": {
                                                 "name": false
                                             }
-                                        },
-                                        {
-                                            "childRelationships": [],
-                                            "comments": "",
-                                            "default": "",
-                                            "dependencies": [],
-                                            "description": "\"hanok\": 한옥\n\"building\": 빌딩\n\"booth\": 축제 부스\n\"waypoint\": 웨이포인트\n\"safezone\": 안전지대\n\"area\": 기타 polygon으로 표현되는 위치\n\n향후 바뀔 수 있음, 지역 설명이 들어갈수도 있고, 다른 이벤트 게임이 적용 될수도 있음",
-                                            "enum": [],
-                                            "foreignCollection": "",
-                                            "foreignField": [],
-                                            "format": "",
-                                            "GUID": "a5b8eb11-d31a-11e8-9b1a-254fdb783791",
-                                            "maxLength": "",
-                                            "minLength": "",
-                                            "name": "type",
-                                            "parentRelationship": "",
-                                            "pattern": "",
-                                            "relationshipType": "",
-                                            "required": true,
-                                            "sample": "",
-                                            "id": "",
-                                            "type": "string"
                                         },
                                         {
                                             "childRelationships": [],
@@ -3049,6 +3049,88 @@
                                     "parentRelationship": "",
                                     "primaryKey": true,
                                     "properties": [
+                                        {
+                                            "type": "document",
+                                            "primaryKey": false,
+                                            "relationshipType": "",
+                                            "parentRelationship": "",
+                                            "childRelationships": [],
+                                            "foreignCollection": "",
+                                            "foreignField": [],
+                                            "properties": [
+                                                {
+                                                    "type": "boolean",
+                                                    "default": "",
+                                                    "enum": [],
+                                                    "primaryKey": false,
+                                                    "relationshipType": "",
+                                                    "parentRelationship": "",
+                                                    "childRelationships": [],
+                                                    "foreignCollection": "",
+                                                    "foreignField": [],
+                                                    "sample": "",
+                                                    "GUID": "92bc29b0-d6c0-11e8-9bd6-7d4e3308a7ae",
+                                                    "description": "",
+                                                    "comments": "",
+                                                    "dependencies": [],
+                                                    "required": false,
+                                                    "id": "",
+                                                    "name": "building"
+                                                },
+                                                {
+                                                    "type": "boolean",
+                                                    "default": "",
+                                                    "enum": [],
+                                                    "primaryKey": false,
+                                                    "relationshipType": "",
+                                                    "parentRelationship": "",
+                                                    "childRelationships": [],
+                                                    "foreignCollection": "",
+                                                    "foreignField": [],
+                                                    "sample": "",
+                                                    "GUID": "a7432320-d6c0-11e8-9bd6-7d4e3308a7ae",
+                                                    "description": "",
+                                                    "comments": "",
+                                                    "dependencies": [],
+                                                    "required": false,
+                                                    "id": "",
+                                                    "name": "street"
+                                                },
+                                                {
+                                                    "type": "boolean",
+                                                    "default": "",
+                                                    "enum": [],
+                                                    "primaryKey": false,
+                                                    "relationshipType": "",
+                                                    "parentRelationship": "",
+                                                    "childRelationships": [],
+                                                    "foreignCollection": "",
+                                                    "foreignField": [],
+                                                    "sample": "",
+                                                    "GUID": "c0ebe4b0-d6c0-11e8-9bd6-7d4e3308a7ae",
+                                                    "description": "",
+                                                    "comments": "",
+                                                    "dependencies": [],
+                                                    "required": false,
+                                                    "id": "",
+                                                    "name": "group",
+                                                    "error": {
+                                                        "name": false
+                                                    }
+                                                }
+                                            ],
+                                            "dependencies": [],
+                                            "minProperties": "",
+                                            "maxProperties": "",
+                                            "additionalProperties": false,
+                                            "enum": [],
+                                            "GUID": "32306690-d6a9-11e8-9bd6-7d4e3308a7ae",
+                                            "description": "\"building\": 빌딩 -> 건물 top 윗쪽에 마커 배치\n\"street\": 거리 -> 바닥 길거리 페인트같이 마커 배치\n\"group\": 일반 그룹 -> group 곳곳에 마커 배치(미정) \n\ngroup별 마커의 위치가 달라 질 것이라고 생각해서 해당 값을 집어넣음\n(firebase에 null이 안 들어가서 groupId값 저장을 위해서 일단 일부러 집어넣음)",
+                                            "comments": "",
+                                            "required": true,
+                                            "id": "",
+                                            "name": "type"
+                                        },
                                         {
                                             "type": "string",
                                             "minLength": "",
@@ -6869,6 +6951,7 @@
     ],
     "users": [],
     "idToNameHashTable": {
+        "32306690-d6a9-11e8-9bd6-7d4e3308a7ae": "type",
         "ca3431a0-d376-11e8-9472-e37da64a2e21": "isLengthPoint",
         "c3a9ffe0-d376-11e8-9472-e37da64a2e21": "isWidthPoint",
         "a022d880-d376-11e8-9472-e37da64a2e21": "p[n]",
@@ -7232,7 +7315,10 @@
         "abe276e0-d375-11e8-9472-e37da64a2e21": "experience",
         "f34a0930-d375-11e8-9472-e37da64a2e21": "p1",
         "fd3f2b50-d375-11e8-9472-e37da64a2e21": "p2",
-        "2b7e2890-d376-11e8-9472-e37da64a2e21": "p[n]"
+        "2b7e2890-d376-11e8-9472-e37da64a2e21": "p[n]",
+        "92bc29b0-d6c0-11e8-9bd6-7d4e3308a7ae": "building",
+        "a7432320-d6c0-11e8-9bd6-7d4e3308a7ae": "street",
+        "c0ebe4b0-d6c0-11e8-9bd6-7d4e3308a7ae": "group"
     },
     "definitions": {
         "type": "definitions",
