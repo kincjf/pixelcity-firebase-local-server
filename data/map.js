@@ -1125,7 +1125,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-1": {		// 한벽문화관(좌)
+		"modern_build_02-1": {		// 한벽문화관1관(좌)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1209,7 +1209,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-2": {		// 한벽문화관(중)
+		"modern_build_02-2": {		// 한벽문화관2관(중)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1293,7 +1293,7 @@ var data = {
 			}
 		},
 
-		"modern_build_02-3": {		//한벽문화관(우)
+		"modern_build_02-3": {		//한벽문화관3관(우)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1377,7 +1377,7 @@ var data = {
 			}
 		},
 
-		"modern_build_03-1": {		// 한벽루(하단)
+		"modern_build_03-1": {		// 한벽루1관(하단)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1461,7 +1461,7 @@ var data = {
 			}
 		},
 
-		"modern_build_03-2": {		// 한벽루(상단)
+		"modern_build_03-2": {		// 한벽루2관(상단)
 			"type": "building",
 			"shape": "polygon",
 			"coord": [
@@ -1545,7 +1545,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_01": { 		//한벽문화관 한옥(하단)
+		"hanok_build_01": { 		//한벽문화관 한옥1관(하단)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1629,7 +1629,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_02": {			//한벽문화관 한옥(상단)
+		"hanok_build_02": {			//한벽문화관 한옥2관(상단)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1713,7 +1713,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_03-1": {		//완판본문화관(상)
+		"hanok_build_03-1": {		//완판본문화관1관(상)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1760,7 +1760,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Row",
+					"objectId": "Hanok_Wanpan_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1797,7 +1797,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_03-2": {		//완판본문화관(하)
+		"hanok_build_03-2": {		//완판본문화관2관(하)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1844,7 +1844,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Col",
+					"objectId": "Hanok_Wanpan_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1881,7 +1881,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_04-1": {		//향교문화관(상)
+		"hanok_build_04-1": {		//향교문화관1관(상)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -1928,7 +1928,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Row",
+					"objectId": "Hanok_Hyanggyo_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -1965,7 +1965,7 @@ var data = {
 			}
 		},
 
-		"hanok_build_04-2": {		//향교문화관(하)
+		"hanok_build_04-2": {		//향교문화관2관(하)
 			"type": "hanok",
 			"shape": "polygon",
 			"coord": [
@@ -2012,7 +2012,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Hanok_Architecture_Col",
+					"objectId": "Hanok_Hyanggyo_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -2049,7 +2049,7 @@ var data = {
 			}
 		},
 
-		"festival_booth_01": {		//임의설치 부스, 천동로
+		"festival_booth_01": {		//임의설치 부스, 천서로
 			"type": "booth",
 			"shape": "pixel",
 			"coord": [
@@ -2159,7 +2159,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Parking_Area",
+					"objectId": "Parking_Area_01",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -2242,7 +2242,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Parking_Area",
+					"objectId": "Parking_Area_02",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
