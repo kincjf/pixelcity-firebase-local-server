@@ -1993,7 +1993,7 @@ var data = {
 					"rotationZ": null
 				},
 				"middle": {
-					"objectId": "Festival_Booth",
+					"objectId": "Festival_Booth_Small",
 					"positionX": 0,
 					"positionY": 0,
 					"positionZ": 0,
@@ -2089,51 +2089,123 @@ var data = {
 					"rotationZ": null
 				}
 			},
-			"scaleX": 1,
-			"scaleY": 1,
-			"scaleZ": 1,
-			"rotationX": 0,
-			"rotationY": 0,
-			"rotationZ": 0,
-			"groupId": null,
-			"property": {
-				"minRequiredLevel": 0,
-				"maxRequiredLevel": 0
+			"parking_area_02": {		//남부시장 주차정
+				"type": "area",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.812871,
+						"lng": 127.142063,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.812430,
+						"lng": 127.145365,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					},
+					"p3": {
+						"lat": 35.812192,
+						"lng": 127.145287,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					},
+					"p4": {
+						"lat": 35.812669,
+						"lng": 127.142057,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Parking_Area",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
 			}
 		},
-		"parking_area_02": {		//남부시장 주차장
+		"parking_area_02": {		//남부시장 주차정
 			"type": "area",
 			"shape": "polygon",
-			"coord": {
-				"p1": {
+			"coord": [
+				{
 					"lat": 35.812871,
 					"lng": 127.142063,
 					"alt": 0,
 					"isWidthPoint": false,
 					"isLengthPoint": false
 				},
-				"p2": {
+				{
 					"lat": 35.812430,
 					"lng": 127.145365,
 					"alt": 0,
 					"isWidthPoint": false,
 					"isLengthPoint": false
 				},
-				"p3": {
+				{
 					"lat": 35.812192,
 					"lng": 127.145287,
 					"alt": 0,
 					"isWidthPoint": false,
 					"isLengthPoint": false
 				},
-				"p4": {
+				{
 					"lat": 35.812669,
 					"lng": 127.142057,
 					"alt": 0,
 					"isWidthPoint": false,
 					"isLengthPoint": false
 				}
-			},
+			],
 			"model": {
 				"top": {
 					"objectId": null,
@@ -2172,25 +2244,14 @@ var data = {
 					"rotationZ": null
 				}
 			},
-			"scaleX": 1,
-			"scaleY": 1,
-			"scaleZ": 1,
-			"rotationX": 0,
-			"rotationY": 0,
-			"rotationZ": 0,
-			"groupId": null,
-			"property": {
-				"minRequiredLevel": 0,
-				"maxRequiredLevel": 0
+			"hanok_03": {
+				"tileColor": null,
+				"coord": null
+			},
+			"hanok_04": {
+				"tileColor": null,
+				"coord": null
 			}
-		},
-		"hanok_03": {
-			"tileColor": null,
-			"coord": null
-		},
-		"hanok_04": {
-			"tileColor": null,
-			"coord": null
 		}
 
 	},
