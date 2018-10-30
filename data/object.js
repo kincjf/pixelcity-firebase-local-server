@@ -113,14 +113,14 @@ var data = {
 		"sizeY": 1.5,
 		"sizeZ": 0.5,
 	},
-	"Parking_Area_01": {
+	"Parking_Area_01": {		//남부시장 주차장 1
 		"type": "area",
 		"part": "single",
 		"sizeX": 3.0,
 		"sizeY": 1.5,
 		"sizeZ": 0.5,
 	},
-	"Parking_Area_02": {
+	"Parking_Area_02": {		//남부시장 주차장 2
 		"type": "area",
 		"part": "single",
 		"sizeX": 3.0,
