@@ -1260,7 +1260,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -6.38,
 				"rotationZ": 0,
 				"groupId": "modern_02",
 				"property": {
@@ -1346,7 +1346,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -7.28,
 				"rotationZ": 0,
 				"groupId": "modern_02",
 				"property": {
@@ -1429,7 +1429,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -8.05,
 				"rotationZ": 0,
 				"groupId": "modern_02",
 				"property": {
@@ -1512,7 +1512,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -6.77,
 				"rotationZ": 0,
 				"groupId": "modern_03",
 				"property": {
@@ -1595,7 +1595,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -96.34,
 				"rotationZ": 0,
 				"groupId": "modern_03",
 				"property": {
@@ -1678,7 +1678,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": 82.49,
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
@@ -1761,7 +1761,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -7.15,
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
@@ -1847,7 +1847,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -4.27,
 				"rotationZ": 0,
 				"groupId": "hanok_03",
 				"property": {
@@ -1930,7 +1930,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -95.01,
 				"rotationZ": 0,
 				"groupId": "hanok_04",
 				"property": {
@@ -2017,7 +2017,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -8.89,
 				"rotationZ": 0,
 				"groupId": "hanok_03",
 				"property": {
@@ -2100,7 +2100,7 @@ var data = {
 				"scaleY": 1,
 				"scaleZ": 1,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -98.03,
 				"rotationZ": 0,
 				"groupId": "hanok_04",
 				"property": {
