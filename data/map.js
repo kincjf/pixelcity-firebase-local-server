@@ -2184,22 +2184,22 @@ var data = {
 						"lat": 35.812236,
 						"lng": 127.146117,
 						"alt": 0,
-						"isWidthPoint": false,
+						"isWidthPoint": true,
 						"isLengthPoint": false
 					},
 					"p2": {
 						"lat": 35.811078,
 						"lng": 127.149473,
 						"alt": 0,
-						"isWidthPoint": false,
-						"isLengthPoint": false
+						"isWidthPoint": true,
+						"isLengthPoint": true
 					},
 					"p3": {
 						"lat": 35.810830,
 						"lng": 127.149428,
 						"alt": 0,
 						"isWidthPoint": false,
-						"isLengthPoint": false
+						"isLengthPoint": true
 					},
 					"p4": {
 						"lat": 35.812037,
@@ -2270,22 +2270,22 @@ var data = {
 						"lat": 35.812871,
 						"lng": 127.142063,
 						"alt": 0,
-						"isWidthPoint": false,
+						"isWidthPoint": true,
 						"isLengthPoint": false
 					},
 					"p2": {
 						"lat": 35.812430,
 						"lng": 127.145365,
 						"alt": 0,
-						"isWidthPoint": false,
-						"isLengthPoint": false
+						"isWidthPoint": true,
+						"isLengthPoint": true
 					},
 					"p3": {
 						"lat": 35.812192,
 						"lng": 127.145287,
 						"alt": 0,
 						"isWidthPoint": false,
-						"isLengthPoint": false
+						"isLengthPoint": true
 					},
 					"p4": {
 						"lat": 35.812669,
