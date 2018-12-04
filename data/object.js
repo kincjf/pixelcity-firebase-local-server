@@ -92,20 +92,55 @@ var data = {
 		"sizeY": 1.5,
 		"sizeZ": 1.0,
 	},
-	"Hanok_Hyanggyo_01": {		//향교문화관1관(상)
+	"Hanok_HyangMun_01": {		//향교문화관1관(상)
 		"type": "hanok",
 		"part": "single",
 		"sizeX": 3.0,
 		"sizeY": 1.5,
 		"sizeZ": 1.0,
 	},
-	"Hanok_Hyanggyo_02": {		//향교문화관2관(상)
+	"Hanok_HyangMun_02": {		//향교문화관2관(상)
 		"type": "hanok",
 		"part": "single",
 		"sizeX": 1.0,
 		"sizeY": 1.5,
 		"sizeZ": 1.0,
 	},
+	"Hanok_Hyanggyo_01": {		//향교 1관, 만화루
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},
+	"Hanok_Hyanggyo_02": {		//향교 2관, 내심문
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},	
+	"Hanok_Hyanggyo_03": {		//향교 3관, 서무
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},			
+	"Hanok_Hyanggyo_04": {		//향교 4관, 동무
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},
+	"Hanok_Hyanggyo_05": {		//향교 5관, 대성전
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},		
 	"Festival_Booth": {			//임의설치 부스, 천서로
 		"type": "building",
 		"part": "single",

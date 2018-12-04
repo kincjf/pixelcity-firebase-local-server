@@ -1989,7 +1989,7 @@ var data = {
 						"rotationZ": null
 					},
 					"middle": {
-						"objectId": "Hanok_Hyanggyo_01",
+						"objectId": "Hanok_HyangMun_01",
 						"positionX": 0,
 						"positionY": 0,
 						"positionZ": 0,
@@ -2072,7 +2072,7 @@ var data = {
 						"rotationZ": null
 					},
 					"middle": {
-						"objectId": "Hanok_Hyanggyo_02",
+						"objectId": "Hanok_HyangMun_02",
 						"positionX": 0,
 						"positionY": 0,
 						"positionZ": 0,
@@ -2108,6 +2108,422 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
+			"hanok_build_05-1": {		//향교 1관, 만화루
+				"type": "hanok",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.812215,
+						"lng": 127.1571417,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.8122209,
+						"lng": 127.1573008,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": true
+					},
+					"p3": {
+						"lat": 35.812122,
+						"lng": 127.1573089,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": true
+					},
+					"p4": {
+						"lat": 35.812115,
+						"lng": 127.157147,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Hanok_Hyanggyo_01",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": "hanok_05",
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"hanok_build_05-2": {		//향교 2관, 내심문
+				"type": "hanok",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.8123124,
+						"lng": 127.1571723,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.812317,
+						"lng": 127.1572636,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": true
+					},
+					"p3": {
+						"lat": 35.8122717,
+						"lng": 127.1572691,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": true
+					},
+					"p4": {
+						"lat": 35.812265,
+						"lng": 127.157176,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Hanok_Hyanggyo_02",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": "hanok_05",
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"hanok_build_05-3": {		//향교 3관, 서무
+				"type": "hanok",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.8126304,
+						"lng": 127.1568756,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.812635,
+						"lng": 127.1569738,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": true
+					},
+					"p3": {
+						"lat": 35.8123622,
+						"lng": 127.1570009,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": true
+					},
+					"p4": {
+						"lat": 35.8123555,
+						"lng": 127.1569013,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Hanok_Hyanggyo_03",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": "hanok_05",
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"hanok_build_05-4": {		//향교 4관, 동무
+				"type": "hanok",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.8126511,
+						"lng": 127.1574316,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.8126555,
+						"lng": 127.157529,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": true
+					},
+					"p3": {
+						"lat": 35.812389,
+						"lng": 127.15755011,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": true
+					},
+					"p4": {
+						"lat": 35.8123875,
+						"lng": 127.1574408,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Hanok_Hyanggyo_04",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": "hanok_05",
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"hanok_build_05-5": {		//향교 5관, 대성전
+				"type": "hanok",
+				"shape": "polygon",
+				"coord": {
+					"p1": {
+						"lat": 35.8127856,
+						"lng": 127.157111,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": false
+					},
+					"p2": {
+						"lat": 35.812793,
+						"lng": 127.1572756,
+						"alt": 0,
+						"isWidthPoint": true,
+						"isLengthPoint": true
+					},
+					"p3": {
+						"lat": 35.8126862,
+						"lng": 127.157286,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": true
+					},
+					"p4": {
+						"lat": 35.812677,
+						"lng": 127.1571164,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "Hanok_Hyanggyo_05",
+						"positionX": 0,
+						"positionY": 0,
+						"positionZ": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"scaleZ": 1,
+						"rotateX": 0,
+						"rotateY": 0,
+						"rotateZ": 0
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": "hanok_05",
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+
 			"festival_booth_01": {		//임의설치 부스, 천동로
 				"markerType": {
 					"info": true
@@ -2376,6 +2792,13 @@ var data = {
 				"coord": null
 			},
 			"hanok_04": {
+				"type": {
+					"building": true
+				},
+				"tileColor": null,
+				"coord": null
+			},
+			"hanok_05": {
 				"type": {
 					"building": true
 				},
