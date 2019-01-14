@@ -92,6 +92,13 @@ var data = {
 		"sizeY": 1.5,
 		"sizeZ": 1.0,
 	},
+	"Hanok_Wanpan_03": {		//완판본문화관 3관, 정문
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},
 	"Hanok_HyangMun_01": {		//향교문화관1관(상)
 		"type": "hanok",
 		"part": "single",
@@ -135,6 +142,34 @@ var data = {
 		"sizeZ": 1.0,
 	},
 	"Hanok_Hyanggyo_05": {		//향교 5관, 대성전
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},
+	"Hanok_Hyanggyo_06": {		//향교 6관, 동재
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},	
+	"Hanok_Hyanggyo_07": {		//향교 7관, 서재
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},	
+	"Hanok_Hyanggyo_08": {		//향교 8관, 명륜당
+		"type": "hanok",
+		"part": "single",
+		"sizeX": 1.0,
+		"sizeY": 1.5,
+		"sizeZ": 1.0,
+	},
+	"Hanok_Yeonsu": {		//전주 전통문화연수원
 		"type": "hanok",
 		"part": "single",
 		"sizeX": 1.0,
