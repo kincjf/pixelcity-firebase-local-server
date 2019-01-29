@@ -1005,6 +1005,11 @@ var data = {
 				"rotationZ": 0,
 				"groupId": "modern_01",
 				"property": {
+					"detailUrl": "http://www.bibimbapfest.com/kr/inner.php?sMenu=C3000",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
@@ -2606,7 +2611,7 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
-			
+
 			/* 19.01.14
 			 * 기록분 */
 
