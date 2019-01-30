@@ -37,6 +37,89 @@ var data = {
 	},
 
 	"map": {
+		/* 승철이형 추가본 */
+		"Jeonju-CheongYeonLu": {
+			"title": "청연루",
+			"comment": "전주 남천교 위의 청연루입니다."
+		},
+		"Jeonju-WanpanCulturalCenter": {
+			"title": "완판본문화관",
+			"comment": "전주지역의 출판유산 보존을 위해 설립된 완판본문화관입니다."
+		},
+		"Jeonju-EojinMuseum": {
+			"title": "전주 어진박물관",
+			"comment": "경기전 내부에 있는 어진박물관입니다."
+		},
+		"Jeonju-HanbyeokCulturalCenter": {
+			"title": "전주 한벽문화관",
+			"comment": "전통문화와 예술을 체험할 수 있는 한벽문화관입니다."
+		},
+		"Jeonju-HyangGyoCulturalCenter": {
+			"title": "전주 향교문화관",
+			"comment": "전주향교의 정면에 있는 향교문화관입니다."
+		},
+		"Jeonju-JamanPaintingVillage": {
+			"title": "자만벽화마을",
+			"comment": "아기자기한 풍경의 자만 벽화마을입니다."
+		},
+		"Jeonju-JeondongChurch": {
+			"title": "전주 전동성당",
+			"comment": "전주의 천주교역사를 간직한 전동성당입니다."
+		},
+		"Jeonju-CheonSeoRo": {
+			"title": "전주 천서로",
+			"comment": "전주 천서로입니다."
+		},
+		"Jeonju-ChunDongRo": {
+			"title": "전주 천동로",
+			"comment": "전주 천동로입니다."
+		},
+		"Jeonju-FanCultureCenter": {
+			"title": "전주 부채박물관",
+			"comment": "전주 부채박물관입니다."
+		},
+		"Jeonju-GyeongGijeon": {
+			"title": "경기전",
+			"comment": "전주의 역사와 함께하는 경기전입니다."
+		},
+		"Jeonju-HyangGyo": {
+			"title": "전주향교",
+			"comment": "옛 조선시대의 교육시설인 전주향교입니다."
+		},
+		"Jeonju-SeongsimHighSchool": {
+			"title": "성심여자고등학교",
+			"comment": "인근 고등학교이며 일반인의 출입이 제한됩니다."
+		},
+		"Jeonju-TraditionalCultureTrainingCenter": {
+			"title": "전주 전통문화연수원",
+			"comment": "전통문화연수원의 본관입니다."
+		},
+		"Jeonju-KMU": {
+			"title": "국립무형문화유산원",
+			"comment": "전통체험을 진행할 수 있는 국립 무형문화유산원입니다."
+		},
+		"Jeonju-NamcheonBridgeIntersection": {
+			"title": "남천교",
+			"comment": "청연루가 있는 남천교의 입구입니다."
+		},
+		"Jeonju-Ohmokgyo": {
+			"title": "오목교",
+			"comment": "오목대와 이목대를 잇는 다리입니다."
+		},
+		"Jeonju-Omogdae": {
+			"title": "오목대",
+			"comment": "한옥마을 전경을 바라볼 수 있는 오목대입니다."
+		},
+		"Jeonju-PungnamGate": {
+			"title": "풍남문",
+			"comment": "옛 전주성의 남문인 풍남문입니다."
+		},
+		"Jeonju-SsajeonBridge": {
+			"title": "싸전다리",
+			"comment": "전주의 외곽으로 나가는 다리입니다."
+		},
+
+		/* default */
 		"Seoul": {	// 서울 광화문
 			"title": "광주",
 			"comment": "서울 광화문"
@@ -107,6 +190,7 @@ var data = {
 			"title": "거북바위",
 			"comment": "전주 사방신 중 현무의 힘이 깃든 바위이다. 금암동의 이름의 어원이 되는 바위이다."
 		}
+
 	}
 };
 

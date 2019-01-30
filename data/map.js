@@ -50,7 +50,12 @@ var data = {
 				}
 			}
 		},
+		"image": {
+
+		},
 		"single": {
+			/* default */
+
 			"Seoul-Gwanghwamun": {		// 서울 광화문
 				"type": "waypoint",  // hanok, building, booth, waypoint, safezone
 				"shape": "pixel",  // pixel, line, polygon
@@ -858,13 +863,15 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
-			"Jeonju-HyanGyo": {		// 전주 향교
+
+			/* 승철이형 waypoint 추가본 */
+			"Jeonju-CheongYeonLu": {		// 전주 청연루
 				"type": "safezone",
 				"shape": "pixel",
 				"coord": {
 					"p1": {
-						"lat": 35.8121,
-						"lng": 127.15719,
+						"lat": 35.810867,
+						"lng": 127.153173,
 						"alt": 0,
 						"isWidthPoint": false,
 						"isLengthPoint": false
@@ -920,6 +927,1187 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
+			"Jeonju-WanpanCulturalCenter": {		// 전주 완판본문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811942,
+						"lng": 127.157946,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-EojinMuseum": {		// 전주 어진박물관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.816242,
+						"lng": 127.149402,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HanbyeokCulturalCenter": {		// 전주 한벽문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812051,
+						"lng": 127.158402,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HyangGyoCulturalCenter": {		// 전주 향교문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811996,
+						"lng": 127.157245,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-JamanPaintingVillage": {		// 전주 자만벽화마을
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814220,
+						"lng": 127.157220,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-JeondongChurch": {		// 전주 전동성당
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813387,
+						"lng": 127.149256,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-CheonSeoRo": {		// 전주 천서로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810601,
+						"lng": 127.157382,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-ChunDongRo": {		// 전주 천동로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811531,
+						"lng": 127.157664,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-FanCultureCenter": {		// 전주 부채박물관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.809831,
+						"lng": 127.153121,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-GyeongGijeon": {		// 전주 경기전
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814815,
+						"lng": 127.149906,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HyangGyo": {		// 전주 향교
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812131,
+						"lng": 127.157196,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-SeongsimHighSchool": {		// 전주 성심여고
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813427,
+						"lng": 127.150311,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-TraditionalCultureTrainingCenter": {		// 전주 전통문화연수원
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812439,
+						"lng": 127.156531,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-KMU": {		// 전주 국립무형문화유산원
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810193,
+						"lng": 127.160612,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-NamcheonBridgeIntersection": {		// 전주 남천교진입로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811090,
+						"lng": 127.153119,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-Ohmokgyo": {		// 전주 오목교
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811238,
+						"lng": 127.158323,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-Omogdae": {		// 전주 오목대
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814040,
+						"lng": 127.154461,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-PungnamGate": {		// 전주 풍남문
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813451,
+						"lng": 127.147593,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-SsajeonBridge": {		// 전주 싸전다리
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810615,
+						"lng": 127.149739,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+
+
+
 
 			//** 여기서부터.. **//
 
@@ -997,9 +2185,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 26.0,
+				"scaleY": 1.5,
+				"scaleZ": 8.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -1088,9 +2276,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 6.5,
+				"scaleY": 1.5,
+				"scaleZ": 5.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -1174,9 +2362,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.5,
+				"scaleY": 1.5,
+				"scaleZ": 8.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -1261,9 +2449,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.0,
+				"scaleY": 1.5,
+				"scaleZ": 2.0,
 				"rotationX": 0,
 				"rotationY": -6.38,
 				"rotationZ": 0,
@@ -1347,9 +2535,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -7.28,
 				"rotationZ": 0,
@@ -1430,9 +2618,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -8.05,
 				"rotationZ": 0,
@@ -1513,9 +2701,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -6.77,
 				"rotationZ": 0,
@@ -1596,9 +2784,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 4.0,
 				"rotationX": 0,
 				"rotationY": -96.34,
 				"rotationZ": 0,
@@ -1679,9 +2867,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": 82.49,
 				"rotationZ": 0,
@@ -1762,9 +2950,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -7.15,
 				"rotationZ": 0,
@@ -1848,9 +3036,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -4.27,
 				"rotationZ": 0,
@@ -1931,9 +3119,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -95.01,
 				"rotationZ": 0,
@@ -2014,11 +3202,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": -95.01,
+				"rotationY": -182.383,
 				"rotationZ": 0,
 				"groupId": "hanok_04",
 				"property": {
@@ -2101,9 +3289,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -8.89,
 				"rotationZ": 0,
@@ -2184,9 +3372,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -98.03,
 				"rotationZ": 0,
@@ -2267,9 +3455,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2350,9 +3538,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2433,11 +3621,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -93.369,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2516,11 +3704,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -93.353,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2599,9 +3787,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2611,7 +3799,7 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
-
+			
 			/* 19.01.14
 			 * 기록분 */
 
@@ -2686,11 +3874,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -92.011,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2769,11 +3957,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -92.883,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2852,9 +4040,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2935,11 +4123,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": -95.01,
+				"rotationY": -181.926,
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
@@ -2951,7 +4139,7 @@ var data = {
 
 			/****/
 
-			"festival_booth_01": {		//임의설치 부스, 천동로
+			"festival_booth_01": {		//임의설치 부스, 천서로
 				"markerType": {
 					"info": true
 				},
@@ -3004,9 +4192,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3090,9 +4278,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3176,9 +4364,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3226,6 +4414,13 @@ var data = {
 				"coord": null
 			},
 			"hanok_05": {
+				"type": {
+					"building": true
+				},
+				"tileColor": null,
+				"coord": null
+			},
+			"hanok_06": {	//경기전
 				"type": {
 					"building": true
 				},
