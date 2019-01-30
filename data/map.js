@@ -50,7 +50,12 @@ var data = {
 				}
 			}
 		},
+		"image": {
+
+		},
 		"single": {
+			/* default */
+
 			"Seoul-Gwanghwamun": {		// 서울 광화문
 				"type": "waypoint",  // hanok, building, booth, waypoint, safezone
 				"shape": "pixel",  // pixel, line, polygon
@@ -298,68 +303,6 @@ var data = {
 					"maxRequiredLevel": 0
 				}
 			},
-			"Jeonju-Gyeongjeon": {		// 전주 경기전 앞
-				"type": "waypoint",
-				"shape": "pixel",
-				"coord": {
-					"p1": {
-						"lat": 35.8140889,
-						"lng": 127.1494826,
-						"alt": 0,
-						"isWidthPoint": false,
-						"isLengthPoint": false
-					}
-				},
-				"model": {
-					"top": {
-						"objectId": null,
-						"positionX": null,
-						"positionY": null,
-						"positionZ": null,
-						"scaleX": null,
-						"scaleY": null,
-						"scaleZ": null,
-						"rotationX": null,
-						"rotationY": null,
-						"rotationZ": null
-					},
-					"middle": {
-						"objectId": "WayPoint1",
-						"positionX": null,
-						"positionY": null,
-						"positionZ": null,
-						"scaleX": null,
-						"scaleY": null,
-						"scaleZ": null,
-						"rotationX": null,
-						"rotationY": null,
-						"rotationZ": null
-					},
-					"bottom": {
-						"objectId": null,
-						"positionX": null,
-						"positionY": null,
-						"positionZ": null,
-						"scaleX": null,
-						"scaleY": null,
-						"scaleZ": null,
-						"rotationX": null,
-						"rotationY": null,
-						"rotationZ": null
-					}
-				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
-				"rotationX": 0,
-				"rotationY": 0,
-				"rotationZ": 0,
-				"groupId": null,
-				"property": {
-					"minRequiredLevel": 0,
-					"maxRequiredLevel": 0
-				}
-			},
 			// end of waypoint
 
 			"Jeonju-DeokjinPark": {		// 전주 덕진공원
@@ -420,11 +363,17 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/27603721",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
-			"Jeonju-SoriHall": {		// 전주 소리의전당
+
+			"Jeonju-SoriHall": {		// 전주 소리문화의전당
 				"type": "safezone",
 				"shape": "pixel",
 				"coord": {
@@ -482,10 +431,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/8150195",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-AJungReservoir": {		// 전주 아중저수지
 				"type": "safezone",
 				"shape": "pixel",
@@ -544,10 +499,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/27233370",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-DragonHeadStreet": {		// 전주 용머리고개
 				"type": "safezone",
 				"shape": "pixel",
@@ -606,10 +567,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/8023777",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-HanokVillage": {		// 전주 한옥마을
 				"type": "safezone",
 				"shape": "pixel",
@@ -668,10 +635,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/10731896",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-NationalMuseum": {		// 전주 국립박물관
 				"type": "safezone",
 				"shape": "pixel",
@@ -730,10 +703,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/8217828",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-Riverside": {		// 전주 천변
 				"type": "safezone",
 				"shape": "pixel",
@@ -792,10 +771,16 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/18488794",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+
 			"Jeonju-WorldcupStadium": {		// 전주 월드컵 경기장
 				"type": "safezone",
 				"shape": "pixel",
@@ -854,17 +839,28 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/8540309",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
-			"Jeonju-HyanGyo": {		// 전주 향교
+
+
+
+			/* 승철이형 waypoint 추가본,
+			 * REAL DATA
+			*/
+			"Jeonju-CheongYeonLu": {		// 전주 청연루
 				"type": "safezone",
 				"shape": "pixel",
 				"coord": {
 					"p1": {
-						"lat": 35.8121,
-						"lng": 127.15719,
+						"lat": 35.810867,
+						"lng": 127.153173,
 						"alt": 0,
 						"isWidthPoint": false,
 						"isLengthPoint": false
@@ -916,10 +912,1291 @@ var data = {
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
+					"detailUrl": "https://place.map.daum.net/19711814",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
 			},
+			"Jeonju-WanpanCulturalCenter": {		// 전주 완판본문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811942,
+						"lng": 127.157946,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "http://www.bibimbapfest.com/kr/inner.php?sMenu=C4000",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-EojinMuseum": {		// 전주 어진박물관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.816242,
+						"lng": 127.149402,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/13031899",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HanbyeokCulturalCenter": {		// 전주 한벽문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812051,
+						"lng": 127.158402,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "http://www.bibimbapfest.com/kr/inner.php?sMenu=C1000",  // 축제링크
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HyangGyoCulturalCenter": {		// 전주 향교문화관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811996,
+						"lng": 127.157245,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "http://www.bibimbapfest.com/kr/inner.php?sMenu=C3000",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-JamanPaintingVillage": {		// 전주 자만벽화마을
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814220,
+						"lng": 127.157220,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/26428896",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-JeondongChurch": {		// 전주 전동성당
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813387,
+						"lng": 127.149256,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/12760599",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-CheonSeoRo": {		// 전주 천서로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810601,
+						"lng": 127.157382,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "http://dmaps.kr/esz8v",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-ChunDongRo": {		// 전주 천동로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811531,
+						"lng": 127.157664,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "http://dmaps.kr/esz9b",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-FanCultureCenter": {		// 전주 부채박물관
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.809831,
+						"lng": 127.153121,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/26801304",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-GyeongGijeon": {		// 전주 경기전
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814815,
+						"lng": 127.149906,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/10170551",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-HyangGyo": {		// 전주 향교
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812131,
+						"lng": 127.157196,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/8064969",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-SeongsimHighSchool": {		// 전주 성심여고
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813427,
+						"lng": 127.150311,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/8412292",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-TraditionalCultureTrainingCenter": {		// 전주 전통문화연수원
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.812439,
+						"lng": 127.156531,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/17087483",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-KMU": {		// 전주 국립무형문화유산원
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810193,
+						"lng": 127.160612,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/18888200",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-NamcheonBridgeIntersection": {		// 전주 남천교진입로
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811090,
+						"lng": 127.153119,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/8233336",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-Ohmokgyo": {		// 전주 오목교
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.811238,
+						"lng": 127.158323,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/15159893",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-Omogdae": {		// 전주 오목대
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.814040,
+						"lng": 127.154461,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/8458699",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-PungnamGate": {		// 전주 풍남문
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.813451,
+						"lng": 127.147593,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/8138264",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+			"Jeonju-SsajeonBridge": {		// 전주 싸전다리
+				"type": "safezone",
+				"shape": "pixel",
+				"coord": {
+					"p1": {
+						"lat": 35.810615,
+						"lng": 127.149739,
+						"alt": 0,
+						"isWidthPoint": false,
+						"isLengthPoint": false
+					}
+				},
+				"model": {
+					"top": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"middle": {
+						"objectId": "WayPoint1",
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					},
+					"bottom": {
+						"objectId": null,
+						"positionX": null,
+						"positionY": null,
+						"positionZ": null,
+						"scaleX": null,
+						"scaleY": null,
+						"scaleZ": null,
+						"rotationX": null,
+						"rotationY": null,
+						"rotationZ": null
+					}
+				},
+				"scaleX": 1,
+				"scaleY": 1,
+				"scaleZ": 1,
+				"rotationX": 0,
+				"rotationY": 0,
+				"rotationZ": 0,
+				"groupId": null,
+				"property": {
+					"detailUrl": "https://place.map.daum.net/7985144",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
+					"minRequiredLevel": 0,
+					"maxRequiredLevel": 0
+				}
+			},
+
+
+
 
 			//** 여기서부터.. **//
 
@@ -997,17 +2274,25 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 26.0,
+				"scaleY": 1.5,
+				"scaleZ": 8.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
 				"groupId": "modern_01",
+
+				/*
 				"property": {
+					"detailUrl": "http://www.bibimbapfest.com/kr/inner.php?sMenu=C3000",
+					"images": {
+						"bibimbob_street1_1080x1080": ".jpg",
+						"collaborate_1080x1080": ".jpg"
+					},
 					"minRequiredLevel": 0,
 					"maxRequiredLevel": 0
 				}
+				*/
 			},
 			"modern_build_01-1": {		//무형유산원 주차장(좌)
 				"markerType": {
@@ -1083,9 +2368,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 6.5,
+				"scaleY": 1.5,
+				"scaleZ": 5.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -1169,9 +2454,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.5,
+				"scaleY": 1.5,
+				"scaleZ": 8.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -1256,9 +2541,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.0,
+				"scaleY": 1.5,
+				"scaleZ": 2.0,
 				"rotationX": 0,
 				"rotationY": -6.38,
 				"rotationZ": 0,
@@ -1342,9 +2627,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -7.28,
 				"rotationZ": 0,
@@ -1425,9 +2710,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -8.05,
 				"rotationZ": 0,
@@ -1508,9 +2793,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -6.77,
 				"rotationZ": 0,
@@ -1591,9 +2876,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 4.0,
 				"rotationX": 0,
 				"rotationY": -96.34,
 				"rotationZ": 0,
@@ -1674,9 +2959,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 4.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": 82.49,
 				"rotationZ": 0,
@@ -1757,9 +3042,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
 				"rotationY": -7.15,
 				"rotationZ": 0,
@@ -1843,9 +3128,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -4.27,
 				"rotationZ": 0,
@@ -1926,9 +3211,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -95.01,
 				"rotationZ": 0,
@@ -2009,11 +3294,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": -95.01,
+				"rotationY": -182.383,
 				"rotationZ": 0,
 				"groupId": "hanok_04",
 				"property": {
@@ -2096,9 +3381,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -8.89,
 				"rotationZ": 0,
@@ -2179,9 +3464,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": -98.03,
 				"rotationZ": 0,
@@ -2262,9 +3547,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2345,9 +3630,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2428,11 +3713,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -93.369,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2511,11 +3796,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -93.353,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2594,9 +3879,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2681,11 +3966,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -92.011,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2764,11 +4049,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": 0,
+				"rotationY": -92.883,
 				"rotationZ": 0,
 				"groupId": "hanok_05",
 				"property": {
@@ -2847,9 +4132,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 1.5,
+				"scaleY": 1.5,
+				"scaleZ": 1.0,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -2930,11 +4215,11 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 2.0,
+				"scaleY": 1.5,
+				"scaleZ": 1.5,
 				"rotationX": 0,
-				"rotationY": -95.01,
+				"rotationY": -181.926,
 				"rotationZ": 0,
 				"groupId": null,
 				"property": {
@@ -2946,7 +4231,7 @@ var data = {
 
 			/****/
 
-			"festival_booth_01": {		//임의설치 부스, 천동로
+			"festival_booth_01": {		//임의설치 부스, 천서로
 				"markerType": {
 					"info": true
 				},
@@ -2999,9 +4284,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 0.5,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3085,9 +4370,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3171,9 +4456,9 @@ var data = {
 						"rotationZ": null
 					}
 				},
-				"scaleX": 1,
-				"scaleY": 1,
-				"scaleZ": 1,
+				"scaleX": 3.0,
+				"scaleY": 1.5,
+				"scaleZ": 0.5,
 				"rotationX": 0,
 				"rotationY": 0,
 				"rotationZ": 0,
@@ -3221,6 +4506,13 @@ var data = {
 				"coord": null
 			},
 			"hanok_05": {
+				"type": {
+					"building": true
+				},
+				"tileColor": null,
+				"coord": null
+			},
+			"hanok_06": {	//경기전
 				"type": {
 					"building": true
 				},
