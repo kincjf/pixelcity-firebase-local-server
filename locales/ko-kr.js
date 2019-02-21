@@ -118,6 +118,18 @@ var data = {
 			"title": "싸전다리",
 			"comment": "전주의 외곽으로 나가는 다리입니다."
 		},
+		"Jeonju-LuxuryCenter": {
+			"title": "전주 명품관",
+			"comment": "전주 명품관"
+		},
+		"Jeonju-HandWritingCenter": {
+			"title": "강암 서예관",
+			"comment": "강암 서예관"
+		},
+		"Jeonju-CentralElementarySchool": {
+			"title": "전주 중앙초등학교",
+			"comment": "전주 중앙초교"
+		},
 
 		/* default */
 		"Seoul": {	// 서울 광화문
