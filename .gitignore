@@ -10,3 +10,4 @@ node_modules
 /functions/**/gcloud-pixelcity-dev.json
 /.cookie
 /%RESOURCE_DIR%
+.vs
